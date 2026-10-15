@@ -63,7 +63,7 @@ Each interview question below is its **own heading and isolated timestamp table*
 | [1:19:54](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4794s) | [IT-5 — How do unit, integration and end-to-end tests differ for communicating microservices?](#it-5) |
 | [1:22:31](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4951s) | [IS-12 — What is reactive programming in Spring WebFlux, and how do Mono and Flux differ?](#is-12) |
 | [1:24:31](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5071s) | [IC-10 — Compare Maven and Gradle as Java build tools.](#ic-10) |
-| [1:25:36](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5136s) | [IC-11 — What is the purpose of pom.xml and how does Maven resolve dependencies?](#ic-11) |
+| [1:25:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5120s) | [IC-11 — What is the purpose of pom.xml and how does Maven resolve dependencies?](#ic-11) |
 | [1:26:52](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5212s) | [IC-12 — Compare Kanban and Scrum and explain how they affect a team's delivery workflow.](#ic-12) |
 | [1:28:19](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5299s) | [IJ-1 — Compare HashMap and ConcurrentHashMap under concurrent access.](#ij-1) |
 | [1:28:46](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5326s) | [IJ-3 — How does HashMap fail-fast iteration compare with ConcurrentHashMap iteration?](#ij-3) |
@@ -383,7 +383,7 @@ Each interview question below is its **own heading and isolated timestamp table*
 
 | ID | Watch | Type | What you will learn |
 |---|---|---|---|
-| YT-1.85 | [55:59](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3359s) | 🟢 USEFUL | Kafka consumer lag question |
+| YT-1.85 | [55:59](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3359s) | 🟢 USEFUL | Kafka consumer lag interview question — no clear tested remedy demonstrated |
 
 <a id="ia-17"></a>
 
@@ -490,7 +490,7 @@ Each interview question below is its **own heading and isolated timestamp table*
 
 | ID | Watch | Type | What you will learn |
 |---|---|---|---|
-| YT-1.105 | [1:11:01](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4261s) | 🟢 USEFUL | Repeated Kubernetes pod crashes — verify Java-version-specific implementation details |
+| YT-1.105 | [1:11:01](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4261s) | 🟢 USEFUL | Repeated Kubernetes pod crashes and CrashLoopBackOff scenario |
 | YT-1.106 | [1:12:07](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4327s) | 🟢 USEFUL | Crash triage, logs and PagerDuty |
 
 <a id="ic-8"></a>
@@ -573,7 +573,6 @@ Each interview question below is its **own heading and isolated timestamp table*
 | ID | Watch | Type | What you will learn |
 |---|---|---|---|
 | YT-1.124 | [1:24:31](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5071s) | 🟢 USEFUL | Maven versus Gradle question |
-| YT-1.125 | [1:25:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5120s) | 🟢 USEFUL | Build tool choice and differences |
 
 <a id="ic-11"></a>
 
@@ -581,6 +580,7 @@ Each interview question below is its **own heading and isolated timestamp table*
 
 | ID | Watch | Type | What you will learn |
 |---|---|---|---|
+| YT-1.125 | [1:25:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5120s) | 🟢 USEFUL | Interview question switches to why pom.xml is used |
 | YT-1.126 | [1:25:36](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5136s) | 🟢 USEFUL | Purpose of pom.xml |
 
 <a id="ic-12"></a>

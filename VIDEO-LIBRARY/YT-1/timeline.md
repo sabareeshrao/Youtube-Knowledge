@@ -137,7 +137,7 @@ This is the complete **single-video timeline**, with separate question-shaped ch
 | YT-1.82 | [54:22](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3262s) | 🟢 USEFUL | Indexing and query profiling |
 | YT-1.83 | [54:45](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3285s) | 🟢 USEFUL | Database partitioning |
 | YT-1.84 | [55:08](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3308s) | 🟢 USEFUL | Sharding versus partitioning |
-| YT-1.85 | [55:59](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3359s) | 🟢 USEFUL | Kafka consumer lag question |
+| YT-1.85 | [55:59](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3359s) | 🟢 USEFUL | Kafka consumer lag interview question — no clear tested remedy demonstrated |
 | YT-1.86 | [57:44](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3464s) | 🟢 USEFUL | CDN for images and static content |
 | YT-1.87 | [58:49](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3529s) | 🟢 USEFUL | Autoscaling during sales spikes |
 | YT-1.88 | [59:52](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3592s) | 🟢 USEFUL | Backend and frontend pagination prompt |
@@ -167,7 +167,7 @@ This is the complete **single-video timeline**, with separate question-shaped ch
 | YT-1.102 | [1:09:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4160s) | 🟢 USEFUL | Dockerfile, image and container |
 | YT-1.103 | [1:09:56](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4196s) | 🟢 USEFUL | Managing multiple microservice containers |
 | YT-1.104 | [1:10:09](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4209s) | 🟢 USEFUL | Kubernetes orchestration and replicas |
-| YT-1.105 | [1:11:01](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4261s) | 🟢 USEFUL | Repeated Kubernetes pod crashes — verify Java-version-specific implementation details |
+| YT-1.105 | [1:11:01](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4261s) | 🟢 USEFUL | Repeated Kubernetes pod crashes and CrashLoopBackOff scenario |
 | YT-1.106 | [1:12:07](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4327s) | 🟢 USEFUL | Crash triage, logs and PagerDuty |
 | YT-1.107 | [1:12:34](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4354s) | 🟢 USEFUL | Rollback to previous application version |
 | YT-1.108 | [1:12:48](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4368s) | 🟢 USEFUL | Release versioning and rollback workflow |
@@ -202,7 +202,7 @@ This is the complete **single-video timeline**, with separate question-shaped ch
 | ID | Watch | Type | What you will learn |
 |---|---|---|---|
 | YT-1.124 | [1:24:31](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5071s) | 🟢 USEFUL | Maven versus Gradle question |
-| YT-1.125 | [1:25:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5120s) | 🟢 USEFUL | Build tool choice and differences |
+| YT-1.125 | [1:25:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5120s) | 🟢 USEFUL | Interview question switches to why pom.xml is used |
 | YT-1.126 | [1:25:36](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5136s) | 🟢 USEFUL | Purpose of pom.xml |
 | YT-1.127 | [1:26:52](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5212s) | 🟢 USEFUL | Kanban versus Scrum in team workflow |
 

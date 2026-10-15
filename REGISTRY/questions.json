@@ -999,8 +999,7 @@
         {
           "video_id": "YT-1",
           "timestamp_ids": [
-            "YT-1.124",
-            "YT-1.125"
+            "YT-1.124"
           ]
         }
       ]
@@ -1019,6 +1018,7 @@
         {
           "video_id": "YT-1",
           "timestamp_ids": [
+            "YT-1.125",
             "YT-1.126"
           ]
         }
