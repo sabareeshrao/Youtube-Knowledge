@@ -1,21 +1,20 @@
-# IJ-N — INTERVIEW QUESTION
+# IJ-1 — What is the interview question?
 
-**Subject:** JAVA  
-**Tags:** java, relevant-topic
+## Video option — YT-1: First video title
 
-**Interviewer:** Write one standalone interview question here.
+**Video:** [Watch YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
 
-## Choose a video explanation
+| ID | Watch | Type | What you will learn |
+|---|---|---|---|
+| YT-1.2 | [00:32](https://www.youtube.com/watch?v=VIDEO_ID&t=32s) | 🟢 USEFUL | First video's explanation |
+| YT-1.3 | [01:20](https://www.youtube.com/watch?v=VIDEO_ID&t=80s) | 🟢 USEFUL | First video's code discussion |
 
-### YT-1 — VIDEO TITLE
+## Video option — YT-2: Second video title
 
-Keep every reference in this video group from the same video:
+**Video:** [Watch YouTube](https://www.youtube.com/watch?v=SECOND_VIDEO_ID)
 
-- **YT-1.1** — [00:00](https://www.youtube.com/watch?v=VIDEO_ID&t=0s) — Intro — [Notes and code](../../VIDEO-LIBRARY/YT-1/timestamps.md#yt-11)
-- **YT-1.3** — [01:15](https://www.youtube.com/watch?v=VIDEO_ID&t=75s) — Explanation — [Notes and code](../../VIDEO-LIBRARY/YT-1/timestamps.md#yt-13)
+| ID | Watch | Type | What you will learn |
+|---|---|---|---|
+| YT-2.7 | [02:10](https://www.youtube.com/watch?v=SECOND_VIDEO_ID&t=130s) | 🟢 USEFUL | Second video's explanation |
 
-### YT-2 — ANOTHER VIDEO TITLE (add ONLY when registered)
-
-- **YT-2.4** — [03:00](https://www.youtube.com/watch?v=ANOTHER_ID&t=180s) — Separate explanation — [Notes and code](../../VIDEO-LIBRARY/YT-2/timestamps.md#yt-24)
-
-> TEMPLATE ONLY: These are placeholders. One question ID per distinct interview concept; group every video independently. Copy only sections actually demonstrated. Related code stays on the linked video notes page.
+> TEMPLATE ONLY. Never use placeholder IDs as actual records. Keep each video's links and code in its own isolated table. Do not add "Detailed video notes" links.

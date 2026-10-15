@@ -2,7 +2,7 @@
 
 ## 1. Separate layers — do not mix
 
-**VIDEO-LIBRARY** is the chronological and standalone record of *one* video. Each folder has `transcript.md` (as received, including its YouTube URL and linked subtitles) and `timestamps.md` (curated timestamp sections, importance classification, summaries, and any demonstrated code). Timestamp links jump to opening positions, never invented end positions. All sections, even NO NEED, can be shown in the video library.
+**VIDEO-LIBRARY** is the chronological and standalone record of *one* video. Each folder has `transcript.md` (as received, including its YouTube URL and linked subtitles) and `timestamps.md` (individually headed question tables), and `timeline.md` (pure chronological tables). Timestamp links jump to opening positions, never invented end positions. All sections, even NO NEED, can be shown in the video library.
 
 **INTERVIEW-SYLLABUS** organizes interview questions by topic and groups timestamp references by `YT-n` video. It never combines sections from two videos into a single video option. The interview question is a single canonical record even when ten videos cover it. Show video choices rather than forcing repeated viewing.
 
@@ -51,26 +51,35 @@ The above is **an example of a future first record**, not a claim that it has be
   ]
 }
 ```
-Each `timestamp_ids` entry MUST exist as a heading in its parent video's `timestamps.md`. The question file groups the source timestamps in exactly these per-video batches. Code stays with the video section demonstrating it; the syllabus links to that section. An existing question may gain another video source without getting another question ID.
+Each `timestamp_ids` entry MUST exist as a table row in the source video's `timeline.md` and also in the matching question table. The question file groups the source timestamps in exactly these per-video batches. Code stays with the video section demonstrating it; the syllabus links to that section. An existing question may gain another video source without getting another question ID.
 
 `REGISTRY/counters.json` stores the **next unallocated** video number and next question number for each subject prefix. Counters must be strictly greater than any registered number and never decremented, including after deletions.
 
-## 4. Video timestamp format
+## 4. Mandatory headings and tables
 
-In `VIDEO-LIBRARY/YT-1/timestamps.md`, each section begins with a machine-readable heading:
+**Three maintained documents per video:**
+- `transcript.md` stores the exact uploaded linked transcript, unchanged.
+- `timestamps.md` shows **only this video's** timestamps, grouped under **full interview-question headings** like `## IJ-1 — What is a HashMap in Java?`. Each heading is followed by an isolated 4-column Markdown table: `ID | Watch | Type | What you will learn`. A section can be referenced by several question groups without changing its permanent ID.
+- `timeline.md` stores every unique `YT-n.m` video timestamp **exactly once**, strictly in chronological video order, with topic/question chapter headings followed by separate Markdown tables. This file is the canonical timestamp inventory validated by GitHub Actions.
+
+**One interview question document per question:** `INTERVIEW-SYLLABUS/SUBJECT/ID.md` begins with the complete actual-or-curated interview question. Then create a `## Video option — YT-n: title` heading and separate table for each relevant video. Never mix two YT IDs in one table. Clicking a timestamp goes to its start position in the original video; closing timestamps are unnecessary.
+
+**Use this row shape:**
+
 ```md
-### YT-1.1 — [03:34](https://www.youtube.com/watch?v=ndTM5I2vtYQ&t=214s) — 🟢 USEFUL: Anonymous object definition
-
-Brief explanation based on the source video.
+| ID | Watch | Type | What you will learn |
+|---|---|---|---|
+| YT-1.4 | [02:44](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=164s) | 🟢 USEFUL | Spring Security end-to-end question |
 ```
-Classification must be exactly one of `🔴 NO NEED`, `🟡 INTRO`, `🟢 USEFUL`. Keep original source terminology unless correcting it is specifically requested; if adding independent technical notes, mark them clearly as such. Timestamps are **starting positions** only. Group contiguous subtitle rows into useful sections without inventing timing or demonstrations.
+
+Avoid bare link lists and 'Detailed video notes' links. Intro, useful and skip labels are preserved. Questions may be *curated from the discussion*, rather than asserted verbatim. Never invent code that was not included in the provided source transcript. Consult [TEMPLATES/](../TEMPLATES/).
 
 ## 5. Ingestion transaction
 
 1. Read all three registries and `INDEX.md` from GitHub; do not trust remembered counters.
 2. Parse the incoming `.md` transcript's original URL and all linked subtitle starting positions. Verify URLs refer to the same video.
 3. Normalize the 11-character YouTube video ID; if registered, **update that YT folder** rather than allocate another `YT-n`.
-4. If new, allocate `YT-n` from the counter; preserve the incoming transcript in `transcript.md`, classify video sections into `timestamps.md`, and register the original video ID. Do not modify existing timestamp IDs when revising segmentation; retire or redirect obsolete references deliberately.
+4. If new, allocate `YT-n` from the counter; preserve the incoming transcript in `transcript.md`, classify video sections into question-headed `timestamps.md` and fully chronological `timeline.md` tables, and register the original video ID. Do not modify existing timestamp IDs when revising segmentation; retire or redirect obsolete references deliberately.
 5. Search existing interview-question registry for exact and semantic matches, then **reuse** or allocate `IJ-n` / `IP-n` / other subject IDs. Link each question's sources by video ID and timestamp IDs, keeping code with each video.
 6. Update question Markdown files, all registries, and `INDEX.md` together.
 7. Run `python scripts/validate.py`. Commit a single coherent change; use a PR/branch and passing validation for concurrent contributions. If GitHub rejects a stale branch update, reread current registries and reassign based on latest counters.

@@ -1,27 +1,20 @@
-# YT-N — VIDEO TITLE
+# YT-N — Video title
 
-Original YouTube video: https://www.youtube.com/watch?v=VIDEO_ID
+**Source:** https://www.youtube.com/watch?v=VIDEO_ID
 
-> TEMPLATE ONLY. Replace `YT-N` with the allocated permanent ID and `VIDEO_ID` with the original 11-character ID. Do not register placeholder text.
+Each question gets a clear full question heading and an isolated timestamp table. All timestamps in this file refer to **this video only**. Keep an additional `timeline.md` containing every original video section in chronological order.
 
-## Full video timeline (chronological)
+## IJ-1 — What is a Java object and how is it created?
 
-### YT-N.1 — [00:00](https://www.youtube.com/watch?v=VIDEO_ID&t=0s) — 🟡 INTRO: TOPIC
+| ID | Watch | Type | What you will learn |
+|---|---|---|---|
+| YT-N.1 | [00:32](https://www.youtube.com/watch?v=VIDEO_ID&t=32s) | 🟢 USEFUL | Creating an object |
+| YT-N.2 | [01:20](https://www.youtube.com/watch?v=VIDEO_ID&t=80s) | 🟢 USEFUL | Reference variables |
 
-Short source-grounded summary.
+## IJ-2 — What is an anonymous object?
 
-### YT-N.2 — [00:45](https://www.youtube.com/watch?v=VIDEO_ID&t=45s) — 🟢 USEFUL: TECHNICAL CONCEPT
+| ID | Watch | Type | What you will learn |
+|---|---|---|---|
+| YT-N.3 | [02:15](https://www.youtube.com/watch?v=VIDEO_ID&t=135s) | 🟢 USEFUL | Anonymous object usage |
 
-What the video teaches, without mixing in other videos.
-
-#### Code shown in THIS video section (only if present)
-
-```java
-// Voice: Describe the exact step when writing teaching code.
-```
-
-### YT-N.3 — [01:10](https://www.youtube.com/watch?v=VIDEO_ID&t=70s) — 🔴 NO NEED: OFF-TOPIC/OUTRO
-
-Reason this section can be skipped.
-
-> Timestamp IDs never change after publication. Add later IDs with unused numeric suffixes; display remains time-ordered.
+> TEMPLATE ONLY. Question IDs must be existing IDs in the interview syllabus. Every video section has a permanent YT-N.m ID that also appears exactly once in the video's chronological timeline.

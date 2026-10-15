@@ -2,7 +2,7 @@
 
 ## 1. Pure Video Library
 
-- **[YT-1 — Mock Interview 5+ year experienced | Spring Boot | Java | Microservice | System Design | Code Decode](VIDEO-LIBRARY/YT-1/timestamps.md)** — 134 chronologically sorted topic sections, with clickable time links, classifications and independently documented identifiers. [Full original linked transcript](VIDEO-LIBRARY/YT-1/transcript.md).
+- **[YT-1 — Mock Interview 5+ year experienced | Spring Boot | Java | Microservice | System Design | Code Decode](VIDEO-LIBRARY/YT-1/timestamps.md)** — 134 question-headed timestamp tables and direct YouTube links, while maintaining a separate chronological timeline. [Pure chronological video tables](VIDEO-LIBRARY/YT-1/timeline.md) · [Full original linked transcript](VIDEO-LIBRARY/YT-1/transcript.md).
 
 ## 2. Interview Syllabus
 

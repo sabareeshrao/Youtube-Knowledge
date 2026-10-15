@@ -4,9 +4,9 @@ A permanent, searchable library of timestamped YouTube tutorials and interview q
 
 ## Two separate study views
 
-**[VIDEO-LIBRARY/](VIDEO-LIBRARY/)** — Open a video on its own. Each `YT-n` folder keeps the original linked transcript and an independent chronological list of clickable starting timestamps, topic classifications (🔴 NO NEED / 🟡 INTRO / 🟢 USEFUL), and code demonstrated in that video. Never mix timestamps from different videos.
+**[VIDEO-LIBRARY/](VIDEO-LIBRARY/)** — Open a video on its own. Each `YT-n` folder keeps the original linked transcript and isolated interview-question timestamp tables, a separate chronological `timeline.md`, and topic classifications (🔴 NO NEED / 🟡 INTRO / 🟢 USEFUL), and code demonstrated in that video. Never mix timestamps from different videos.
 
-**[INTERVIEW-SYLLABUS/](INTERVIEW-SYLLABUS/)** — Open a specific interview question. Its page groups video timestamps by `YT-n`, so you can choose one video's complete relevant sections and code instead of watching ten repeat explanations. Different subjects have independent question IDs.
+**[INTERVIEW-SYLLABUS/](INTERVIEW-SYLLABUS/)** — Open a specific interview question. Its page groups video timestamps by `YT-n`, so you can choose one video's group of timestamp links in its **own table**, without mixing timestamps from ten videos. Different subjects have independent question IDs.
 
 ## Simple, permanent IDs
 
@@ -26,7 +26,8 @@ Never add leading zeros or reuse IDs. If a video is added twice, reuse its exist
 VIDEO-LIBRARY/
   YT-1/
     transcript.md       # original timestamped source
-    timestamps.md       # pure video timeline, clickable links, codes
+    timestamps.md       # questions as headings, separate clickable timestamp tables
+    timeline.md         # all timestamps chronologically, grouped in tables
 
 INTERVIEW-SYLLABUS/
   JAVA/IJ-1.md          # one interview question, separate video options
@@ -57,3 +58,10 @@ Folder paths containing `YT-1` and `IJ-1` above are **examples of files to be ad
 See [INDEX.md](INDEX.md) to browse, [docs/WORKFLOW.md](docs/WORKFLOW.md) for the schemas and rules, or [TEMPLATES/](TEMPLATES/) for starter page formats.
 
 **Current state:** Initialized, waiting for the first transcript. Next unallocated video ID: `YT-1`; question IDs: `IJ-1`, `IP-1`, `IS-1`.
+
+## Presentation rules
+
+- **Every relevant group has a full interview-question heading and a dedicated Markdown table.** Never output a loose list of random linked timestamps.
+- The VIDEO-LIBRARY/timestamps.md page shows question-grouped tables for a **single video only**; its timeline.md is the complete chronological single-video index.
+- Each INTERVIEW-SYLLABUS question contains a separate headed table for **each video option**. Do not mix timestamps from different YT IDs.
+- Preserve original linked transcript independently. No "Detailed video notes" clutter or invented runnable code.
