@@ -1,3 +1,24 @@
 {
-  "videos": []
+  "videos": [
+    {
+      "id": "YT-1",
+      "youtube_id": "xMlcsFLk-CU",
+      "title": "Mock Interview 5+ year experienced | Spring Boot | Java | Microservice | System Design | Code Decode",
+      "tags": [
+        "java",
+        "spring-boot",
+        "spring-security",
+        "microservices",
+        "system-design",
+        "graphql",
+        "hibernate",
+        "caching",
+        "kafka",
+        "devops",
+        "testing"
+      ],
+      "transcript": "VIDEO-LIBRARY/YT-1/transcript.md",
+      "timestamps": "VIDEO-LIBRARY/YT-1/timestamps.md"
+    }
+  ]
 }
