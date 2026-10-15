@@ -8,13 +8,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 errors = []
 VIDEO_RE = re.compile(r"YT-([1-9][0-9]*)$")
-QUESTION_RE = re.compile(r"(IJ|IP|IS)-([1-9][0-9]*)$")
+QUESTION_RE = re.compile(r"(IJ|IP|IS|IA|ID|IC|IT)-([1-9][0-9]*)$")
 SECTION_RE = re.compile(
     r"^### (YT-([1-9][0-9]*)\.([1-9][0-9]*)) — \[([0-9:]+)\]"
     r"\(https://www\.youtube\.com/watch\?v=([A-Za-z0-9_-]{11})&t=([0-9]+)s\)"
     r" — (🔴 NO NEED|🟡 INTRO|🟢 USEFUL): .+"
 )
-SUBJECTS = {"IJ": "JAVA", "IP": "PYTHON", "IS": "SPRING-BOOT"}
+SUBJECTS = {"IJ": "JAVA", "IP": "PYTHON", "IS": "SPRING-BOOT", "IA": "ARCHITECTURE", "ID": "DATABASE", "IC": "DEVOPS", "IT": "TESTING"}
 
 
 def fail(msg):

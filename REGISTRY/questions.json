@@ -1,3 +1,1214 @@
 {
-  "questions": []
+  "questions": [
+    {
+      "id": "IS-1",
+      "subject": "SPRING-BOOT",
+      "question": "How would you secure a Spring Boot REST API from frontend to backend?",
+      "tags": [
+        "spring-security",
+        "jwt",
+        "rest",
+        "authentication"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-1.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.4",
+            "YT-1.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-2",
+      "subject": "SPRING-BOOT",
+      "question": "How does a Spring Security application integrate with Okta and OAuth 2.0?",
+      "tags": [
+        "spring-security",
+        "oauth2",
+        "okta",
+        "authorization"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-2.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.7",
+            "YT-1.8",
+            "YT-1.9",
+            "YT-1.10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-3",
+      "subject": "SPRING-BOOT",
+      "question": "How should a Spring Boot backend validate an incoming JWT and detect tampering?",
+      "tags": [
+        "spring-security",
+        "jwt",
+        "verification",
+        "signature"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-3.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.11",
+            "YT-1.12",
+            "YT-1.13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-4",
+      "subject": "SPRING-BOOT",
+      "question": "What information must not be stored in JWT claims, and why?",
+      "tags": [
+        "spring-security",
+        "jwt",
+        "claims",
+        "sensitive-data"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-4.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.14",
+            "YT-1.15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-5",
+      "subject": "SPRING-BOOT",
+      "question": "How do access-token expiry and refresh tokens work?",
+      "tags": [
+        "spring-security",
+        "jwt",
+        "refresh-token"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-5.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-6",
+      "subject": "SPRING-BOOT",
+      "question": "How can you avoid duplicate Spring scheduled jobs running across multiple application instances?",
+      "tags": [
+        "spring-scheduling",
+        "shedlock",
+        "microservices"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-6.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.17",
+            "YT-1.18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-7",
+      "subject": "SPRING-BOOT",
+      "question": "Explain Hibernate first-level and second-level caching, including defaults and scope.",
+      "tags": [
+        "hibernate",
+        "jpa",
+        "l1-cache",
+        "l2-cache"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-7.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.27",
+            "YT-1.28",
+            "YT-1.29",
+            "YT-1.30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-8",
+      "subject": "SPRING-BOOT",
+      "question": "Why reuse Hibernate SessionFactory and what happens when an application has several databases?",
+      "tags": [
+        "hibernate",
+        "sessionfactory",
+        "multi-database"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-8.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.31",
+            "YT-1.32"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-9",
+      "subject": "SPRING-BOOT",
+      "question": "Compare application.properties and application.yml in Spring Boot.",
+      "tags": [
+        "spring-boot",
+        "configuration",
+        "yaml",
+        "properties"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-9.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.39",
+            "YT-1.40",
+            "YT-1.41",
+            "YT-1.42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-10",
+      "subject": "SPRING-BOOT",
+      "question": "How do Spring Boot profiles manage configuration across development, QA, staging and production?",
+      "tags": [
+        "spring-boot",
+        "profiles",
+        "configuration"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-10.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.96",
+            "YT-1.97"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-11",
+      "subject": "SPRING-BOOT",
+      "question": "How would you implement backend pagination using Spring Data JPA?",
+      "tags": [
+        "spring-data-jpa",
+        "pagination",
+        "backend"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-11.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.90"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-12",
+      "subject": "SPRING-BOOT",
+      "question": "What is reactive programming in Spring WebFlux, and how do Mono and Flux differ?",
+      "tags": [
+        "spring-webflux",
+        "reactive",
+        "mono",
+        "flux"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-12.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.120",
+            "YT-1.121",
+            "YT-1.122",
+            "YT-1.123"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-1",
+      "subject": "ARCHITECTURE",
+      "question": "Explain cache-aside caching using Redis and a database.",
+      "tags": [
+        "redis",
+        "caching",
+        "cache-aside"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-1.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.19",
+            "YT-1.20",
+            "YT-1.21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-2",
+      "subject": "ARCHITECTURE",
+      "question": "How would you control stale cached data using TTL and consistency requirements?",
+      "tags": [
+        "caching",
+        "ttl",
+        "eventual-consistency"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-2.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.22",
+            "YT-1.23",
+            "YT-1.24",
+            "YT-1.25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-3",
+      "subject": "ARCHITECTURE",
+      "question": "When would you choose GraphQL over REST for an API?",
+      "tags": [
+        "graphql",
+        "rest",
+        "api-design"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-3.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.33",
+            "YT-1.34",
+            "YT-1.35"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-4",
+      "subject": "ARCHITECTURE",
+      "question": "How does GraphQL field selection compare with REST DTO responses?",
+      "tags": [
+        "graphql",
+        "rest",
+        "dto",
+        "field-selection"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-4.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.36",
+            "YT-1.37",
+            "YT-1.38"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-5",
+      "subject": "ARCHITECTURE",
+      "question": "Compare Saga and two-phase commit for distributed microservice transactions.",
+      "tags": [
+        "microservices",
+        "saga",
+        "2pc",
+        "distributed-transactions"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-5.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.43",
+            "YT-1.44",
+            "YT-1.45",
+            "YT-1.72"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-6",
+      "subject": "ARCHITECTURE",
+      "question": "How would you gather functional and nonfunctional requirements for an e-commerce platform?",
+      "tags": [
+        "system-design",
+        "ecommerce",
+        "requirements"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-6.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.46",
+            "YT-1.47",
+            "YT-1.48",
+            "YT-1.49"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-7",
+      "subject": "ARCHITECTURE",
+      "question": "How would you protect e-commerce APIs from abusive traffic and request floods?",
+      "tags": [
+        "system-design",
+        "rate-limiting",
+        "nginx"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-7.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.50",
+            "YT-1.53",
+            "YT-1.54"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-8",
+      "subject": "ARCHITECTURE",
+      "question": "Design a load-balanced high-level architecture for a large e-commerce application.",
+      "tags": [
+        "ecommerce",
+        "load-balancing",
+        "microservices"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-8.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.51",
+            "YT-1.52",
+            "YT-1.53",
+            "YT-1.55"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-9",
+      "subject": "ARCHITECTURE",
+      "question": "Design product search using a cache, database and search index.",
+      "tags": [
+        "ecommerce",
+        "search",
+        "redis",
+        "elasticsearch",
+        "nosql"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-9.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.56",
+            "YT-1.57",
+            "YT-1.58",
+            "YT-1.59",
+            "YT-1.60"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-10",
+      "subject": "ARCHITECTURE",
+      "question": "How would you model a user's cart, and why might you choose a relational database?",
+      "tags": [
+        "ecommerce",
+        "cart",
+        "sql",
+        "data-model"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-10.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.61",
+            "YT-1.62"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-11",
+      "subject": "ARCHITECTURE",
+      "question": "How should cart, product, inventory and user responsibilities be split across services?",
+      "tags": [
+        "microservices",
+        "bounded-contexts",
+        "single-responsibility"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-11.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.63",
+            "YT-1.68",
+            "YT-1.69"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-12",
+      "subject": "ARCHITECTURE",
+      "question": "How do you avoid overselling the last inventory item when Kafka delivery is delayed?",
+      "tags": [
+        "ecommerce",
+        "inventory",
+        "kafka",
+        "consistency"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-12.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.64",
+            "YT-1.65",
+            "YT-1.66",
+            "YT-1.67"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-13",
+      "subject": "ARCHITECTURE",
+      "question": "How would you implement delivery-partner assignment with asynchronous events?",
+      "tags": [
+        "ecommerce",
+        "saga",
+        "kafka",
+        "delivery"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-13.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.70",
+            "YT-1.71",
+            "YT-1.72",
+            "YT-1.73",
+            "YT-1.74"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-14",
+      "subject": "ARCHITECTURE",
+      "question": "How would you deliver order-status notifications by email and SMS?",
+      "tags": [
+        "ecommerce",
+        "notifications",
+        "messaging"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-14.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.75"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-15",
+      "subject": "ARCHITECTURE",
+      "question": "Design an event-driven order-tracking system with a suitable database.",
+      "tags": [
+        "ecommerce",
+        "order-tracking",
+        "kafka"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-15.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.76",
+            "YT-1.78",
+            "YT-1.79",
+            "YT-1.80"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-16",
+      "subject": "ARCHITECTURE",
+      "question": "What data would you collect for logs and commerce analytics?",
+      "tags": [
+        "system-design",
+        "logging",
+        "analytics"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-16.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.77"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-17",
+      "subject": "ARCHITECTURE",
+      "question": "Why use a CDN for an e-commerce product catalog?",
+      "tags": [
+        "cdn",
+        "system-design",
+        "static-assets"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-17.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.86"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-18",
+      "subject": "ARCHITECTURE",
+      "question": "How would you autoscale services when traffic surges during holiday sales?",
+      "tags": [
+        "autoscaling",
+        "cloud",
+        "system-design"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-18.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.87"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-19",
+      "subject": "ARCHITECTURE",
+      "question": "How would you implement infinite scroll with pagination, prefetching and loading feedback?",
+      "tags": [
+        "pagination",
+        "infinite-scroll",
+        "frontend",
+        "backend"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-19.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.88",
+            "YT-1.89",
+            "YT-1.91",
+            "YT-1.92",
+            "YT-1.93"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-20",
+      "subject": "ARCHITECTURE",
+      "question": "How would you diagnose Kafka consumer lag in a distributed system?",
+      "tags": [
+        "kafka",
+        "consumer-lag",
+        "microservices"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-20.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.85"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-21",
+      "subject": "ARCHITECTURE",
+      "question": "How would backend microservices communicate with each other using HTTP clients?",
+      "tags": [
+        "microservices",
+        "rest",
+        "feign"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-21.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.63"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-22",
+      "subject": "ARCHITECTURE",
+      "question": "What tradeoffs affect choosing a database for search versus shopping-cart data?",
+      "tags": [
+        "system-design",
+        "sql",
+        "nosql"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-22.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.57",
+            "YT-1.62"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID-1",
+      "subject": "DATABASE",
+      "question": "How would you troubleshoot and optimize a slow SQL query over a large table?",
+      "tags": [
+        "sql",
+        "indexing",
+        "query-optimization"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DATABASE/ID-1.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.81",
+            "YT-1.82"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID-2",
+      "subject": "DATABASE",
+      "question": "Explain table partitioning versus database sharding.",
+      "tags": [
+        "database",
+        "partitioning",
+        "sharding"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DATABASE/ID-2.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.83",
+            "YT-1.84"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID-3",
+      "subject": "DATABASE",
+      "question": "When would SQL or NoSQL be appropriate for search, cart and tracking data?",
+      "tags": [
+        "database",
+        "sql",
+        "nosql",
+        "data-modeling"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DATABASE/ID-3.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.57",
+            "YT-1.62",
+            "YT-1.79"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID-4",
+      "subject": "DATABASE",
+      "question": "How do consistency needs differ between cached social content and financial data?",
+      "tags": [
+        "database",
+        "consistency",
+        "cache"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DATABASE/ID-4.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.24",
+            "YT-1.25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-1",
+      "subject": "DEVOPS",
+      "question": "What Git branching and release promotion workflow have you used?",
+      "tags": [
+        "git",
+        "branching",
+        "releases"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-1.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.95"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-2",
+      "subject": "DEVOPS",
+      "question": "How do feature branches progress through QA, staging and production?",
+      "tags": [
+        "git",
+        "release-management",
+        "environment"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-2.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.95",
+            "YT-1.96",
+            "YT-1.98"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-3",
+      "subject": "DEVOPS",
+      "question": "What happens after a pull request is merged and what tools trigger the pipeline?",
+      "tags": [
+        "github-actions",
+        "jenkins",
+        "pipeline"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-3.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.98",
+            "YT-1.99"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-4",
+      "subject": "DEVOPS",
+      "question": "Explain CI versus continuous delivery and deployment, including automated gates.",
+      "tags": [
+        "cicd",
+        "testing",
+        "automation"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-4.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.99",
+            "YT-1.100",
+            "YT-1.101"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-5",
+      "subject": "DEVOPS",
+      "question": "What is a Dockerfile, and how are Docker images used to run a Java application?",
+      "tags": [
+        "docker",
+        "containers",
+        "java"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-5.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.102"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-6",
+      "subject": "DEVOPS",
+      "question": "How would you run and scale ten microservices with Kubernetes?",
+      "tags": [
+        "kubernetes",
+        "microservices",
+        "orchestration"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-6.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.103",
+            "YT-1.104"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-7",
+      "subject": "DEVOPS",
+      "question": "How would you troubleshoot a repeatedly crashing Kubernetes pod in production?",
+      "tags": [
+        "kubernetes",
+        "crashloopbackoff",
+        "production"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-7.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.105",
+            "YT-1.106"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-8",
+      "subject": "DEVOPS",
+      "question": "How would you roll back a broken deployment to a previous container image?",
+      "tags": [
+        "rollback",
+        "release",
+        "containers"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-8.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.107",
+            "YT-1.108"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-9",
+      "subject": "DEVOPS",
+      "question": "What is infrastructure as code, and how would you use Pulumi for cloud alerts?",
+      "tags": [
+        "pulumi",
+        "terraform",
+        "iac",
+        "azure"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-9.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.109",
+            "YT-1.110"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-10",
+      "subject": "DEVOPS",
+      "question": "Compare Maven and Gradle as Java build tools.",
+      "tags": [
+        "maven",
+        "gradle",
+        "build-tools"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-10.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.124",
+            "YT-1.125"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-11",
+      "subject": "DEVOPS",
+      "question": "What is the purpose of pom.xml and how does Maven resolve dependencies?",
+      "tags": [
+        "maven",
+        "pom",
+        "dependencies"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-11.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.126"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-12",
+      "subject": "DEVOPS",
+      "question": "Compare Kanban and Scrum and explain how they affect a team's delivery workflow.",
+      "tags": [
+        "agile",
+        "kanban",
+        "scrum"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-12.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.127"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT-1",
+      "subject": "TESTING",
+      "question": "How should a team interpret a claim of 90 to 95 percent unit-test coverage?",
+      "tags": [
+        "testing",
+        "coverage",
+        "quality"
+      ],
+      "path": "INTERVIEW-SYLLABUS/TESTING/IT-1.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.111"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT-2",
+      "subject": "TESTING",
+      "question": "How do JUnit tests and mocks isolate logic from databases and other services?",
+      "tags": [
+        "junit",
+        "mockito",
+        "mocking",
+        "unit-testing"
+      ],
+      "path": "INTERVIEW-SYLLABUS/TESTING/IT-2.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.112"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT-3",
+      "subject": "TESTING",
+      "question": "How is SonarQube used for static analysis and code quality checks?",
+      "tags": [
+        "sonarqube",
+        "static-analysis",
+        "quality"
+      ],
+      "path": "INTERVIEW-SYLLABUS/TESTING/IT-3.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.113"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT-4",
+      "subject": "TESTING",
+      "question": "Should DTO getters be tested just to increase coverage, and how are exclusions configured?",
+      "tags": [
+        "testing",
+        "dto",
+        "coverage",
+        "exclusions"
+      ],
+      "path": "INTERVIEW-SYLLABUS/TESTING/IT-4.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.114",
+            "YT-1.115"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT-5",
+      "subject": "TESTING",
+      "question": "How do unit, integration and end-to-end tests differ for communicating microservices?",
+      "tags": [
+        "testing",
+        "unit",
+        "integration",
+        "e2e"
+      ],
+      "path": "INTERVIEW-SYLLABUS/TESTING/IT-5.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.116",
+            "YT-1.117",
+            "YT-1.118",
+            "YT-1.119"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-1",
+      "subject": "JAVA",
+      "question": "Compare HashMap and ConcurrentHashMap under concurrent access.",
+      "tags": [
+        "java",
+        "hashmap",
+        "concurrenthashmap",
+        "threads"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-1.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.128",
+            "YT-1.129",
+            "YT-1.130",
+            "YT-1.131"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-2",
+      "subject": "JAVA",
+      "question": "What is the equals and hashCode contract when a custom Employee object is a HashMap key?",
+      "tags": [
+        "java",
+        "hashmap",
+        "equals",
+        "hashcode"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-2.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.132",
+            "YT-1.133"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-3",
+      "subject": "JAVA",
+      "question": "How does HashMap fail-fast iteration compare with ConcurrentHashMap iteration?",
+      "tags": [
+        "java",
+        "collections",
+        "iteration",
+        "concurrency"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-3.md",
+      "sources": [
+        {
+          "video_id": "YT-1",
+          "timestamp_ids": [
+            "YT-1.129",
+            "YT-1.130"
+          ]
+        }
+      ]
+    }
+  ]
 }

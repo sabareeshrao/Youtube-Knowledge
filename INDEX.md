@@ -1,18 +1,22 @@
-# Browse YouTube Knowledge
+# YouTube Knowledge — Browse
 
-## Pure video library
+## 1. Pure Video Library
 
-- **[YT-1 — Mock Interview 5+ year experienced | Spring Boot | Java | Microservice | System Design | Code Decode](VIDEO-LIBRARY/YT-1/timestamps.md)** — 134 chronological sections, click-to-seek timestamps; [complete untouched transcript](VIDEO-LIBRARY/YT-1/transcript.md).  
-  Source: https://www.youtube.com/watch?v=xMlcsFLk-CU
+- **[YT-1 — Mock Interview 5+ year experienced | Spring Boot | Java | Microservice | System Design | Code Decode](VIDEO-LIBRARY/YT-1/timestamps.md)** — 134 chronologically sorted topic sections, with clickable time links, classifications and independently documented identifiers. [Full original linked transcript](VIDEO-LIBRARY/YT-1/transcript.md).
 
-## Interview syllabus
+## 2. Interview Syllabus
 
-- [Java](INTERVIEW-SYLLABUS/JAVA/)
-- [Spring Boot](INTERVIEW-SYLLABUS/SPRING-BOOT/)
-- [System Design / Architecture](INTERVIEW-SYLLABUS/ARCHITECTURE/)
-- [Database](INTERVIEW-SYLLABUS/DATABASE/)
-- [Cloud / DevOps](INTERVIEW-SYLLABUS/DEVOPS/)
-- [Testing](INTERVIEW-SYLLABUS/TESTING/)
-- [Python](INTERVIEW-SYLLABUS/PYTHON/)
+[Browse all interview questions](INTERVIEW-SYLLABUS/README.md)
 
-Each syllabus question groups references **by YT ID** without mixing timestamps from different videos. Search the [questions registry](REGISTRY/questions.json) for topic, prefix or keyword.
+- [Java — 3 questions](INTERVIEW-SYLLABUS/JAVA/README.md)
+- [Spring Boot — 12 questions](INTERVIEW-SYLLABUS/SPRING-BOOT/README.md)
+- [System Design / Architecture — 22 questions](INTERVIEW-SYLLABUS/ARCHITECTURE/README.md)
+- [Database — 4 questions](INTERVIEW-SYLLABUS/DATABASE/README.md)
+- [Cloud / DevOps — 12 questions](INTERVIEW-SYLLABUS/DEVOPS/README.md)
+- [Testing — 5 questions](INTERVIEW-SYLLABUS/TESTING/README.md)
+
+[Python — no questions yet](INTERVIEW-SYLLABUS/PYTHON/README.md)
+
+## ID registry
+
+[Questions and tags](REGISTRY/questions.json) · [Unique videos](REGISTRY/videos.json) · [Counters](REGISTRY/counters.json) · [Rules](docs/WORKFLOW.md)

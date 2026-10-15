@@ -78,3 +78,7 @@ Classification must be exactly one of `🔴 NO NEED`, `🟡 INTRO`, `🟢 USEFUL
 ## 6. Important limitations
 
 The validator detects duplicate *IDs*, duplicate original YouTube video IDs, dangling references, improper timestamp URLs, missing records, and stale counters. It **cannot** automatically judge whether two differently worded questions ask the same thing, whether subtitles are accurate, or whether code in the transcript is correct. Those need review.
+
+## Subject codes introduced with YT-1
+
+`IJ` Java; `IP` Python; `IS` Spring Boot (including Spring Security/Hibernate); `IA` System Design/Architecture; `ID` Database; `IC` Cloud/DevOps; `IT` Testing. Each is independently numbered from 1, and none may be reused for a different subject. The question groups remain separate from the standalone per-video chronology.
