@@ -10,9 +10,9 @@ errors = []
 VIDEO_RE = re.compile(r"YT-([1-9][0-9]*)$")
 QUESTION_RE = re.compile(r"(IJ|IP|IS|IA|ID|IC|IT)-([1-9][0-9]*)$")
 SECTION_RE = re.compile(
-    r"^### (YT-([1-9][0-9]*)\.([1-9][0-9]*)) — \[([0-9:]+)\]"
+    r"^\| (YT-([1-9][0-9]*)\.([1-9][0-9]*)) \| \[([0-9:]+)\]"
     r"\(https://www\.youtube\.com/watch\?v=([A-Za-z0-9_-]{11})&t=([0-9]+)s\)"
-    r" — (🔴 NO NEED|🟡 INTRO|🟢 USEFUL): .+"
+    r" \| (🔴 NO NEED|🟡 INTRO|🟢 USEFUL) \| .+ \|$"
 )
 SUBJECTS = {"IJ": "JAVA", "IP": "PYTHON", "IS": "SPRING-BOOT", "IA": "ARCHITECTURE", "ID": "DATABASE", "IC": "DEVOPS", "IT": "TESTING"}
 
@@ -97,11 +97,16 @@ for video in videos:
     exists(expected_transcript)
     if not exists(expected_timestamps):
         continue
-    contents = (ROOT / expected_timestamps).read_text(encoding="utf-8")
+    expected_timeline = f"VIDEO-LIBRARY/{vid}/timeline.md"
+    if video.get("timeline") != expected_timeline:
+        fail(f"{vid}: timeline path must be {expected_timeline}")
+    if not exists(expected_timeline):
+        continue
+    contents = (ROOT / expected_timeline).read_text(encoding="utf-8")
     seen_sections = set()
     last_time = -1
     for line in contents.splitlines():
-        if not line.startswith("### YT-"):
+        if not line.startswith("| YT-"):
             continue
         section = SECTION_RE.match(line)
         if not section:
@@ -123,7 +128,12 @@ for video in videos:
         if seconds is not None:
             last_time = seconds
     if not seen_sections:
-        fail(f"{vid}: no validated timestamp headings")
+        fail(f"{vid}: no validated timeline rows")
+    if exists(expected_timestamps):
+        grouped = (ROOT / expected_timestamps).read_text(encoding="utf-8")
+        for sid in seen_sections:
+            if f"| {sid} |" not in grouped:
+                fail(f"{vid}: missing section {sid} from video question tables")
     known_sections[vid] = seen_sections
 
 if type(counters.get("next_video")) is not int or counters["next_video"] <= max_video:
@@ -185,6 +195,8 @@ for question in questions:
         for section_id in ids:
             if section_id not in known_sections.get(vid, set()):
                 fail(f"{qid}: unknown timestamp {section_id} under {vid}")
+            if f"| {section_id} |" not in contents:
+                fail(f"{qid}: missing timestamp table row {section_id}")
 
 for prefix in SUBJECTS:
     value = next_question.get(prefix)
