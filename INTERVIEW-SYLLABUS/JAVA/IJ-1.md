@@ -11,3 +11,11 @@
 | YT-1.130 | [1:29:32](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5372s) | 🟢 USEFUL | Concurrent access and synchronization |
 | YT-1.131 | [1:30:07](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5407s) | 🟢 USEFUL | Legacy segment-lock explanation caveat |
 
+### Candidate answer vs. AI-corrected answer — YT-1
+
+**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+
+| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+|---|---|
+| He said HashMap iterators can fail when entries change during iteration, while ConcurrentHashMap handles concurrent writes without that iterator exception. He described an older segmented-locking model. | HashMap is not thread-safe; fail-fast iteration is best-effort and does not make access safe. ConcurrentHashMap supports safe concurrent operations and weakly consistent iterators; modern implementations use fine-grained synchronization/CAS, not a fixed simple set of 16 segment locks. Use atomic APIs such as computeIfAbsent when coordination is needed. |
+

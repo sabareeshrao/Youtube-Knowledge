@@ -203,6 +203,42 @@ for prefix in SUBJECTS:
     if type(value) is not int or value <= max_question.get(prefix, 0):
         fail(f"REGISTRY/counters.json: next_question.{prefix} must exceed all registered {prefix} IDs")
 
+# Validate per-video candidate versus AI comparison records.
+comparisons_document = load("REGISTRY/answer-comparisons.json")
+answer_comparisons = comparisons_document.get("comparisons", [])
+if not isinstance(answer_comparisons, list):
+    fail("answer-comparisons.json: comparisons must be a list")
+    answer_comparisons = []
+keys = set()
+valid_source_pairs = {(q.get("id"), source.get("video_id")) for q in questions if isinstance(q, dict) for source in q.get("sources", []) if isinstance(source, dict)}
+for comparison in answer_comparisons:
+    if not isinstance(comparison, dict):
+        fail("Answer comparison record must be a JSON object")
+        continue
+    key = (comparison.get("question_id"), comparison.get("video_id"))
+    if key in keys:
+        fail(f"Duplicate answer comparison: {key}")
+    keys.add(key)
+    if key not in valid_source_pairs:
+        fail(f"Answer comparison not linked by question registry: {key}")
+    if not isinstance(comparison.get("candidate_answer"), str) or len(comparison["candidate_answer"].strip()) < 20:
+        fail(f"Candidate response missing/too brief: {key}")
+    if not isinstance(comparison.get("ai_corrected_answer"), str) or len(comparison["ai_corrected_answer"].strip()) < 30:
+        fail(f"AI correction missing/too brief: {key}")
+for key in valid_source_pairs:
+    if key not in keys:
+        fail(f"Missing answer comparison for interview video: {key}")
+for q in questions:
+    if not isinstance(q, dict) or not isinstance(q.get("path"), str):
+        continue
+    page = ROOT / q["path"]
+    if page.is_file():
+        source_text = page.read_text(encoding="utf-8")
+        for source in q.get("sources", []):
+            vid = source.get("video_id")
+            if f"### Candidate answer vs. AI-corrected answer — {vid}" not in source_text:
+                fail(f"Question page lacks comparison: {q['id']} / {vid}")
+
 if errors:
     print(f"FAILED: {len(errors)} validation error(s)")
     for problem in errors:

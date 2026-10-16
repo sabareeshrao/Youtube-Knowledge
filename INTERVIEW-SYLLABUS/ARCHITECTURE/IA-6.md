@@ -11,3 +11,11 @@
 | YT-1.48 | [27:35](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1655s) | 🟢 USEFUL | Nonfunctional requirements |
 | YT-1.49 | [28:37](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1717s) | 🟢 USEFUL | Search, cart, order, delivery and notification scope |
 
+### Candidate answer vs. AI-corrected answer — YT-1
+
+**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+
+| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+|---|---|
+| He listed product browsing/search, cart, payment, delivery and notifications as functional requirements, and scale, resilience and latency as nonfunctional concerns. | Start with explicit user flows, inventory/payment correctness, failure paths and measurable nonfunctional targets: peak QPS, latency SLO, availability, data consistency, security and recovery objectives. Clarify constraints and workload assumptions before choosing databases or services, and prioritize core flows before optional features. |
+

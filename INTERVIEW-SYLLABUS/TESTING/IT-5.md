@@ -11,3 +11,11 @@
 | YT-1.118 | [1:21:15](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4875s) | 🟢 USEFUL | Avoid real cross-service calls in unit tests |
 | YT-1.119 | [1:21:30](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4890s) | 🟢 USEFUL | Use separate integration/system-test suites |
 
+### Candidate answer vs. AI-corrected answer — YT-1
+
+**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+
+| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+|---|---|
+| He described calling actual REST endpoints across microservices in tests and checking responses, then agreed those calls should be separated from fast unit tests. | Unit tests mock remote clients and run quickly. Integration tests check adapters and real dependencies (often via Testcontainers or stubbed services); contract tests validate provider/consumer interfaces. A small end-to-end suite exercises deployed service flows. Separate suites by CI stage to avoid flaky, slow unit builds. |
+

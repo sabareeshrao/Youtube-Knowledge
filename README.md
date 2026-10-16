@@ -65,3 +65,7 @@ See [INDEX.md](INDEX.md) to browse, [docs/WORKFLOW.md](docs/WORKFLOW.md) for the
 - The VIDEO-LIBRARY/timestamps.md page shows question-grouped tables for a **single video only**; its timeline.md is the complete chronological single-video index.
 - Each INTERVIEW-SYLLABUS question contains a separate headed table for **each video option**. Do not mix timestamps from different YT IDs.
 - Preserve original linked transcript independently. No "Detailed video notes" clutter or invented runnable code.
+
+## Side-by-side candidate and AI-corrected answers
+
+Every interview-question page now contains a **two-column comparison** under the timestamp table of each source video. Left: candidate's answer paraphrased from the linked transcript. Right: independently authored AI correction, including missing details or fixes. The [answer-comparison registry](REGISTRY/answer-comparisons.json) keeps the pair associated with its question ID and video ID. These answers also appear on the question-grouped video page.

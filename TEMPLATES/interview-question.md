@@ -18,3 +18,11 @@
 | YT-2.7 | [02:10](https://www.youtube.com/watch?v=SECOND_VIDEO_ID&t=130s) | 🟢 USEFUL | Second video's explanation |
 
 > TEMPLATE ONLY. Never use placeholder IDs as actual records. Keep each video's links and code in its own isolated table. Do not add "Detailed video notes" links.
+
+### Candidate answer vs. AI-corrected answer — YT-1
+
+| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+|---|---|
+| Grounded paraphrase from this video's actual candidate response, or explicitly “Not answered” | Independently authored technically correct interview response |
+
+> TEMPLATE ONLY. Repeat the table for each separate YT-n video option. Never mix candidate responses across videos.

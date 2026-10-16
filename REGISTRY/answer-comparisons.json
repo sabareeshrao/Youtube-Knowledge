@@ -1,0 +1,412 @@
+{
+  "description": "Per-video, per-interview-question comparison. Left is a source-grounded candidate paraphrase, not a verbatim quote. Right is the separately authored corrected technical answer.",
+  "source_video": "YT-1",
+  "comparisons": [
+    {
+      "question_id": "IS-1",
+      "video_id": "YT-1",
+      "candidate_answer": "He said security should mainly be enforced on the backend, and stateless REST APIs can reuse a JWT sent by the frontend in cookies or a session. He described it as a hash of authentication.",
+      "ai_corrected_answer": "Enforce authentication and authorization at the backend, not merely in the browser. With Spring Security, configure request authorization, validate the access token’s signature, issuer, audience and expiry, and enforce roles/scopes. Use HTTPS, secure token storage and appropriate CSRF/CORS protections. A JWT is not simply an authentication hash.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-2",
+      "video_id": "YT-1",
+      "candidate_answer": "He described using Okta with Spring Security, an Okta sign-in page, configured callback URLs, and tokens forwarded from the frontend to the API. He loosely referred to API/access keys for configuration.",
+      "ai_corrected_answer": "Use OpenID Connect/OAuth 2.0 authorization-code flow, typically with PKCE for a browser client. Redirect to Okta, receive an authorization code at a registered redirect URI, exchange it securely for tokens, then have Spring Security validate access tokens. Configure issuer, client credentials where applicable, audience, scopes and role mapping; do not put confidential client secrets in browser code.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-3",
+      "video_id": "YT-1",
+      "candidate_answer": "He said a JWT has three parts and a signature that reveals tampering, but suggested decoding or hashing it back and comparing a password or user ID against the database to trust the caller.",
+      "ai_corrected_answer": "JWT verification is not reverse hashing. A resource server validates a trusted signature (or MAC), expected algorithm, issuer, audience, expiration/not-before and relevant authorization claims. Spring Security OAuth2 Resource Server can validate JWTs using an issuer/JWK set. Never place passwords inside JWT payloads or trust a token just because its decoded fields match a database record.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-4",
+      "video_id": "YT-1",
+      "candidate_answer": "He initially argued that JWT hashing prevented outsiders from recovering sensitive information, but later agreed that passwords and personal details should not be placed in the token body.",
+      "ai_corrected_answer": "A common signed JWT is base64url-encoded, not encrypted: anyone holding it can read header and payload. Never put passwords, credential hashes, access secrets or unnecessary personal data in its claims. Signatures protect integrity, not confidentiality; use TLS, minimal claims, and encryption only when separately required.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-5",
+      "video_id": "YT-1",
+      "candidate_answer": "He mentioned a short token lifetime and reauthentication after expiry; the interviewer introduced refresh tokens, which he acknowledged without explaining the refresh exchange.",
+      "ai_corrected_answer": "Access tokens expire according to the exp claim. Before or after expiry, an authorized client can exchange a valid refresh token at the authorization server for a new access token; it does not re-send the user’s password on every API call. Protect refresh tokens, use rotation/revocation where supported, and handle expired or stolen tokens safely.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-6",
+      "video_id": "YT-1",
+      "candidate_answer": "He correctly noted that @Scheduled runs independently in each application replica and proposed ShedLock to prevent three instances from writing the same record.",
+      "ai_corrected_answer": "A local Spring scheduler does not coordinate replicas. Use a shared distributed lock such as ShedLock with a properly configured persistent lock provider, or a dedicated scheduler/queue with leader election. Set lock durations carefully and still make the job idempotent, because retries and crashes can otherwise cause duplicates.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-7",
+      "video_id": "YT-1",
+      "candidate_answer": "He associated Hibernate L1 with an individual Session and L2 with SessionFactory, saying L1 is enabled by default and L2 can share entities across sessions.",
+      "ai_corrected_answer": "Hibernate’s first-level cache (persistence context) is mandatory and scoped to a Session/EntityManager. The optional second-level cache is managed at SessionFactory scope through a configured cache provider and caching policies. L2 is not a magical cache of every entity; explain regions, invalidation, transaction consistency and when it is appropriate.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-8",
+      "video_id": "YT-1",
+      "candidate_answer": "He said SessionFactory is expensive, should be reused as a singleton, and different databases generally need separate SessionFactory instances. He also compared one SessionFactory to one database connection.",
+      "ai_corrected_answer": "SessionFactory is expensive to build but thread-safe and reused, typically one per persistence unit/configuration. It creates many short-lived Sessions and works with a connection pool; it is not one database connection. With multiple independently configured databases/persistence units, configure corresponding factories/entity managers and transaction boundaries.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-9",
+      "video_id": "YT-1",
+      "candidate_answer": "He explained that properties repeat dotted prefixes while YAML nests values hierarchically and supports lists/maps. He treated the difference as mostly readability and expanded YAML’s acronym incorrectly.",
+      "ai_corrected_answer": "Spring Boot can bind both .properties and .yml to the same configuration properties. YAML is useful for nested maps/lists; properties are simple and explicit. YAML stands for “YAML Ain’t Markup Language.” Consider profile overrides, config source precedence, validation and secret management rather than declaring one universally superior.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-10",
+      "video_id": "YT-1",
+      "candidate_answer": "He said Spring Boot uses application.properties by default and can load application-dev, QA, staging or production files to override environment-specific database/settings.",
+      "ai_corrected_answer": "Activate profiles using SPRING_PROFILES_ACTIVE, --spring.profiles.active or another supported configuration source. Spring Boot loads profile-specific application-{profile}.properties or YAML, subject to property-source precedence. Deploy the same tested artifact to environments; inject credentials through managed secrets or environment configuration, not committed passwords.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-11",
+      "video_id": "YT-1",
+      "candidate_answer": "He described loading bounded batches and a next-page number/size through JPA or EntityManager, but admitted he was unsure of the exact query/API.",
+      "ai_corrected_answer": "In Spring Data JPA use a repository method accepting Pageable, e.g. PageRequest.of(page, size, Sort.by(...)), returning Page or Slice. Always use deterministic sorting, bound page sizes and understand count-query cost. For very deep pagination consider keyset/cursor pagination; avoid confusing JDBC batch updates with paginated reads.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IS-12",
+      "video_id": "YT-1",
+      "candidate_answer": "He contrasted waiting threads with callback-like, nonblocking operations and mentioned Reactor’s Mono and Flux for small versus multiple results.",
+      "ai_corrected_answer": "Spring WebFlux uses Reactive Streams publishers: Mono emits zero or one item, Flux emits zero to many. Nonblocking I/O helps high-concurrency I/O-bound workloads but does not make CPU work faster. Avoid blocking calls on event-loop threads, handle backpressure/errors and select the model based on dependencies and workload.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-1",
+      "video_id": "YT-1",
+      "candidate_answer": "He described Redis as an in-memory key-value cache checked before querying the database, reducing latency for frequently read data.",
+      "ai_corrected_answer": "That is cache-aside: read cache, on miss read authoritative storage, write the result to cache with appropriate TTL, and return it. Redis is a separate shared in-memory service, not necessarily local RAM inside each app instance. Plan invalidation, miss storms, serialization and failure fallback.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-2",
+      "video_id": "YT-1",
+      "candidate_answer": "He described TTL-based caching, recognized possible stale results, and said eventual consistency can be acceptable for some apps but not financial balances. He did not give a concrete invalidation design.",
+      "ai_corrected_answer": "Choose freshness guarantees by business use case. On writes, invalidate or update affected cache keys; complement this with TTL, versioning/events and retryable invalidation. TTL alone bounds staleness imperfectly and short TTLs increase load. Describe race conditions, read-after-write needs and strong-consistency paths for critical values.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-3",
+      "video_id": "YT-1",
+      "candidate_answer": "He preferred GraphQL when a REST design requires many endpoints and said GraphQL can service several entity requirements through a common endpoint.",
+      "ai_corrected_answer": "Choose GraphQL when clients need flexible shapes, related data and self-described schema-driven queries; use REST when simple resources, HTTP caching and operational simplicity fit better. GraphQL is not automatically faster or always one endpoint. Address N+1 queries, query complexity limits, authorization at field/resolver level and caching.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-4",
+      "video_id": "YT-1",
+      "candidate_answer": "He argued REST can reduce response fields via DTOs or @JsonIgnore, while GraphQL lets each caller select requested fields more conveniently.",
+      "ai_corrected_answer": "GraphQL clients specify selected fields at query time. REST can also provide sparse fieldsets, projections, query parameters or alternate DTOs without always changing source code. @JsonIgnore is mostly static serialization exclusion, not the same as per-request selection. Compare schema governance, authorization, overfetching and resolver performance.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-5",
+      "video_id": "YT-1",
+      "candidate_answer": "He contrasted Saga’s event-triggered local transactions and compensating operations with synchronous two-phase commit, but at times spoke as if Saga could provide one atomic end-to-end transaction.",
+      "ai_corrected_answer": "Saga coordinates independently committed local transactions through orchestration or choreography and compensating actions after failure; it does not provide global ACID atomicity or instant rollback. Two-phase commit coordinates participants for atomic commit but adds blocking, availability and operational costs. Choose based on consistency requirements, failure recovery and service autonomy.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-6",
+      "video_id": "YT-1",
+      "candidate_answer": "He listed product browsing/search, cart, payment, delivery and notifications as functional requirements, and scale, resilience and latency as nonfunctional concerns.",
+      "ai_corrected_answer": "Start with explicit user flows, inventory/payment correctness, failure paths and measurable nonfunctional targets: peak QPS, latency SLO, availability, data consistency, security and recovery objectives. Clarify constraints and workload assumptions before choosing databases or services, and prioritize core flows before optional features.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-7",
+      "video_id": "YT-1",
+      "candidate_answer": "He proposed a proxy/load balancer and request limits, including watching repeated calls from an IP, to stop abusive traffic.",
+      "ai_corrected_answer": "Apply rate limiting at an API gateway/edge using token bucket or sliding-window policies per identity, token, endpoint and IP, backed by a shared limiter when necessary. Add WAF/bot controls, authentication, quotas and observability. IP-only throttling can punish shared networks; tune legitimate burst allowances and abuse responses.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-8",
+      "video_id": "YT-1",
+      "candidate_answer": "He drew clients feeding an Nginx-like reverse proxy/load balancer, which routes requests to replicated microservices.",
+      "ai_corrected_answer": "A solid overview includes clients, CDN/WAF, gateway or reverse proxy, load-balanced stateless services, authentication, service discovery, databases, caching, messaging and observability. Define service ownership and request flow, scaling/failure modes and consistency, not just the drawing. Add health checks, retries with limits and graceful degradation.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-9",
+      "video_id": "YT-1",
+      "candidate_answer": "He combined product search with Redis caching, Cassandra/MongoDB as product storage and Elasticsearch for keyword/typo search, assuming search can tolerate some staleness.",
+      "ai_corrected_answer": "Keep authoritative product/catalog data in a suitable operational store, maintain a dedicated search index asynchronously via a reliable change pipeline, and cache hot queries in Redis with expiration/invalidation. Use an Elasticsearch/OpenSearch query service for text relevance. Protect inventory/pricing correctness at checkout; search-index and cache consistency need explicit update/rebuild plans.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-10",
+      "video_id": "YT-1",
+      "candidate_answer": "He modeled cart items as a one-to-many user association and chose MySQL for structured relations and consistency, loosely invoking the CAP theorem.",
+      "ai_corrected_answer": "Model cart, cart_line_item and product references with stable IDs, quantities and constraints. A relational database supports joins and transactions, but CAP is not a direct rule saying “use MySQL for cart.” Plan concurrent cart updates, optimistic locking/versioning, expiration and price/stock revalidation at checkout.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-11",
+      "video_id": "YT-1",
+      "candidate_answer": "He proposed distinct cart, product, inventory and user services and REST/Feign-style communication to preserve one responsibility per service.",
+      "ai_corrected_answer": "Split services by clear business ownership: catalog/product, inventory availability/reservation, cart, order, payment and identity. Define owned databases, API/event contracts, idempotent interactions and failure boundaries. “One service per noun” is not automatically best; use cohesive bounded contexts and avoid synchronous call chains across every operation.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-12",
+      "video_id": "YT-1",
+      "candidate_answer": "He initially proposed Kafka events to reduce stock after an order; when challenged about two customers buying the last item before consumers catch up, he admitted the race and suggested synchronous handling.",
+      "ai_corrected_answer": "Do not rely on delayed Kafka consumers to guarantee stock availability. Atomically reserve/decrement inventory within the inventory store using a conditional update or serializable/locking strategy before confirming the order. Then publish reliable events via an outbox for notifications and downstream workflows. Handle idempotency, reservation expiry and compensation on payment failure.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-13",
+      "video_id": "YT-1",
+      "candidate_answer": "He designed a SQL-backed delivery-partner service; after discussion, he agreed assignment can occur after the order and be driven asynchronously through Kafka.",
+      "ai_corrected_answer": "Make delivery assignment an asynchronous post-order workflow: publish an OrderReadyForDispatch event reliably, match eligible partners and persist assignment transactionally. Consumers must be idempotent and retry safely; track unassigned orders, timeout and reassignment. Payment and inventory guarantees should be handled before dispatch eligibility.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-14",
+      "video_id": "YT-1",
+      "candidate_answer": "He proposed a notification service consuming Kafka events and choosing email or SMS based on each customer’s preference.",
+      "ai_corrected_answer": "Consume domain events in a dedicated notification service, render templates and honor channel preferences and consent. Use idempotency keys to prevent duplicate sends, provider retries/backoff, dead-letter queues and delivery-status tracking. Never block the core order transaction on an external email/SMS provider.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-15",
+      "video_id": "YT-1",
+      "candidate_answer": "He suggested Kafka-driven tracking updates with status timestamps, initially chose NoSQL, then accepted that structured SQL records could fit tracking better.",
+      "ai_corrected_answer": "Store append-only shipment/status events with order ID, carrier/partner, timestamp and state; derive the current shipment status for reads. A relational table often fits this schema well, though event stores/NoSQL may be justified by scale. Consume events idempotently, deduplicate and handle out-of-order arrivals explicitly.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-16",
+      "video_id": "YT-1",
+      "candidate_answer": "He proposed storing logs, possibly in S3, and analyzing sales trends with a tool such as Spark to improve stock or promotions.",
+      "ai_corrected_answer": "Separate operational observability (structured logs, metrics, traces, correlation IDs, error rates) from business analytics (orders, conversion, search, returns). Stream events into governed storage/warehouse with retention, privacy and data-quality controls. Analytics jobs can inform forecasting, but logging should not expose customer secrets.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-17",
+      "video_id": "YT-1",
+      "candidate_answer": "He said product images and other static files could be copied to geographically distributed CDN locations, giving customers nearby delivery.",
+      "ai_corrected_answer": "A CDN caches eligible static assets at edge locations, reducing origin requests and latency. Set cache-control and TTL, version asset URLs, compress/resize images and secure origin access. Product availability, user-specific details and private data usually require different caching policies.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-18",
+      "video_id": "YT-1",
+      "candidate_answer": "He described cloud monitoring that scales instance counts up when CPU crosses a threshold and down when demand falls.",
+      "ai_corrected_answer": "Configure horizontal autoscaling against CPU, request rate, queue depth or suitable custom metrics, with safe minimum/maximum replicas and cooldown behavior. Add readiness probes, load tests and capacity limits; scaling services alone does not solve database bottlenecks or cold starts. Define SLOs and monitor cost versus latency.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-19",
+      "video_id": "YT-1",
+      "candidate_answer": "He proposed loading initial product batches, fetching more during infinite scrolling, then prefetching before the bottom and showing loading indicators to hide latency.",
+      "ai_corrected_answer": "Use stable cursor/keyset or correctly ordered page-based endpoints, request the next window ahead of viewport intersection and deduplicate responses. Show skeleton/placeholder states, handle errors and avoid overlapping fetches. Throttle/debounce scroll input when relevant, but distinguish event control from backend pagination.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-20",
+      "video_id": "YT-1",
+      "candidate_answer": "He interpreted Kafka lag as a broker resilience/leader–follower issue rather than a backlog of unprocessed messages; the transcript does not demonstrate a specific consumer-lag fix.",
+      "ai_corrected_answer": "Consumer lag is the difference between produced offsets and consumer-group committed/processed offsets. Inspect lag per partition, throughput, consumer errors, rebalances, processing latency and downstream dependencies. Tune batch sizes or processing, add consumers up to partition count, raise partitions carefully and apply backpressure; monitor progress rather than confusing lag with broker replication.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-21",
+      "video_id": "YT-1",
+      "candidate_answer": "He said microservices exchange data through REST calls using RestTemplate or Feign, without going into client reliability.",
+      "ai_corrected_answer": "For synchronous HTTP use an appropriate typed client such as Spring RestClient, WebClient or OpenFeign. Define contracts, connection and request timeouts, retry policies only for safe/idempotent calls, circuit breakers, authentication and tracing. Use asynchronous messaging where workflows should not wait on another service.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IA-22",
+      "video_id": "YT-1",
+      "candidate_answer": "He leaned toward NoSQL for varied product/search schemas and MySQL for structured cart relations and consistency.",
+      "ai_corrected_answer": "Choose storage from query patterns and invariants, not simply “structured versus unstructured.” Search often benefits from a specialized index, catalogs may use SQL or document stores, and orders/inventory need strong transactional guarantees. Compare transactions, indexing, scaling, failure recovery and consistency explicitly.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "ID-1",
+      "video_id": "YT-1",
+      "candidate_answer": "He suggested first profiling the slow query and checking indexes, then partitioning large datasets if the table itself is a bottleneck.",
+      "ai_corrected_answer": "Capture the slow SQL and use EXPLAIN/EXPLAIN ANALYZE plus query and database metrics. Check missing/poor indexes, selectivity, join plans, row counts, locking, statistics, overfetching and N+1 access. Benchmark changes and account for index write costs before trying partitioning, caching or sharding.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "ID-2",
+      "video_id": "YT-1",
+      "candidate_answer": "He distinguished partitioning as splitting data within one server and sharding as distributing portions of the dataset across different servers or locations.",
+      "ai_corrected_answer": "Partitioning divides a table logically or physically by a key, often within one database instance, improving pruning and maintenance when queries align. Sharding distributes ownership of data across independent database instances/nodes. Both can span physical machines depending on implementation; explain shard keys, routing, cross-shard queries and rebalancing.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "ID-3",
+      "video_id": "YT-1",
+      "candidate_answer": "He selected Cassandra/MongoDB for search-related product data and SQL for cart relationships; for shipment tracking he revised an initial NoSQL decision to SQL.",
+      "ai_corrected_answer": "For product catalog, choose SQL/document storage from update and query needs; maintain a search index separately for text queries. Use relational transactions where cart/order/stock invariants require them. Tracking is often an append-only relational event table. Operational simplicity and access patterns matter more than a rule that every microservice needs NoSQL.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "ID-4",
+      "video_id": "YT-1",
+      "candidate_answer": "He said stale reads may be acceptable for social feeds but account balances must not show inaccurate values across users.",
+      "ai_corrected_answer": "Define required consistency for each operation. Feeds and recommendation caches may tolerate bounded staleness, while available balances and payment authorization should read from an authoritative consistent source or use transactional safeguards. Invalidate related caches on writes and document read-after-write requirements and acceptable delay.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-1",
+      "video_id": "YT-1",
+      "candidate_answer": "He described feature branches, dev/QA stages, a preproduction branch and a stable production branch with testing between promotions.",
+      "ai_corrected_answer": "Use protected main/release branches or trunk-based development with short-lived feature branches, PR review and automated build/security/test gates. Promote a versioned, tested artifact through environments rather than rebuilding different code. Explain tagging, releases, rollback and how hotfixes flow back to main.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-2",
+      "video_id": "YT-1",
+      "candidate_answer": "He described development branches progressing through QA and preproduction before stable production, with different environment settings.",
+      "ai_corrected_answer": "Treat environments as deployment targets, not necessarily one Git branch each. Build once and promote immutable artifacts through test, staging and production with approvals and environment-specific secrets/configuration. Use protected branches and clear release ownership to prevent drift.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-3",
+      "video_id": "YT-1",
+      "candidate_answer": "He said GitHub Actions or Jenkins notices a new commit/merge, runs tests and automatically deploys, suggesting it periodically checks changed commit IDs.",
+      "ai_corrected_answer": "A PR merge normally triggers a push/webhook or CI workflow event; it need not rely on periodic commit polling. The pipeline checks out an immutable commit, builds, runs tests/scans, publishes a versioned artifact and deploys under approval/health gates. Distinguish CI triggers, artifact promotion and production-release policy.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-4",
+      "video_id": "YT-1",
+      "candidate_answer": "He said CI automates integration and test execution on commits, while CD moves verified changes toward deployment after passing tests.",
+      "ai_corrected_answer": "CI continuously merges/checks changes with builds, unit/integration tests and quality gates. Continuous delivery keeps releasable artifacts ready but may require production approval; continuous deployment automatically releases every change that passes gates. Include secure artifact publishing, rollback and environment-specific deployment verification.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-5",
+      "video_id": "YT-1",
+      "candidate_answer": "He described a Dockerfile with JDK version, application startup entry point, exposed ports and dependencies that run a Java JAR.",
+      "ai_corrected_answer": "A Dockerfile describes an image build: select a suitable base runtime (up to Java 21 here), copy the built JAR, configure a non-root user and ENTRYPOINT, and optionally document EXPOSE. Images are immutable packages; containers are running instances. Inject secrets and environment config at runtime and scan/minimize image layers.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-6",
+      "video_id": "YT-1",
+      "candidate_answer": "He suggested Kubernetes orchestrates containers, adds/removes replicas based on load and runs packaged microservice images in production.",
+      "ai_corrected_answer": "Push immutable images to a container registry, deploy each workload via Kubernetes Deployment/Service resources, and configure health probes, resource requests/limits and autoscaling (HPA where appropriate). Kubernetes reconciles desired state but you must configure autoscaling policies, rollout strategy, networking and observability.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-7",
+      "video_id": "YT-1",
+      "candidate_answer": "He mentioned PagerDuty alerts and manual intervention when a pod repeatedly restarts; he said he had not implemented an additional automation solution.",
+      "ai_corrected_answer": "For CrashLoopBackOff inspect kubectl describe pod, events, logs --previous, exit codes/OOMKilled, configuration, secrets, dependencies and probes. Compare rollout changes, mitigate via rollback or corrected config, and monitor recovery. PagerDuty routes an incident; it is not the technical fix.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-8",
+      "video_id": "YT-1",
+      "candidate_answer": "He said Docker images have versions and Kubernetes can go back to a previous version when the newest one fails, but the actual rollback mechanics were vague.",
+      "ai_corrected_answer": "Tag/digest images immutably, use rollout history and a controlled rollback such as kubectl rollout undo deployment/name or redeploy a known-good image. Kubernetes does not automatically roll back every failed Deployment by default. Verify readiness, error rates and dependencies after rollback.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-9",
+      "video_id": "YT-1",
+      "candidate_answer": "He described Pulumi as Terraform-like infrastructure automation, reported Azure authentication/alert work, but suggested Pulumi is mainly YAML configuration without real coding.",
+      "ai_corrected_answer": "Pulumi is infrastructure as code using TypeScript/JavaScript, Python, Go, C#, Java or YAML. Define resources and alerts in version-controlled projects, manage encrypted configuration/state and preview/apply changes through CI. Explain alert rules, thresholds, notification targets, permissions and drift/rollback management.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-10",
+      "video_id": "YT-1",
+      "candidate_answer": "He called Maven and Gradle build tools, associated Maven with pom.xml and said Gradle may feel faster although either can build the same project.",
+      "ai_corrected_answer": "Maven uses a declarative XML POM and standard lifecycle; Gradle supports Groovy/Kotlin DSL and incremental/cached builds. Both resolve dependencies, execute plugins/tasks and produce artifacts. Compare team conventions, build reproducibility, cacheability and measured performance—not blanket speed claims.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-11",
+      "video_id": "YT-1",
+      "candidate_answer": "He said a POM declares required JARs and versions, letting Maven look locally first and then download missing artifacts instead of manually sharing library files.",
+      "ai_corrected_answer": "pom.xml defines project coordinates, dependencies, repositories, plugins and build lifecycle configuration. Maven resolves transitive dependencies through configured repositories, caching them locally; dependencyManagement controls versions. Explain reproducible builds, plugin goals and why secrets/absolute machine paths should not be embedded.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IC-12",
+      "video_id": "YT-1",
+      "candidate_answer": "He understood Kanban as adaptive Agile project management and admitted he had not worked on a fully Kanban-based team, only a mix with Scrum.",
+      "ai_corrected_answer": "Scrum organizes work into timeboxed sprints with defined accountabilities/events; Kanban optimizes continuous flow with a visual board, pull policies and work-in-progress limits. Teams can combine practices. Be explicit about personal experience and discuss lead/cycle time, bottlenecks and predictable delivery.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IT-1",
+      "video_id": "YT-1",
+      "candidate_answer": "He said he tests methods using JUnit 5 and mocks, and uses coverage/static analysis tools. He did not clearly justify which statements or behaviors count toward 90–95 percent coverage.",
+      "ai_corrected_answer": "Coverage is a signal, not a target that proves correctness. Prioritize business branches, boundary cases, failures and contract behavior; inspect line/branch coverage and mutation testing when useful. Explain justified exclusions and quality gates, while avoiding trivial tests written solely to raise a percentage.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IT-2",
+      "video_id": "YT-1",
+      "candidate_answer": "He said JUnit 5 tests cover individual methods and mocks stand in for database calls or other external dependencies.",
+      "ai_corrected_answer": "Use JUnit 5 plus Mockito to inject mocked repositories/clients, arrange behavior, call the service and assert outputs and important interactions. Test edge/error cases without real external services in unit tests. Use separate integration tests with realistic dependencies for persistence and wire behavior.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IT-3",
+      "video_id": "YT-1",
+      "candidate_answer": "He said he used SonarQube for code/static analysis and configured its server URL/properties, but his described integration was mainly from an Android project.",
+      "ai_corrected_answer": "SonarQube analyzes source against code-quality/security rules and quality gates; feed it coverage reports such as JaCoCo output through the scanner/CI pipeline. Configure project identity, authentication, analysis path and branch/PR checks. It complements, rather than replaces, unit and integration tests.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IT-4",
+      "video_id": "YT-1",
+      "candidate_answer": "He agreed that testing every DTO getter/setter is low value and said Maven XML exclusion patterns can omit boilerplate packages from coverage reporting.",
+      "ai_corrected_answer": "Test behavior and meaningful serialization/validation contracts, not trivial accessors for percentages. Configure JaCoCo report exclusions or coverage rules explicitly, document why generated/DTO code is omitted, and do not use blanket exclusions to conceal untested logic.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IT-5",
+      "video_id": "YT-1",
+      "candidate_answer": "He described calling actual REST endpoints across microservices in tests and checking responses, then agreed those calls should be separated from fast unit tests.",
+      "ai_corrected_answer": "Unit tests mock remote clients and run quickly. Integration tests check adapters and real dependencies (often via Testcontainers or stubbed services); contract tests validate provider/consumer interfaces. A small end-to-end suite exercises deployed service flows. Separate suites by CI stage to avoid flaky, slow unit builds.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IJ-1",
+      "video_id": "YT-1",
+      "candidate_answer": "He said HashMap iterators can fail when entries change during iteration, while ConcurrentHashMap handles concurrent writes without that iterator exception. He described an older segmented-locking model.",
+      "ai_corrected_answer": "HashMap is not thread-safe; fail-fast iteration is best-effort and does not make access safe. ConcurrentHashMap supports safe concurrent operations and weakly consistent iterators; modern implementations use fine-grained synchronization/CAS, not a fixed simple set of 16 segment locks. Use atomic APIs such as computeIfAbsent when coordination is needed.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IJ-2",
+      "video_id": "YT-1",
+      "candidate_answer": "He said a custom Employee key should override equals() and hashCode() to distinguish logically equal keys and avoid duplicate entries.",
+      "ai_corrected_answer": "Implement equals() and hashCode() consistently: equal objects must produce equal hash codes, and key fields should remain stable while stored. HashMap uses hash buckets and equality comparisons on collisions/matches. Prefer immutable identifiers/keys, and test equal, unequal and collision scenarios.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    },
+    {
+      "question_id": "IJ-3",
+      "video_id": "YT-1",
+      "candidate_answer": "He contrasted HashMap's iterator exception on structural changes with ConcurrentHashMap supporting changes during iteration, but named the exception imprecisely.",
+      "ai_corrected_answer": "HashMap iterators may throw ConcurrentModificationException on structural modification (fail-fast is best-effort, not a safety guarantee). ConcurrentHashMap iterators are weakly consistent: they neither throw that exception for concurrent updates nor promise a single atomic snapshot. Choose based on access and iteration-consistency requirements.",
+      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+    }
+  ]
+}

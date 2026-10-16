@@ -4,7 +4,7 @@
 
 - **[YT-1 — Mock Interview 5+ year experienced | Spring Boot | Java | Microservice | System Design | Code Decode](VIDEO-LIBRARY/YT-1/timestamps.md)** — 134 question-headed timestamp tables and direct YouTube links, while maintaining a separate chronological timeline. [Pure chronological video tables](VIDEO-LIBRARY/YT-1/timeline.md) · [Full original linked transcript](VIDEO-LIBRARY/YT-1/transcript.md).
 
-## 2. Interview Syllabus
+## 2. Interview Syllabus — candidate vs AI-corrected answers
 
 [Browse all interview questions](INTERVIEW-SYLLABUS/README.md)
 
