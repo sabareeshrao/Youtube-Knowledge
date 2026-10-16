@@ -26,3 +26,15 @@
 | Grounded paraphrase from this video's actual candidate response, or explicitly “Not answered” | Independently authored technically correct interview response |
 
 > TEMPLATE ONLY. Repeat the table for each separate YT-n video option. Never mix candidate responses across videos.
+
+## Tutorial source option (AI answer only)
+
+A video that is a tutorial, not a candidate interview, gets its **own YT-n section** with an independent timestamp table and this answer block:
+
+### AI answer — YT-2
+
+| AI answer |
+|---|
+| AI-generated technically correct interview response, informed by the tutorial's subject. No candidate answer exists. |
+
+> Do not show this AI-only block under a genuine candidate response. For complete instructional examples, see [tutorial-question.md](tutorial-question.md).

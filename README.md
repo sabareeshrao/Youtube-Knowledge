@@ -1,6 +1,8 @@
 # YouTube Knowledge
 
-A permanent, searchable library of timestamped YouTube tutorials and interview questions.
+A permanent, searchable library that turns **any timestamped YouTube video (including tutorials and mock interviews)** into interview-style questions and precise clickable source sections.
+
+**AI contributor instructions:** [AGENTS.md](AGENTS.md) · [Transcript ingestion playbook](docs/TRANSCRIPT-INGESTION.md). Read these before handling a new transcript.
 
 ## Two separate study views
 
@@ -46,9 +48,9 @@ scripts/validate.py      # structural duplicate and broken-link checks
 INDEX.md                 # human-friendly navigation
 ```
 
-Folder paths containing `YT-1` and `IJ-1` above are **examples of files to be added**, not video records already ingested. Everything starts empty.
+The repository already contains **YT-1** (an interview) and its question bank. Paths elsewhere in this README can also illustrate future videos; always read the live registries for actual IDs.
 
-## First transcript workflow
+## Next transcript workflow
 
 1. Upload a Markdown (`.md`) file with the main YouTube URL and clickable subtitle timestamps.
 2. Read [REGISTRY/videos.json](REGISTRY/videos.json), [REGISTRY/questions.json](REGISTRY/questions.json), and [REGISTRY/counters.json](REGISTRY/counters.json) from GitHub first.
@@ -57,7 +59,7 @@ Folder paths containing `YT-1` and `IJ-1` above are **examples of files to be ad
 
 See [INDEX.md](INDEX.md) to browse, [docs/WORKFLOW.md](docs/WORKFLOW.md) for the schemas and rules, or [TEMPLATES/](TEMPLATES/) for starter page formats.
 
-**Current state:** Initialized, waiting for the first transcript. Next unallocated video ID: `YT-1`; question IDs: `IJ-1`, `IP-1`, `IS-1`.
+**Existing interview:** YT-1. Next video ID and all question IDs must be read live from the registries—do not trust old instructions for counters.
 
 ## Presentation rules
 
@@ -69,3 +71,12 @@ See [INDEX.md](INDEX.md) to browse, [docs/WORKFLOW.md](docs/WORKFLOW.md) for the
 ## Side-by-side candidate and AI-corrected answers
 
 Every interview-question page now contains a **two-column comparison** under the timestamp table of each source video. Left: candidate's answer paraphrased from the linked transcript. Right: independently authored AI correction, including missing details or fixes. The [answer-comparison registry](REGISTRY/answer-comparisons.json) keeps the pair associated with its question ID and video ID. These answers also appear on the question-grouped video page.
+
+## Interview versus tutorial answer modes
+
+| Uploaded recording | Question treatment | Answer section below each video's timestamps |
+|---|---|---|
+| Mock interview with candidate | Existing interviewer questions plus meaningful follow-ups | **Two columns:** candidate answer (faithful paraphrase) **vs** AI-corrected answer |
+| Tutorial, lecture, walkthrough, lesson, coding demonstration | Convert taught concepts into realistic interview-style questions | **One column:** AI answer only — no candidate column, no invented candidate |
+
+The same canonical `IJ-n` question may have a **YT-1 interview video option** with a candidate comparison and a **YT-2 tutorial option** with an AI-only answer. IDs, timestamp tables, and video code are never mixed. The backend stores both formats in [REGISTRY/answer-comparisons.json](REGISTRY/answer-comparisons.json); tutorial records have `answer_type: "ai_only"` and `ai_answer`. See the [playbook](docs/TRANSCRIPT-INGESTION.md).
