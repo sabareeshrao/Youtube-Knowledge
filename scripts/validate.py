@@ -81,6 +81,8 @@ for video in videos:
     max_video = max(max_video, number)
     if vid in seen_videos:
         fail(f"Duplicate video ID: {vid}")
+    if video.get("type") not in ("interview", "tutorial"):
+        fail(f"{vid}: type must be 'interview' or 'tutorial'")
     seen_videos[vid] = video
     if not isinstance(youtube_id, str) or not re.fullmatch(r"[A-Za-z0-9_-]{11}", youtube_id):
         fail(f"{vid}: invalid original YouTube video ID {youtube_id!r}")
@@ -203,41 +205,100 @@ for prefix in SUBJECTS:
     if type(value) is not int or value <= max_question.get(prefix, 0):
         fail(f"REGISTRY/counters.json: next_question.{prefix} must exceed all registered {prefix} IDs")
 
-# Validate per-video candidate versus AI comparison records.
+# Validate source-specific interview comparisons or tutorial AI-only answers.
 comparisons_document = load("REGISTRY/answer-comparisons.json")
 answer_comparisons = comparisons_document.get("comparisons", [])
 if not isinstance(answer_comparisons, list):
     fail("answer-comparisons.json: comparisons must be a list")
     answer_comparisons = []
+
 keys = set()
-valid_source_pairs = {(q.get("id"), source.get("video_id")) for q in questions if isinstance(q, dict) for source in q.get("sources", []) if isinstance(source, dict)}
+source_pairs = {
+    (q.get("id"), s.get("video_id"))
+    for q in questions if isinstance(q, dict)
+    for s in q.get("sources", []) if isinstance(s, dict)
+}
+source_modes = {}
 for comparison in answer_comparisons:
     if not isinstance(comparison, dict):
-        fail("Answer comparison record must be a JSON object")
+        fail("Answer record must be a JSON object")
         continue
     key = (comparison.get("question_id"), comparison.get("video_id"))
     if key in keys:
-        fail(f"Duplicate answer comparison: {key}")
+        fail(f"Duplicate answer record: {key}")
     keys.add(key)
-    if key not in valid_source_pairs:
-        fail(f"Answer comparison not linked by question registry: {key}")
-    if not isinstance(comparison.get("candidate_answer"), str) or len(comparison["candidate_answer"].strip()) < 20:
-        fail(f"Candidate response missing/too brief: {key}")
-    if not isinstance(comparison.get("ai_corrected_answer"), str) or len(comparison["ai_corrected_answer"].strip()) < 30:
-        fail(f"AI correction missing/too brief: {key}")
-for key in valid_source_pairs:
+    if key not in source_pairs:
+        fail(f"Answer source not in question registry: {key}")
+    video_id = comparison.get("video_id")
+    video = seen_videos.get(video_id, {})
+    video_type = video.get("type")
+    explicit_mode = comparison.get("answer_type")
+    if explicit_mode not in (None, "ai_only", "interview_comparison"):
+        fail(f"Invalid answer_type {explicit_mode!r}: {key}")
+        continue
+
+    # Historical YT-1 interview records legitimately lack answer_type.
+    mode = explicit_mode or "interview_comparison"
+    source_modes[key] = mode
+    if video_type == "tutorial" and mode != "ai_only":
+        fail(f"Tutorial video must use AI-only answer mode: {key}")
+
+    if mode == "ai_only":
+        if explicit_mode != "ai_only":
+            fail(f"AI-only answer must explicitly set answer_type: {key}")
+        if video_type == "interview" and comparison.get("source_role") != "instructor_only":
+            fail(f"AI-only segment in interview needs source_role=instructor_only: {key}")
+        if "candidate_answer" in comparison or "ai_corrected_answer" in comparison:
+            fail(f"AI-only answer must OMIT candidate and corrected-answer fields: {key}")
+        value = comparison.get("ai_answer")
+        if not isinstance(value, str) or len(value.strip()) < 30:
+            fail(f"AI-only answer is missing or too brief: {key}")
+    else:
+        if video_type != "interview":
+            fail(f"Only actual interviews can have candidate comparisons: {key}")
+        if "ai_answer" in comparison:
+            fail(f"Interview comparison must not include ai_answer: {key}")
+        candidate = comparison.get("candidate_answer")
+        correction = comparison.get("ai_corrected_answer")
+        if not isinstance(candidate, str) or len(candidate.strip()) < 20:
+            fail(f"Candidate answer missing or too brief: {key}")
+        if not isinstance(correction, str) or len(correction.strip()) < 30:
+            fail(f"AI-corrected interview answer missing or too brief: {key}")
+
+for key in source_pairs:
     if key not in keys:
-        fail(f"Missing answer comparison for interview video: {key}")
+        fail(f"Missing answer record for question/video source: {key}")
+
 for q in questions:
     if not isinstance(q, dict) or not isinstance(q.get("path"), str):
         continue
     page = ROOT / q["path"]
-    if page.is_file():
-        source_text = page.read_text(encoding="utf-8")
-        for source in q.get("sources", []):
-            vid = source.get("video_id")
-            if f"### Candidate answer vs. AI-corrected answer — {vid}" not in source_text:
-                fail(f"Question page lacks comparison: {q['id']} / {vid}")
+    if not page.is_file():
+        continue
+    source_text = page.read_text(encoding="utf-8")
+    for source in q.get("sources", []):
+        if not isinstance(source, dict):
+            continue
+        vid = source.get("video_id")
+        key = (q["id"], vid)
+        mode = source_modes.get(key)
+        video = seen_videos.get(vid, {})
+        grouped_path = video.get("timestamps")
+        grouped_text = ""
+        if isinstance(grouped_path, str) and (ROOT / grouped_path).is_file():
+            grouped_text = (ROOT / grouped_path).read_text(encoding="utf-8")
+        if mode == "ai_only":
+            heading = f"### AI answer — {vid}"
+            if heading not in source_text:
+                fail(f"Tutorial question page missing AI-only answer table: {key}")
+            if heading not in grouped_text:
+                fail(f"Tutorial video page missing AI-only answer table: {key}")
+        elif mode == "interview_comparison":
+            heading = f"### Candidate answer vs. AI-corrected answer — {vid}"
+            if heading not in source_text:
+                fail(f"Interview question page missing comparison table: {key}")
+            if heading not in grouped_text:
+                fail(f"Interview video page missing comparison table: {key}")
 
 if errors:
     print(f"FAILED: {len(errors)} validation error(s)")

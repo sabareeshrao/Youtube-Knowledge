@@ -14,3 +14,5 @@ jobs:
           python-version: '3.11'
       - name: Validate IDs and references
         run: python scripts/validate.py
+      - name: Test interview and tutorial answer modes
+        run: python scripts/test_validator_modes.py
