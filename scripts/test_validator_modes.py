@@ -48,11 +48,11 @@ def make_fixture(root, video_type, record):
     qpage = "# IJ-1 — What is the example topic?\n\n" + grouped.replace(
         "## IJ-1 — What is the example topic?\n\n", "", 1
     )
-    source_text = f"Video: https://www.youtube.com/watch?v={SAMPLE_VIDEO}\\n"
+    source_text = f"Video: https://www.youtube.com/watch?v={SAMPLE_VIDEO}\n"
     if record.get("candidate_transcript_rows"):
         source_text += (
             f"- [0:05](https://www.youtube.com/watch?v={SAMPLE_VIDEO}&t=5s) "
-            "This is the candidate speaking about the example topic exactly as transcribed.\\n"
+            "This is the candidate speaking about the example topic exactly as transcribed.\n"
         )
     write("VIDEO-LIBRARY/YT-2/transcript.md", source_text)
     write("VIDEO-LIBRARY/YT-2/timestamps.md", grouped)
