@@ -11,11 +11,11 @@
 | YT-1.118 | [1:21:15](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4875s) | 🟢 USEFUL | Avoid real cross-service calls in unit tests |
 | YT-1.119 | [1:21:30](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4890s) | 🟢 USEFUL | Use separate integration/system-test suites |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He described calling actual REST endpoints across microservices in tests and checking responses, then agreed those calls should be separated from fast unit tests. | Unit tests mock remote clients and run quickly. Integration tests check adapters and real dependencies (often via Testcontainers or stubbed services); contract tests validate provider/consumer interfaces. A small end-to-end suite exercises deployed service flows. Separate suites by CI stage to avoid flaky, slow unit builds. |
+| [1:20:16](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4816s) I have written the test cases but generally it's more like a integration test case only where<br>[1:20:27](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4827s) we make the call to the uh rest template uh with by passing the payload so so one way we have to ensure like these uh services are running and also like the for this particular request the<br>[1:20:40](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4840s) corresponding response is coming back or not so we don't have to test cases itself you have involved this particular part yes uh because like even when we make a call to different micros service | I keep three levels of testing separate. Unit tests check one service's logic quickly, using mocks for outside calls. Integration tests check real pieces working together, like a repository with a test database. A smaller end-to-end suite checks the full journey—for example, cart to order to payment—in a test environment. If every unit test calls ten live services, builds become slow and unreliable. Test small things quickly and complete journeys deliberately. |
 

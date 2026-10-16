@@ -9,11 +9,11 @@
 | YT-1.129 | [1:28:46](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5326s) | 🟢 USEFUL | HashMap fail-fast iteration |
 | YT-1.130 | [1:29:32](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5372s) | 🟢 USEFUL | Concurrent access and synchronization |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He contrasted HashMap's iterator exception on structural changes with ConcurrentHashMap supporting changes during iteration, but named the exception imprecisely. | HashMap iterators may throw ConcurrentModificationException on structural modification (fail-fast is best-effort, not a safety guarantee). ConcurrentHashMap iterators are weakly consistent: they neither throw that exception for concurrent updates nor promise a single atomic snapshot. Choose based on access and iteration-consistency requirements. |
+| [1:28:56](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5336s) exception called concurrent hash exception to avoid this kind of like uh scenario we can go with like a new family of the uh hashing is called concurrent hashmap so it will works in<br>[1:29:10](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5350s) efficient way so that even if you do add any entities to the hashmap while you are iterating so it will be uh efficient to handle that kind of scenarios so that will be very useful when we have a yeah<br>[1:29:22](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=5362s) exception will be uh I don't think any exception will come because this is kind of like a main uh uh hashing we use especially for the multi- thread environments when there are more than | A HashMap iterator usually notices structural changes and may throw ConcurrentModificationException, but that fail-fast behavior is only a best-effort warning. It isn't thread safety. ConcurrentHashMap uses weakly consistent iteration: another thread can update the map while I'm looping, without that exception, but I may not see a perfect snapshot. For example, a live metrics dashboard can often tolerate that. If I need an exact snapshot, I must coordinate it explicitly. |
 

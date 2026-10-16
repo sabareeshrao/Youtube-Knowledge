@@ -10,11 +10,11 @@
 | YT-1.12 | [7:28](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=448s) | 🟢 USEFUL | JWT signature and payload discussion — JWT payload is encoded, not automatically encrypted |
 | YT-1.13 | [8:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=500s) | 🟢 USEFUL | Questionable JWT validation explanation — WARNING: candidate's token-validation claim is incorrect; validate signature and claims |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He said a JWT has three parts and a signature that reveals tampering, but suggested decoding or hashing it back and comparing a password or user ID against the database to trust the caller. | JWT verification is not reverse hashing. A resource server validates a trusted signature (or MAC), expected algorithm, issuer, audience, expiration/not-before and relevant authorization claims. Spring Security OAuth2 Resource Server can validate JWTs using an issuer/JWK set. Never place passwords inside JWT payloads or trust a token just because its decoded fields match a database record. |
+| [7:14](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=434s) the token what uh it's getting generated it's B is based on<br>[7:28](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=448s) some hashing algorithms it means it it's a one way like u based on that hash code if I just use JWT uh which can if you hash back it like we can get like three part out of it so we I think one of the<br>[7:41](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=461s) part is signature which is just to authenticate whether this hash is corrupted or some someone like uh changed it or not hacked it or not uh but in our case if let's assume like if | A JWT is like a signed entry pass. Before trusting it, my Spring Boot API checks the signature, the issuer, who the token is meant for, and whether it has expired. Then I check the user's permission for the request. For example, changing the word 'admin' inside the token should break its signature. I use Spring Security's JWT support instead of writing my own verification. The key point: reading a token is easy; proving it's genuine is what matters. |
 

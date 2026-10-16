@@ -10,11 +10,11 @@
 | YT-1.34 | [19:05](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1145s) | 🟢 USEFUL | GraphQL query entry point |
 | YT-1.35 | [19:29](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1169s) | 🟢 USEFUL | GraphQL versus REST decision criteria |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He preferred GraphQL when a REST design requires many endpoints and said GraphQL can service several entity requirements through a common endpoint. | Choose GraphQL when clients need flexible shapes, related data and self-described schema-driven queries; use REST when simple resources, HTTP caching and operational simplicity fit better. GraphQL is not automatically faster or always one endpoint. Address N+1 queries, query complexity limits, authorization at field/resolver level and caching. |
+| [18:28](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1108s) uh generally U it's not a limitation of the rest API it's just<br>[18:43](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1123s) like when we go with the rest API there are so many end points come to picture like it's very hard for the any client applications or any like third party to remember this so like for example if I<br>[18:53](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1133s) have like a a student as the uh main entity and if you have like all the crude operation then like it end up with like so many end points for suent TBL and similarly for like account again | I choose GraphQL when different clients need different pieces of the same data. For example, a mobile screen might need only a product's name and price, while the website needs reviews and images too. GraphQL lets each client ask for the fields it needs. REST still works very well for straightforward resource APIs. So I don't choose GraphQL because it's trendy. I choose it when flexible queries genuinely make the client simpler, while controlling query cost and permissions. |
 

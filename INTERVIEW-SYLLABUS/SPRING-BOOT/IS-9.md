@@ -11,11 +11,11 @@
 | YT-1.41 | [23:38](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1418s) | 🟢 USEFUL | Hierarchical YAML configuration |
 | YT-1.42 | [24:13](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1453s) | 🟢 USEFUL | Structured configuration values |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He explained that properties repeat dotted prefixes while YAML nests values hierarchically and supports lists/maps. He treated the difference as mostly readability and expanded YAML’s acronym incorrectly. | Spring Boot can bind both .properties and .yml to the same configuration properties. YAML is useful for nested maps/lists; properties are simple and explicit. YAML stands for “YAML Ain’t Markup Language.” Consider profile overrides, config source precedence, validation and secret management rather than declaring one universally superior. |
+| [23:00](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1380s) uh actually uh uh much there is no<br>[23:15](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1395s) difference it's just like the way we write the files uh the structure is different the yl is like yet another markup language as a name indicate so the main problem with like normal the<br>[23:27](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1407s) property file the application do property we use the Dot Structure so so the thing is like we have to keep on repeating the same prefix for uh every uh changes for example it has to be like | Both application.properties and application.yml tell Spring Boot how to run. The biggest difference is how they look. In properties, I'd write server.port=8080. In YAML, I'd place port beneath server, which is easier to read when settings have several levels. Both can produce the same result. I choose the format my team can understand and maintain consistently; the format itself doesn't make the application faster or safer. |
 

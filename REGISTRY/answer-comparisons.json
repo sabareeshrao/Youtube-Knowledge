@@ -1,412 +1,1531 @@
 {
-  "description": "Per-video, per-interview-question comparison. Left is a source-grounded candidate paraphrase, not a verbatim quote. Right is the separately authored corrected technical answer.",
-  "source_video": "YT-1",
+  "description": "Interview source captions are copied verbatim as excerpts with original starting times (speaker boundaries inferred in unlabeled transcript); AI answers are written in simple, spoken, example-driven form. Tutorials continue to use answer_type ai_only.",
   "comparisons": [
     {
       "question_id": "IS-1",
       "video_id": "YT-1",
-      "candidate_answer": "He said security should mainly be enforced on the backend, and stateless REST APIs can reuse a JWT sent by the frontend in cookies or a session. He described it as a hash of authentication.",
-      "ai_corrected_answer": "Enforce authentication and authorization at the backend, not merely in the browser. With Spring Security, configure request authorization, validate the access token’s signature, issuer, audience and expiry, and enforce roles/scopes. Use HTTPS, secure token storage and appropriate CSRF/CORS protections. A JWT is not simply an authentication hash.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "so generally we enforce the security mainly on the back end itself because uh the client browsers uh it is secured like we can have like multiple browsers running but main thing which we have to ensure is our servers are running fine so we generally go with some of the security features like JWT uh because generally we go with the HTTP rest apis these are like stateless applications which means like when every time when you make a request you don't",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 175,
+          "clock": "2:55",
+          "text": "so generally we enforce the security mainly on the back end itself"
+        },
+        {
+          "seconds": 186,
+          "clock": "3:06",
+          "text": "because uh the client browsers uh it is secured like we can have like multiple browsers running but main thing which we have to ensure is our servers are running fine so we generally go with"
+        },
+        {
+          "seconds": 198,
+          "clock": "3:18",
+          "text": "some of the security features like JWT uh because generally we go with the HTTP rest apis these are like stateless applications which means like when every time when you make a request you don't"
+        }
+      ],
+      "ai_corrected_answer": "I secure a Spring Boot API by making the backend check every request, not by trusting the browser. When a user signs in, the identity provider gives them an access token. The frontend sends it with API requests, and Spring Security checks that it's genuine, hasn't expired, and permits the action. For example, a normal customer should never access an admin endpoint. The simple rule is: the frontend offers the experience, but the backend makes the security decision.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-2",
       "video_id": "YT-1",
-      "candidate_answer": "He described using Okta with Spring Security, an Okta sign-in page, configured callback URLs, and tokens forwarded from the frontend to the API. He loosely referred to API/access keys for configuration.",
-      "ai_corrected_answer": "Use OpenID Connect/OAuth 2.0 authorization-code flow, typically with PKCE for a browser client. Redirect to Okta, receive an authorization code at a registered redirect URI, exchange it securely for tokens, then have Spring Security validate access tokens. Configure issuer, client credentials where applicable, audience, scopes and role mapping; do not put confidential client secrets in browser code.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh I generally used uh OCTA o 2.0 U that's that's that's I think that's one of the popularly getting used uh authentication and authorization tool so and it's uh spring also comes with a spring security uh which I prefer like also return on top of this so this is the main thing which I have used correct I agree that OCTA you have used as authorization servers and Spring Security is something which properly integrates with the OCTA parts so yes completely agree on that front now my",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 259,
+          "clock": "4:19",
+          "text": "uh I generally used uh OCTA o 2.0 U that's that's that's I think that's one of the popularly getting used uh"
+        },
+        {
+          "seconds": 272,
+          "clock": "4:32",
+          "text": "authentication and authorization tool so and it's uh spring also comes with a spring security uh which I prefer like also return on top of this so this is the main thing which I have used correct"
+        },
+        {
+          "seconds": 286,
+          "clock": "4:46",
+          "text": "I agree that OCTA you have used as authorization servers and Spring Security is something which properly integrates with the OCTA parts so yes completely agree on that front now my"
+        }
+      ],
+      "ai_corrected_answer": "I use Okta to handle sign-in, while Spring Security protects the API. For example, a user clicks Login, signs in through Okta, and the application receives tokens through the configured OAuth/OpenID Connect flow. When the user calls our order API, the backend validates the access token and checks permissions. For a browser app, I would normally use authorization code with PKCE. Okta confirms who signed in; our API still decides what that person can do.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-3",
       "video_id": "YT-1",
-      "candidate_answer": "He said a JWT has three parts and a signature that reveals tampering, but suggested decoding or hashing it back and comparing a password or user ID against the database to trust the caller.",
-      "ai_corrected_answer": "JWT verification is not reverse hashing. A resource server validates a trusted signature (or MAC), expected algorithm, issuer, audience, expiration/not-before and relevant authorization claims. Spring Security OAuth2 Resource Server can validate JWTs using an issuer/JWK set. Never place passwords inside JWT payloads or trust a token just because its decoded fields match a database record.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "the token what uh it's getting generated it's B is based on some hashing algorithms it means it it's a one way like u based on that hash code if I just use JWT uh which can if you hash back it like we can get like three part out of it so we I think one of the part is signature which is just to authenticate whether this hash is corrupted or some someone like uh changed it or not hacked it or not uh but in our case if let's assume like if",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 434,
+          "clock": "7:14",
+          "text": "the token what uh it's getting generated it's B is based on"
+        },
+        {
+          "seconds": 448,
+          "clock": "7:28",
+          "text": "some hashing algorithms it means it it's a one way like u based on that hash code if I just use JWT uh which can if you hash back it like we can get like three part out of it so we I think one of the"
+        },
+        {
+          "seconds": 461,
+          "clock": "7:41",
+          "text": "part is signature which is just to authenticate whether this hash is corrupted or some someone like uh changed it or not hacked it or not uh but in our case if let's assume like if"
+        }
+      ],
+      "ai_corrected_answer": "A JWT is like a signed entry pass. Before trusting it, my Spring Boot API checks the signature, the issuer, who the token is meant for, and whether it has expired. Then I check the user's permission for the request. For example, changing the word 'admin' inside the token should break its signature. I use Spring Security's JWT support instead of writing my own verification. The key point: reading a token is easy; proving it's genuine is what matters.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-4",
       "video_id": "YT-1",
-      "candidate_answer": "He initially argued that JWT hashing prevented outsiders from recovering sensitive information, but later agreed that passwords and personal details should not be placed in the token body.",
-      "ai_corrected_answer": "A common signed JWT is base64url-encoded, not encrypted: anyone holding it can read header and payload. Never put passwords, credential hashes, access secrets or unnecessary personal data in its claims. Signatures protect integrity, not confidentiality; use TLS, minimal claims, and encryption only when separately required.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh no I think it's Works based on like a hashing is only like a one way of uh it's called like one way like mapping it means like from the the keywords we can get to know like what's the hash code but other way can't be possible so you can't get to know the actual password sorry I said password but you can't get to know the password so generally anyone can't get to know only the user know his own passwords so when we save it in the database so it's always be the hashing so we never save",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 553,
+          "clock": "9:13",
+          "text": "uh no I think it's Works based on like a hashing is only like a one way of uh it's called like one way like"
+        },
+        {
+          "seconds": 567,
+          "clock": "9:27",
+          "text": "mapping it means like from the the keywords we can get to know like what's the hash code but other way can't be possible so you can't get to know the actual password sorry I said password"
+        },
+        {
+          "seconds": 577,
+          "clock": "9:37",
+          "text": "but you can't get to know the password so generally anyone can't get to know only the user know his own passwords so when we save it in the database so it's always be the hashing so we never save"
+        }
+      ],
+      "ai_corrected_answer": "I treat a JWT payload like a postcard: someone holding the token can usually read what's written on it. That's why I never put passwords, secrets, or unnecessary personal information inside. For example, including a customer's password in a token would expose it to anyone who gets a copy. A signature prevents undetected changes; it doesn't hide the text. My rule is simple: keep claims minimal, protect tokens, and never mistake encoding for encryption.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-5",
       "video_id": "YT-1",
-      "candidate_answer": "He mentioned a short token lifetime and reauthentication after expiry; the interviewer introduced refresh tokens, which he acknowledged without explaining the refresh exchange.",
-      "ai_corrected_answer": "Access tokens expire according to the exp claim. Before or after expiry, an authorized client can exchange a valid refresh token at the authorization server for a new access token; it does not re-send the user’s password on every API call. Protect refresh tokens, use rotation/revocation where supported, and handle expired or stolen tokens safely.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "yes yeah exactly",
+      "candidate_answer_status": "no_substantive_answer",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 247,
+          "clock": "4:07",
+          "text": "yes yeah exactly"
+        }
+      ],
+      "ai_corrected_answer": "An access token is a short-lived pass to call an API. When it expires, the user shouldn't necessarily have to sign in again. The app can use a properly protected refresh token to request a new access token from the authorization server. For example, while someone browses an online store, their session can continue without interrupting every few minutes. Refresh tokens need strong protection and sometimes rotation or revocation. Short-lived access plus carefully managed refresh is the balance.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-6",
       "video_id": "YT-1",
-      "candidate_answer": "He correctly noted that @Scheduled runs independently in each application replica and proposed ShedLock to prevent three instances from writing the same record.",
-      "ai_corrected_answer": "A local Spring scheduler does not coordinate replicas. Use a shared distributed lock such as ShedLock with a properly configured persistent lock provider, or a dedicated scheduler/queue with leader election. Set lock durations carefully and still make the job idempotent, because retries and crashes can otherwise cause duplicates.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh yeah I mean generally we go with the spring scheduler but the drawback as you mentioned uh if there are multiple instances the spring Schuler can't able to handle this instance it end up with running on all the three instance so we want something like a single turn Behavior here like for that we can go with something called shedlock so how it orchestrate is like rather than uh it will let it to run only once and like and ra for the all the instances so that's how internal architectures are",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 653,
+          "clock": "10:53",
+          "text": "uh yeah I mean generally we go with the spring scheduler but the drawback as you mentioned uh if there are multiple"
+        },
+        {
+          "seconds": 664,
+          "clock": "11:04",
+          "text": "instances the spring Schuler can't able to handle this instance it end up with running on all the three instance so we want something like a single turn Behavior here like for that we can go"
+        },
+        {
+          "seconds": 674,
+          "clock": "11:14",
+          "text": "with something called shedlock so how it orchestrate is like rather than uh it will let it to run only once and like and ra for the all the instances so that's how internal architectures are"
+        }
+      ],
+      "ai_corrected_answer": "If I run the same Spring scheduler on three servers, all three may execute the job. That's a problem if the job must send only one email or create only one record. I would use a shared lock, such as ShedLock backed by the database, so only one instance runs at a time. I would also make the job safe to retry after a crash. A scheduler knows when to run; a shared lock helps decide who runs.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-7",
       "video_id": "YT-1",
-      "candidate_answer": "He associated Hibernate L1 with an individual Session and L2 with SessionFactory, saying L1 is enabled by default and L2 can share entities across sessions.",
-      "ai_corrected_answer": "Hibernate’s first-level cache (persistence context) is mandatory and scoped to a Session/EntityManager. The optional second-level cache is managed at SessionFactory scope through a configured cache provider and caching policies. L2 is not a magical cache of every entity; explain regions, invalidation, transaction consistency and when it is appropriate.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh yes so session level uh is called L1 caching and session Factory is the L2 so by default we enable the session level caching which is like limited to particular session so but if you want some data which should be like could be cached across the all the sessions then we put it in the L2 level caching which is under the session Factory",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 955,
+          "clock": "15:55",
+          "text": "uh yes so session level uh is called L1 caching and session Factory is the L2 so by default we enable the session level caching which is like limited to particular session so"
+        },
+        {
+          "seconds": 970,
+          "clock": "16:10",
+          "text": "but if you want some data which should be like could be cached across the all the sessions then we put it in the L2 level caching which is under the session Factory"
+        }
+      ],
+      "ai_corrected_answer": "Hibernate has two useful cache levels. The first-level cache belongs to one Session and is always there. If I read the same entity twice in that session, Hibernate can avoid a second database fetch. The optional second-level cache can share eligible entity data across sessions using a configured provider. For example, product categories that rarely change might benefit from it. The memory trick is: L1 belongs to one conversation with the database; L2 can serve many conversations.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-8",
       "video_id": "YT-1",
-      "candidate_answer": "He said SessionFactory is expensive, should be reused as a singleton, and different databases generally need separate SessionFactory instances. He also compared one SessionFactory to one database connection.",
-      "ai_corrected_answer": "SessionFactory is expensive to build but thread-safe and reused, typically one per persistence unit/configuration. It creates many short-lived Sessions and works with a connection pool; it is not one database connection. With multiple independently configured databases/persistence units, configure corresponding factories/entity managers and transaction boundaries.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "U first thing is like it's a costly operation I would say but I mean in the normal words U this as same as like creating the instance of the database so we generally want it to be like U highly uh synchronized uh applications so that no two uh interactions can corrupt the datas so when we make it as single turn so that uh every time every new sessions we use the same uh sorry every uh New Creations will create the only one",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 1007,
+          "clock": "16:47",
+          "text": "U first thing is like it's a costly"
+        },
+        {
+          "seconds": 1020,
+          "clock": "17:00",
+          "text": "operation I would say but I mean in the normal words U this as same as like creating the instance of the database so we generally want it to be like U highly uh synchronized uh applications so that"
+        },
+        {
+          "seconds": 1032,
+          "clock": "17:12",
+          "text": "no two uh interactions can corrupt the datas so when we make it as single turn so that uh every time every new sessions we use the same uh sorry every uh New Creations will create the only one"
+        }
+      ],
+      "ai_corrected_answer": "I reuse SessionFactory because building it takes work: it holds Hibernate's mapping and database configuration. It isn't a single database connection. Think of it as a factory that creates many short-lived Sessions, usually using pooled connections underneath. If my application connects to three separately configured databases, I generally set up an appropriate factory or persistence unit for each. Reuse the factory; open and close sessions for the actual work.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-9",
       "video_id": "YT-1",
-      "candidate_answer": "He explained that properties repeat dotted prefixes while YAML nests values hierarchically and supports lists/maps. He treated the difference as mostly readability and expanded YAML’s acronym incorrectly.",
-      "ai_corrected_answer": "Spring Boot can bind both .properties and .yml to the same configuration properties. YAML is useful for nested maps/lists; properties are simple and explicit. YAML stands for “YAML Ain’t Markup Language.” Consider profile overrides, config source precedence, validation and secret management rather than declaring one universally superior.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh actually uh uh much there is no difference it's just like the way we write the files uh the structure is different the yl is like yet another markup language as a name indicate so the main problem with like normal the property file the application do property we use the Dot Structure so so the thing is like we have to keep on repeating the same prefix for uh every uh changes for example it has to be like",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 1380,
+          "clock": "23:00",
+          "text": "uh actually uh uh much there is no"
+        },
+        {
+          "seconds": 1395,
+          "clock": "23:15",
+          "text": "difference it's just like the way we write the files uh the structure is different the yl is like yet another markup language as a name indicate so the main problem with like normal the"
+        },
+        {
+          "seconds": 1407,
+          "clock": "23:27",
+          "text": "property file the application do property we use the Dot Structure so so the thing is like we have to keep on repeating the same prefix for uh every uh changes for example it has to be like"
+        }
+      ],
+      "ai_corrected_answer": "Both application.properties and application.yml tell Spring Boot how to run. The biggest difference is how they look. In properties, I'd write server.port=8080. In YAML, I'd place port beneath server, which is easier to read when settings have several levels. Both can produce the same result. I choose the format my team can understand and maintain consistently; the format itself doesn't make the application faster or safer.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-10",
       "video_id": "YT-1",
-      "candidate_answer": "He said Spring Boot uses application.properties by default and can load application-dev, QA, staging or production files to override environment-specific database/settings.",
-      "ai_corrected_answer": "Activate profiles using SPRING_PROFILES_ACTIVE, --spring.profiles.active or another supported configuration source. Spring Boot loads profile-specific application-{profile}.properties or YAML, subject to property-source precedence. Deploy the same tested artifact to environments; inject credentials through managed secrets or environment configuration, not committed passwords.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "it's generally called like profiling like uh generally we specify what kind of environment we are running so based on that particular profile file uh if I just want to explain with the springboard uh we have application do uh application. property files generally that's like a default file we use but we can also have something called application Dev application PR application staging So based on the environment these file will used and it will overhead the settings of the",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3931,
+          "clock": "1:05:31",
+          "text": "it's generally called like profiling like uh generally we specify what kind of environment we are running so based on"
+        },
+        {
+          "seconds": 3946,
+          "clock": "1:05:46",
+          "text": "that particular profile file uh if I just want to explain with the springboard uh we have application do uh application. property files generally that's like a default file we"
+        },
+        {
+          "seconds": 3956,
+          "clock": "1:05:56",
+          "text": "use but we can also have something called application Dev application PR application staging So based on the environment these file will used and it will overhead the settings of the"
+        }
+      ],
+      "ai_corrected_answer": "I use Spring profiles so the same application can run with different settings. For example, development connects to a local database, while production uses its own database and credentials. I keep the common settings in application.yml and put environment differences in profile-specific files or external configuration. Then I activate the right profile during deployment. The idea is simple: one tested application, different environment settings—and no production passwords committed to Git.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-11",
       "video_id": "YT-1",
-      "candidate_answer": "He described loading bounded batches and a next-page number/size through JPA or EntityManager, but admitted he was unsure of the exact query/API.",
-      "ai_corrected_answer": "In Spring Data JPA use a repository method accepting Pageable, e.g. PageRequest.of(page, size, Sort.by(...)), returning Page or Slice. Always use deterministic sorting, bound page sizes and understand count-query cost. For very deep pagination consider keyset/cursor pagination; avoid confusing JDBC batch updates with paginated reads.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "I think u i I'm not sure exactly with the query but I use the jpa uh methods which can uh which we can specify with our entity manager like what's the next uh next batch number and what could be the size of the next batch",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3692,
+          "clock": "1:01:32",
+          "text": "I think u i I'm not sure exactly with the query but I use the jpa uh methods which can uh which we can specify with our entity manager like what's the next uh next batch number and what could be"
+        },
+        {
+          "seconds": 3707,
+          "clock": "1:01:47",
+          "text": "the size of the next batch"
+        }
+      ],
+      "ai_corrected_answer": "Pagination means asking the database for only the records we need right now. With Spring Data JPA, I can pass a Pageable such as PageRequest.of(0, 20) to get the first 20 products. The next request asks for the next page with a stable sort order. For an infinite-scroll screen, the frontend loads another page as the user moves down. I always cap page size; loading 20 useful records beats loading 20,000 at once.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IS-12",
       "video_id": "YT-1",
-      "candidate_answer": "He contrasted waiting threads with callback-like, nonblocking operations and mentioned Reactor’s Mono and Flux for small versus multiple results.",
-      "ai_corrected_answer": "Spring WebFlux uses Reactive Streams publishers: Mono emits zero or one item, Flux emits zero to many. Nonblocking I/O helps high-concurrency I/O-bound workloads but does not make CPU work faster. Avoid blocking calls on event-loop threads, handle backpressure/errors and select the model based on dependencies and workload.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh so generally we go with the reactive programming because the threats are limited like uh so we can't have like threads waiting for the response to come back so when we write any calls these are like as synchronous calls like because few of the operation has to be done one after the other so in that case we block the threats to wait for the response to come back so in that case uh we can go with a reactive programming where uh something called like a call",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4966,
+          "clock": "1:22:46",
+          "text": "uh so generally we go with the reactive programming because the threats are"
+        },
+        {
+          "seconds": 4977,
+          "clock": "1:22:57",
+          "text": "limited like uh so we can't have like threads waiting for the response to come back so when we write any calls these are like as synchronous calls like because few of the operation has to be"
+        },
+        {
+          "seconds": 4989,
+          "clock": "1:23:09",
+          "text": "done one after the other so in that case we block the threats to wait for the response to come back so in that case uh we can go with a reactive programming where uh something called like a call"
+        }
+      ],
+      "ai_corrected_answer": "Reactive programming is useful when an application spends a lot of time waiting for network or database responses. Instead of tying up one thread while it waits, nonblocking code can let that thread handle other work. In Spring WebFlux, Mono represents zero or one result, while Flux can represent many. Imagine a service receiving thousands of slow API responses: this can improve resource use. Reactive isn't automatically faster for every task, especially if the code still blocks.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-1",
       "video_id": "YT-1",
-      "candidate_answer": "He described Redis as an in-memory key-value cache checked before querying the database, reducing latency for frequently read data.",
-      "ai_corrected_answer": "That is cache-aside: read cache, on miss read authoritative storage, write the result to cache with appropriate TTL, and return it. Redis is a separate shared in-memory service, not necessarily local RAM inside each app instance. Plan invalidation, miss storms, serialization and failure fallback.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh the caching generally uh I mean uh either we can use the third party which is already available so which is like uh redis is one of the popular caching uh it's nowadays which we use uh to enhance the performance there are few datas which we find like frequently are getting used so rather than hitting the database which takes some additional time as a latency so we can use this caching which is like",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 687,
+          "clock": "11:27",
+          "text": "uh the caching generally uh I"
+        },
+        {
+          "seconds": 701,
+          "clock": "11:41",
+          "text": "mean uh either we can use the third party which is already available so which is like uh redis is one of the popular caching uh it's nowadays which we use uh to enhance the performance"
+        },
+        {
+          "seconds": 711,
+          "clock": "11:51",
+          "text": "there are few datas which we find like frequently are getting used so rather than hitting the database which takes some additional time as a latency so we can use this caching which is like"
+        }
+      ],
+      "ai_corrected_answer": "Redis helps me avoid asking the database the same question again and again. Suppose a popular product page gets 10,000 requests. I first look for its details in Redis. If they're there, I return them quickly. If not, I read the database, put a copy in Redis, and return it. That's called cache-aside. The trick is remembering that Redis is a fast copy, while the database remains the source of truth.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-2",
       "video_id": "YT-1",
-      "candidate_answer": "He described TTL-based caching, recognized possible stale results, and said eventual consistency can be acceptable for some apps but not financial balances. He did not give a concrete invalidation design.",
-      "ai_corrected_answer": "Choose freshness guarantees by business use case. On writes, invalidate or update affected cache keys; complement this with TTL, versioning/events and retryable invalidation. TTL alone bounds staleness imperfectly and short TTLs increase load. Describe race conditions, read-after-write needs and strong-consistency paths for critical values.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh so generally for the server it can't get to know whether the data is dirty or not because only the database has a clear idea whether this data was corrupted so there could be be a chances of reading this diry data but this kind of data we keep this kind of data especially for the applications like where some datas need not to be accurate like for example if you use Twitter so we don't want like what I see on my table sorry page is need not to be like as accurate as yours so when we can compromise on the consistency we can go with like this",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 824,
+          "clock": "13:44",
+          "text": "uh so generally for the server it can't get to know whether the data is dirty or not because only the database has a clear idea whether this data was corrupted so there could"
+        },
+        {
+          "seconds": 838,
+          "clock": "13:58",
+          "text": "be be a chances of reading this diry data but this kind of data we keep this kind of data especially for the applications like where some datas need not to be accurate like for example if"
+        },
+        {
+          "seconds": 849,
+          "clock": "14:09",
+          "text": "you use Twitter so we don't want like what I see on my table sorry page is need not to be like as accurate as yours so when we can compromise on the consistency we can go with like this"
+        }
+      ],
+      "ai_corrected_answer": "A cache is useful only if we know how fresh its data needs to be. For example, an old product description may be acceptable for a minute, but an incorrect bank balance is not. I use a time-to-live to expire cached entries and invalidate or update them when important data changes. I also plan for timing races between a database write and a cache read. The question isn't 'How long can we cache?'; it's 'How wrong can this data safely be?'",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-3",
       "video_id": "YT-1",
-      "candidate_answer": "He preferred GraphQL when a REST design requires many endpoints and said GraphQL can service several entity requirements through a common endpoint.",
-      "ai_corrected_answer": "Choose GraphQL when clients need flexible shapes, related data and self-described schema-driven queries; use REST when simple resources, HTTP caching and operational simplicity fit better. GraphQL is not automatically faster or always one endpoint. Address N+1 queries, query complexity limits, authorization at field/resolver level and caching.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh generally U it's not a limitation of the rest API it's just like when we go with the rest API there are so many end points come to picture like it's very hard for the any client applications or any like third party to remember this so like for example if I have like a a student as the uh main entity and if you have like all the crude operation then like it end up with like so many end points for suent TBL and similarly for like account again",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 1108,
+          "clock": "18:28",
+          "text": "uh generally U it's not a limitation of the rest API it's just"
+        },
+        {
+          "seconds": 1123,
+          "clock": "18:43",
+          "text": "like when we go with the rest API there are so many end points come to picture like it's very hard for the any client applications or any like third party to remember this so like for example if I"
+        },
+        {
+          "seconds": 1133,
+          "clock": "18:53",
+          "text": "have like a a student as the uh main entity and if you have like all the crude operation then like it end up with like so many end points for suent TBL and similarly for like account again"
+        }
+      ],
+      "ai_corrected_answer": "I choose GraphQL when different clients need different pieces of the same data. For example, a mobile screen might need only a product's name and price, while the website needs reviews and images too. GraphQL lets each client ask for the fields it needs. REST still works very well for straightforward resource APIs. So I don't choose GraphQL because it's trendy. I choose it when flexible queries genuinely make the client simpler, while controlling query cost and permissions.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-4",
       "video_id": "YT-1",
-      "candidate_answer": "He argued REST can reduce response fields via DTOs or @JsonIgnore, while GraphQL lets each caller select requested fields more conveniently.",
-      "ai_corrected_answer": "GraphQL clients specify selected fields at query time. REST can also provide sparse fieldsets, projections, query parameters or alternate DTOs without always changing source code. @JsonIgnore is mostly static serialization exclusion, not the same as per-request selection. Compare schema governance, authorization, overfetching and resolver performance.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "returned with the graph we can also limit in the rest API as well based on like what kind of dto we are returning because like uh yeah I I didn't go in depth about this but uh in rest AP also we can limit what response we are responding back we also come up with something called Json ignore and yeah some crucial Fields if you don't want to ex we don't want to export we can at the rate and out with Json ignore ignore so yeah but I feel like it's still like too much of laborious task to do this using rest API which can be easily automated with the graph",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 1255,
+          "clock": "20:55",
+          "text": "returned with the graph we can also limit in the rest API as well based on like what kind of dto we are returning because like uh yeah I I didn't go in depth about this but uh in rest AP also"
+        },
+        {
+          "seconds": 1269,
+          "clock": "21:09",
+          "text": "we can limit what response we are responding back we also come up with something called Json ignore and yeah some crucial Fields if you don't want to ex we don't want to export we can at the"
+        },
+        {
+          "seconds": 1279,
+          "clock": "21:19",
+          "text": "rate and out with Json ignore ignore so yeah but I feel like it's still like too much of laborious task to do this using rest API which can be easily automated with the graph"
+        }
+      ],
+      "ai_corrected_answer": "GraphQL lets the caller choose fields in a query. For example, a customer screen can request just an employee's ID and name instead of the whole employee record. REST can return smaller responses too, using DTOs or field-selection options. The difference is that GraphQL makes client-driven selection a central feature. I would use whichever approach keeps the API predictable, secure, and easy to maintain. Less unnecessary data is good; extra complexity isn't always worth it.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-5",
       "video_id": "YT-1",
-      "candidate_answer": "He contrasted Saga’s event-triggered local transactions and compensating operations with synchronous two-phase commit, but at times spoke as if Saga could provide one atomic end-to-end transaction.",
-      "ai_corrected_answer": "Saga coordinates independently committed local transactions through orchestration or choreography and compensating actions after failure; it does not provide global ACID atomicity or instant rollback. Two-phase commit coordinates participants for atomic commit but adds blocking, availability and operational costs. Choose based on consistency requirements, failure recovery and service autonomy.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh so when it comes to distributed transactions uh it's easy to handle that in the monolith architecture because we can have one transaction and write all the operations we want to perform but in case of distributed we uh bate the functionalities to different micros service the main problem is if something goes wrong then we have to roll back but since it is under in different transactions we have a I think two-way of approach so whether we can go with synchronized or asynchronized I",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 1467,
+          "clock": "24:27",
+          "text": "uh so when it comes to distributed transactions uh it's easy to handle that in the monolith architecture"
+        },
+        {
+          "seconds": 1484,
+          "clock": "24:44",
+          "text": "because we can have one transaction and write all the operations we want to perform but in case of distributed we uh bate the functionalities to different micros service the main problem is if"
+        },
+        {
+          "seconds": 1496,
+          "clock": "24:56",
+          "text": "something goes wrong then we have to roll back but since it is under in different transactions we have a I think two-way of approach so whether we can go with synchronized or asynchronized I"
+        }
+      ],
+      "ai_corrected_answer": "A Saga helps several microservices complete one business process without pretending they share a single database transaction. Picture placing an order: reserve stock, take payment, and create the order. If payment fails, we release the stock through a compensating action. Two-phase commit tries to coordinate an atomic commit across participants, but can be harder to operate and less available. A Saga doesn't magically roll back the whole world; it plans how to recover from each step.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-6",
       "video_id": "YT-1",
-      "candidate_answer": "He listed product browsing/search, cart, payment, delivery and notifications as functional requirements, and scale, resilience and latency as nonfunctional concerns.",
-      "ai_corrected_answer": "Start with explicit user flows, inventory/payment correctness, failure paths and measurable nonfunctional targets: peak QPS, latency SLO, availability, data consistency, security and recovery objectives. Clarify constraints and workload assumptions before choosing databases or services, and prioritize core flows before optional features.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh sure so uh generally we say the e-commerce I would take U either flip cart or Amazon as an example here so if if I get this kind of questions first I would think what could be the functional requ requirement and what are non-functional requirement because functional requirement is something like uh business steam or some customer would specify what kind of requirements we want so in the e-commerce first thing is",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 1595,
+          "clock": "26:35",
+          "text": "uh sure so uh generally we say the"
+        },
+        {
+          "seconds": 1608,
+          "clock": "26:48",
+          "text": "e-commerce I would take U either flip cart or Amazon as an example here so if if I get this kind of questions first I would think what could be the functional requ requirement and what are"
+        },
+        {
+          "seconds": 1618,
+          "clock": "26:58",
+          "text": "non-functional requirement because functional requirement is something like uh business steam or some customer would specify what kind of requirements we want so in the e-commerce first thing is"
+        }
+      ],
+      "ai_corrected_answer": "Before drawing an e-commerce system, I ask what customers need to do and how much traffic we expect. The basic flow is search, cart, checkout, payment, and order tracking. Then I ask about scale, response time, security, and what happens when a service fails. For example, selling ten products a day is different from handling a flash sale with a million visitors. Good system design starts with good questions, not with drawing twenty microservices.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-7",
       "video_id": "YT-1",
-      "candidate_answer": "He proposed a proxy/load balancer and request limits, including watching repeated calls from an IP, to stop abusive traffic.",
-      "ai_corrected_answer": "Apply rate limiting at an API gateway/edge using token bucket or sliding-window policies per identity, token, endpoint and IP, backed by a shared limiter when necessary. Add WAF/bot controls, authentication, quotas and observability. IP-only throttling can punish shared networks; tune legitimate burst allowances and abuse responses.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "handlers like it will keep track of like how many requests are coming from like same uh IP address so if if it find it like uh if the the number of request is miscellaneous like it's not something uh it's like active uh user request in that case we can uh it will like stop the user to hit that part so which we call that as rate limits yeah rate limits that's what sorry that's what I was trying to say no problem okay yeah I yeah I don't have any filter kind of icons so I would have used that here so okay no problem uh um okay so then we have like different",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 1967,
+          "clock": "32:47",
+          "text": "handlers like it will keep track of like how many requests are coming from like same uh IP address so if if it find it like uh if the the number of request is miscellaneous like it's not something uh"
+        },
+        {
+          "seconds": 1981,
+          "clock": "33:01",
+          "text": "it's like active uh user request in that case we can uh it will like stop the user to hit that part so which we call that as rate limits yeah rate limits that's what sorry that's what I was"
+        },
+        {
+          "seconds": 1994,
+          "clock": "33:14",
+          "text": "trying to say no problem okay yeah I yeah I don't have any filter kind of icons so I would have used that here so okay no problem uh um okay so then we have like different"
+        }
+      ],
+      "ai_corrected_answer": "I protect an e-commerce API by limiting how many requests a client can send in a short time. For example, one account shouldn't be allowed to call product search thousands of times per second. I put rate limits at the API gateway, and I can add WAF rules or bot protection for suspicious traffic. I wouldn't rely only on IP addresses because many real users can share one IP. Protecting the system means slowing abuse without blocking genuine shoppers.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-8",
       "video_id": "YT-1",
-      "candidate_answer": "He drew clients feeding an Nginx-like reverse proxy/load balancer, which routes requests to replicated microservices.",
-      "ai_corrected_answer": "A solid overview includes clients, CDN/WAF, gateway or reverse proxy, load-balanced stateless services, authentication, service discovery, databases, caching, messaging and observability. Define service ownership and request flow, scaling/failure modes and consistency, not just the drawing. Add health checks, retries with limits and graceful degradation.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "simple design first then I'll keep on add the enhancement based on the non-functionality as well so yeah generally we have a client here client could be either uh like a mobile or it could be uh web or any uh lab yeah this has to be like a responsive web screen so that every different resolution can see that uh HTML page in a clear way and um there could be many uh users because since we are talking about the e-commerce website we can come up with like um millions of user in know we call that as like a daily active users So based on that we",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 1887,
+          "clock": "31:27",
+          "text": "simple design first then I'll keep on add the enhancement based on the non-functionality as well so yeah generally we have a client here client could be either uh like a mobile or it"
+        },
+        {
+          "seconds": 1897,
+          "clock": "31:37",
+          "text": "could be uh web or any uh lab yeah this has to be like a responsive web screen so that every different resolution can see that uh HTML page in a clear way and um there"
+        },
+        {
+          "seconds": 1912,
+          "clock": "31:52",
+          "text": "could be many uh users because since we are talking about the e-commerce website we can come up with like um millions of user in know we call that as like a daily active users So based on that we"
+        }
+      ],
+      "ai_corrected_answer": "I would start with the customer, then follow one request through the system. The browser hits a CDN or gateway, a load balancer selects a healthy application instance, and the right service handles the request. Search might use a cache and search index; orders and payments need reliable storage and clear ownership. For example, if one search instance crashes, another should keep serving customers. I design for the customer journey first, then scale and failures.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-9",
       "video_id": "YT-1",
-      "candidate_answer": "He combined product search with Redis caching, Cassandra/MongoDB as product storage and Elasticsearch for keyword/typo search, assuming search can tolerate some staleness.",
-      "ai_corrected_answer": "Keep authoritative product/catalog data in a suitable operational store, maintain a dedicated search index asynchronously via a reliable change pipeline, and cache hot queries in Redis with expiration/invalidation. Use an Elasticsearch/OpenSearch query service for text relevance. Protect inventory/pricing correctness at checkout; search-index and cache consistency need explicit update/rebuild plans.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "okay so this generally cash the uh the data like all the items which are coming from the inventories so this data need not to be accurate like sometimes we can search the product but even though if you don't available in the car in the inventory so this need not be like 100% consistence it can be like uh eventual consistence as well so that's totally fine uh so and generally we can go with the database here uh of no SQL or SQL but I was thinking",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2070,
+          "clock": "34:30",
+          "text": "okay so this generally cash the uh the data like all the items which are coming"
+        },
+        {
+          "seconds": 2095,
+          "clock": "34:55",
+          "text": "from the inventories so this data need not to be accurate like sometimes we can search the product but even though if you don't available in the car in the inventory so this need not be like 100%"
+        },
+        {
+          "seconds": 2105,
+          "clock": "35:05",
+          "text": "consistence it can be like uh eventual consistence as well so that's totally fine uh so and generally we can go with the database here uh of no SQL or SQL but I was thinking"
+        }
+      ],
+      "ai_corrected_answer": "For product search, I separate where product data is owned from how people search it. A product database stores the real catalog. A search index such as Elasticsearch makes text and typo-tolerant searches fast. Redis can hold common search results so we don't repeat expensive queries. For example, thousands of people searching 'running shoes' may share a cached result. But stock and price must be checked again when the customer actually buys.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-10",
       "video_id": "YT-1",
-      "candidate_answer": "He modeled cart items as a one-to-many user association and chose MySQL for structured relations and consistency, loosely invoking the CAP theorem.",
-      "ai_corrected_answer": "Model cart, cart_line_item and product references with stable IDs, quantities and constraints. A relational database supports joins and transactions, but CAP is not a direct rule saying “use MySQL for cart.” Plan concurrent cart updates, optimistic locking/versioning, expiration and price/stock revalidation at checkout.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "the cart service like uh when user add to the cut it means like U it has to be like a map so I generally like map between like uh this user and his all the items so it could be like uh one to many mappings so generally if it's a mapping uh it could be debatable but I can go with the SQL database so here it could be uh my SQ mycle is better suit uh because there is something called a cap algorithm which is called consistency availability and the I forgot about the last one it is uh yeah so yeah so in my case I need complete consistency because uh and the",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2342,
+          "clock": "39:02",
+          "text": "the cart service like uh when user add to the cut it means like U it has to be like a map so I generally like map between like uh this user and his all the items so it could be like uh one to"
+        },
+        {
+          "seconds": 2357,
+          "clock": "39:17",
+          "text": "many mappings so generally if it's a mapping uh it could be debatable but I can go with the SQL database so here it could be uh my SQ mycle is better suit uh because there is"
+        },
+        {
+          "seconds": 2370,
+          "clock": "39:30",
+          "text": "something called a cap algorithm which is called consistency availability and the I forgot about the last one it is uh yeah so yeah so in my case I need complete consistency because uh and the"
+        }
+      ],
+      "ai_corrected_answer": "A shopping cart is naturally a relationship between a user and the products they selected. I might store it in SQL using a cart table and cart-item rows, each with product ID and quantity. When the same item is added twice, I update its quantity safely rather than creating a confusing duplicate. A relational database is a solid option because updates and relationships are clear. The important part isn't the brand of database—it's keeping the cart correct.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-11",
       "video_id": "YT-1",
-      "candidate_answer": "He proposed distinct cart, product, inventory and user services and REST/Feign-style communication to preserve one responsibility per service.",
-      "ai_corrected_answer": "Split services by clear business ownership: catalog/product, inventory availability/reservation, cart, order, payment and identity. Define owned databases, API/event contracts, idempotent interactions and failure boundaries. “One service per noun” is not automatically best; use cohesive bounded contexts and avoid synchronous call chains across every operation.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "since it is a micros service it doesn't have all the compete information it just perform one single uh responsibility so I can uh I mean in the behind the picture I can go with either uh rest template or a f client algorithms to communicate with the services but but uh but when it comes to system design uh I don't want to go in depth about the uh coding but when it comes to uh place order so when user place the order",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2425,
+          "clock": "40:25",
+          "text": "since it is a micros service it doesn't have all the"
+        },
+        {
+          "seconds": 2442,
+          "clock": "40:42",
+          "text": "compete information it just perform one single uh responsibility so I can uh I mean in the behind the picture I can go with either uh rest template or a f client algorithms to communicate with"
+        },
+        {
+          "seconds": 2455,
+          "clock": "40:55",
+          "text": "the services but but uh but when it comes to system design uh I don't want to go in depth about the uh coding but when it comes to uh place order so when user place the order"
+        }
+      ],
+      "ai_corrected_answer": "I split microservices around business responsibilities, not just names on a diagram. The catalog describes products, inventory knows what stock is available, the cart remembers selections, and the order service manages purchases. For example, the product page can say 'in stock,' but only inventory should decide whether the last unit can be reserved. Each service owns its data and communicates through clear APIs or events. Good boundaries prevent one problem from spreading everywhere.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-12",
       "video_id": "YT-1",
-      "candidate_answer": "He initially proposed Kafka events to reduce stock after an order; when challenged about two customers buying the last item before consumers catch up, he admitted the race and suggested synchronous handling.",
-      "ai_corrected_answer": "Do not rely on delayed Kafka consumers to guarantee stock availability. Atomically reserve/decrement inventory within the inventory store using a conditional update or serializable/locking strategy before confirming the order. Then publish reliable events via an outbox for notifications and downstream workflows. Handle idempotency, reservation expiry and compensation on payment failure.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "maybe in the place order U I use some I use called Kafka here because whenever we place the order item has to get reduced from the inventory and there is some periodic update has to be done so that next user won't get any problem of like uh ordering the same item but eventually it will come up with like no items are available so I need a Kafka here uh so that once I place the order u i can update that in my inventory so that my no SQL will get updated correct so this CF will be over this so uh when",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2521,
+          "clock": "42:01",
+          "text": "maybe in the place order U I use some I use called Kafka here because whenever we place the order item has to get"
+        },
+        {
+          "seconds": 2534,
+          "clock": "42:14",
+          "text": "reduced from the inventory and there is some periodic update has to be done so that next user won't get any problem of like uh ordering the same item but eventually it will come up with like no"
+        },
+        {
+          "seconds": 2546,
+          "clock": "42:26",
+          "text": "items are available so I need a Kafka here uh so that once I place the order u i can update that in my inventory so that my no SQL will get updated correct so this CF will be over this so uh when"
+        }
+      ],
+      "ai_corrected_answer": "Kafka is great for telling other services that something happened, but I wouldn't use a delayed event to decide whether the last item can be sold. Imagine two customers buying the only remaining laptop at the same moment. Inventory must reserve that laptop atomically before we confirm either order. After that, Kafka can safely notify shipping or analytics using reliable publishing. The takeaway is simple: confirm stock first; announce the result second.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-13",
       "video_id": "YT-1",
-      "candidate_answer": "He designed a SQL-backed delivery-partner service; after discussion, he agreed assignment can occur after the order and be driven asynchronously through Kafka.",
-      "ai_corrected_answer": "Make delivery assignment an asynchronous post-order workflow: publish an OrderReadyForDispatch event reliably, match eligible partners and persist assignment transactionally. Consumers must be idempotent and retry safely; track unassigned orders, timeout and reassignment. Payment and inventory guarantees should be handled before dispatch eligibility.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "for uh uh assigning the delivery Partners uh yeah so uh we also need a sign delivery uh Partners so we should have one more service to keep uh the keep like uh we need a table to keep like uh all the delivery Partners which are available so so I go with the SQL here because uh I mean I find it like all the deliveries partner have like more structured data so that's the main intention so uh and like what kind of delivery they're",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2748,
+          "clock": "45:48",
+          "text": "for uh uh assigning the delivery Partners uh yeah so uh we also need"
+        },
+        {
+          "seconds": 2765,
+          "clock": "46:05",
+          "text": "a sign delivery uh Partners so we should have one more service to keep uh the keep like uh we need a table to keep like uh all the delivery Partners which are available so"
+        },
+        {
+          "seconds": 2788,
+          "clock": "46:28",
+          "text": "so I go with the SQL here because uh I mean I find it like all the deliveries partner have like more structured data so that's the main intention so uh and like what kind of delivery they're"
+        }
+      ],
+      "ai_corrected_answer": "I wouldn't make a customer wait for a delivery partner to be assigned before showing 'Order placed.' Once payment and inventory are handled, the order service can publish an event. A delivery service picks it up, finds an available partner, and records the assignment. If nobody is available yet, the order stays pending and the system retries. For example, a food-delivery app can confirm an order before a rider accepts it. Keep checkout quick and delivery reliable.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-14",
       "video_id": "YT-1",
-      "candidate_answer": "He proposed a notification service consuming Kafka events and choosing email or SMS based on each customer’s preference.",
-      "ai_corrected_answer": "Consume domain events in a dedicated notification service, render templates and honor channel preferences and consent. Use idempotency keys to prevent duplicate sends, provider retries/backoff, dead-letter queues and delivery-status tracking. Never block the core order transaction on an external email/SMS provider.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh I can use the same Kafka to trigger another notifications for the notification part so we have a notification service and uh this based on the user uh preference like if user just want the SMS or if user want it to be email kind of notifications and everything uh based on that we can uh have a s i mean notification handlers it could be SMS or it could be uh email or it could be any other different way of uh intimating the users yes and there is one thing I yet to write is something called uh uh tracking the orders once the delivery",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2958,
+          "clock": "49:18",
+          "text": "uh I can use the same Kafka to trigger another notifications for the notification part so we have a notification service and uh this based on the user uh preference"
+        },
+        {
+          "seconds": 2972,
+          "clock": "49:32",
+          "text": "like if user just want the SMS or if user want it to be email kind of notifications and everything uh based on that we can uh have a s i mean notification handlers it could be SMS or"
+        },
+        {
+          "seconds": 2985,
+          "clock": "49:45",
+          "text": "it could be uh email or it could be any other different way of uh intimating the users yes and there is one thing I yet to write is something called uh uh tracking the orders once the delivery"
+        }
+      ],
+      "ai_corrected_answer": "I would have one notification service listen for events such as OrderPlaced or OrderShipped. It checks whether the customer prefers email, SMS, or both, and sends the right message. For example, one purchase should produce one order-confirmation email even if Kafka redelivers the event. That means using an idempotency key and retrying temporary delivery failures. Notifications are important, but an email-provider outage should never cancel a valid order.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-15",
       "video_id": "YT-1",
-      "candidate_answer": "He suggested Kafka-driven tracking updates with status timestamps, initially chose NoSQL, then accepted that structured SQL records could fit tracking better.",
-      "ai_corrected_answer": "Store append-only shipment/status events with order ID, carrier/partner, timestamp and state; derive the current shipment status for reads. A relational table often fits this schema well, though event stores/NoSQL may be justified by scale. Consume events idempotently, deduplicate and handle out-of-order arrivals explicitly.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "we can have like a same Kafka uh notifications which uh help us to like uh put an entry in our uh table which help us to track the uh items okay it could be uh since I said items are like could be in any different structure I can keep it as no SQL here also so this generally like contain the historical data in a chronological order like uh and also like there will be a flag which says like whether it is delivered or not so that help us to like keep track of like whether the item is delivered and",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3072,
+          "clock": "51:12",
+          "text": "we can have like a same Kafka uh notifications which uh help us to like uh put an entry in our uh table which help us to track the uh items okay it could be"
+        },
+        {
+          "seconds": 3092,
+          "clock": "51:32",
+          "text": "uh since I said items are like could be in any different structure I can keep it as no SQL here also so this generally like contain the historical data in a chronological order"
+        },
+        {
+          "seconds": 3105,
+          "clock": "51:45",
+          "text": "like uh and also like there will be a flag which says like whether it is delivered or not so that help us to like keep track of like whether the item is delivered and"
+        }
+      ],
+      "ai_corrected_answer": "I track an order as a history of events, not just one changing word. For example: placed at 10:00, packed at 11:00, shipped at 14:00, and delivered tomorrow. Each event stores the order ID, status, and time. A relational table often handles this well, and Kafka can deliver updates from other services. I also guard against duplicate or out-of-order events. Customers want a clear story of where their order is, and the data should tell that story.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-16",
       "video_id": "YT-1",
-      "candidate_answer": "He proposed storing logs, possibly in S3, and analyzing sales trends with a tool such as Spark to improve stock or promotions.",
-      "ai_corrected_answer": "Separate operational observability (structured logs, metrics, traces, correlation IDs, error rates) from business analytics (orders, conversion, search, returns). Stream events into governed storage/warehouse with retention, privacy and data-quality controls. Analytics jobs can inform forecasting, but logging should not expose customer secrets.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "we can have some analytic tool on top of this it could be like Apache spark or something and then we can decide like okay we can have these kind of items in our inventory in our future uh something like that or something we can add a discount or something uh which we see it on like on every holidays uh and for the tracking the product so once the delivery part is also assigned so uh we can have like a same Kafka uh notifications which uh help us to like uh put an entry in our uh table which help us to track the uh items okay it could be",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3048,
+          "clock": "50:48",
+          "text": "we can have some analytic tool on top of this it could be like Apache spark or something and then we can decide like okay we can have these kind of items in"
+        },
+        {
+          "seconds": 3059,
+          "clock": "50:59",
+          "text": "our inventory in our future uh something like that or something we can add a discount or something uh which we see it on like on every holidays uh and for the tracking the product so once the"
+        },
+        {
+          "seconds": 3072,
+          "clock": "51:12",
+          "text": "delivery part is also assigned so uh we can have like a same Kafka uh notifications which uh help us to like uh put an entry in our uh table which help us to track the uh items okay it could be"
+        }
+      ],
+      "ai_corrected_answer": "I separate two questions: 'Is the system healthy?' and 'How is the business doing?' Logs and metrics help engineers find failed orders or slow APIs; business events help us understand popular products, sales, and returns. For example, a spike in checkout errors needs an alert, while rising demand for shoes belongs in a sales dashboard. I avoid logging passwords or unnecessary personal data. Good data should lead to a decision, not just fill storage.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-17",
       "video_id": "YT-1",
-      "candidate_answer": "He said product images and other static files could be copied to geographically distributed CDN locations, giving customers nearby delivery.",
-      "ai_corrected_answer": "A CDN caches eligible static assets at edge locations, reducing origin requests and latency. Set cache-control and TTL, version asset URLs, compress/resize images and secure origin access. Product availability, user-specific details and private data usually require different caching policies.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "we could also add it is something called CDN uh generally to keep the static datas the the thing what I'm thinking about is like there are images uh and also few datas which are like same like for example if you're booking for pen I mean it's like a common image which we can show so we can use something called CDN It generally comes like a web symbol I think there are popular CDN available like Aline and uh and uh Cloud flare there are like popular ones where uh which keep the datas geographically across the endpoint so that it can hit the nearest CDN to get those images",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3464,
+          "clock": "57:44",
+          "text": "we could also add it is something called CDN uh generally to keep the static datas the the thing what I'm thinking about is like there are images uh and also few datas which are like"
+        },
+        {
+          "seconds": 3476,
+          "clock": "57:56",
+          "text": "same like for example if you're booking for pen I mean it's like a common image which we can show so we can use something called CDN It generally comes like a web symbol I think there are popular CDN"
+        },
+        {
+          "seconds": 3488,
+          "clock": "58:08",
+          "text": "available like Aline and uh and uh Cloud flare there are like popular ones where uh which keep the datas geographically across the endpoint so that it can hit the nearest CDN to get those images"
+        }
+      ],
+      "ai_corrected_answer": "A CDN puts copies of images and other static files closer to users. Imagine a shopper in India viewing a product image stored on a server in the US. A nearby CDN edge can serve that image faster and reduce work on the main server. I'd use cache headers and versioned image URLs so updates don't leave stale pictures forever. It's like placing popular products in local warehouses instead of shipping every request across the world.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-18",
       "video_id": "YT-1",
-      "candidate_answer": "He described cloud monitoring that scales instance counts up when CPU crosses a threshold and down when demand falls.",
-      "ai_corrected_answer": "Configure horizontal autoscaling against CPU, request rate, queue depth or suitable custom metrics, with safe minimum/maximum replicas and cooldown behavior. Add readiness probes, load tests and capacity limits; scaling services alone does not solve database bottlenecks or cold starts. Define SLOs and monitor cost versus latency.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "so generally uh we uh if you use the cloud service applications it also comes with something called alerting uh features it track the logs and uh we can have like some kind of like a threshold so if it's exceeding our CPU utilize like more than this it automatically span the new uh I mean scan the servers or if it's get going below than that then it will also so like reduce the number of instances of the servers so this help us to like orchestrate in a in a dynamic way rather than like hardcoding number of servers we want for the applications perfect sounds great",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3540,
+          "clock": "59:00",
+          "text": "so generally uh we uh if you use the cloud service applications it also comes with something called alerting uh features it track the logs and uh we can have like some kind of like a threshold"
+        },
+        {
+          "seconds": 3553,
+          "clock": "59:13",
+          "text": "so if it's exceeding our CPU utilize like more than this it automatically span the new uh I mean scan the servers or if it's get going below than that then it will also so like reduce the"
+        },
+        {
+          "seconds": 3565,
+          "clock": "59:25",
+          "text": "number of instances of the servers so this help us to like orchestrate in a in a dynamic way rather than like hardcoding number of servers we want for the applications perfect sounds great"
+        }
+      ],
+      "ai_corrected_answer": "During a big sale, traffic doesn't stay the same all day. I configure autoscaling so the application adds instances when demand rises and removes them when it falls. For example, if checkout traffic doubles, we may need more checkout pods—but only if the database can keep up. I watch real indicators like request rate, latency, CPU and queue length, not CPU alone. Autoscaling is about maintaining a smooth customer experience, not just creating more servers.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-19",
       "video_id": "YT-1",
-      "candidate_answer": "He proposed loading initial product batches, fetching more during infinite scrolling, then prefetching before the bottom and showing loading indicators to hide latency.",
-      "ai_corrected_answer": "Use stable cursor/keyset or correctly ordered page-based endpoints, request the next window ahead of viewport intersection and deduplicate responses. Show skeleton/placeholder states, handle errors and avoid overlapping fetches. Throttle/debounce scroll input when relevant, but distinguish event control from backend pagination.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "there is two different way one is like lazy loading of the data like we can load in a bulk manner like first we load only like 100 then uh we keep on load other one is something called infinite scrolling uh which is like when you scroll upon the page whenever it hints when the scroll hit the end of your viewport it will make a call to a database by sending the next page number to the back end so that our query will fetch the next 100 records starting from",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3602,
+          "clock": "1:00:02",
+          "text": "there is two different way one is like lazy loading of the data like we can load in"
+        },
+        {
+          "seconds": 3616,
+          "clock": "1:00:16",
+          "text": "a bulk manner like first we load only like 100 then uh we keep on load other one is something called infinite scrolling uh which is like when you scroll upon the page whenever it hints"
+        },
+        {
+          "seconds": 3628,
+          "clock": "1:00:28",
+          "text": "when the scroll hit the end of your viewport it will make a call to a database by sending the next page number to the back end so that our query will fetch the next 100 records starting from"
+        }
+      ],
+      "ai_corrected_answer": "I don't load 10,000 products into a browser at once. I load a small first page, then request the next set as the customer scrolls. I start the next request a little before the bottom so the page feels smooth, and I show a small loading placeholder if necessary. The API returns a stable page or cursor so items don't repeat. Great infinite scrolling should feel effortless because the work happens just ahead of the user.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-20",
       "video_id": "YT-1",
-      "candidate_answer": "He interpreted Kafka lag as a broker resilience/leader–follower issue rather than a backlog of unprocessed messages; the transcript does not demonstrate a specific consumer-lag fix.",
-      "ai_corrected_answer": "Consumer lag is the difference between produced offsets and consumer-group committed/processed offsets. Inspect lag per partition, throughput, consumer errors, rebalances, processing latency and downstream dependencies. Tune batch sizes or processing, add consumers up to partition count, raise partitions carefully and apply backpressure; monitor progress rather than confusing lag with broker replication.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "Kafka comes with the resilient uh it's one of the resilient feature of the Kafka is like if anything goes wrong or like if something is going uh failures uh Kafka Works in a concept of like uh multiple uh Brokers so there will be like leaders and other one is like a followers or a worker nodes worker Brokers so",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3377,
+          "clock": "56:17",
+          "text": "Kafka comes with the resilient uh it's one of the resilient feature of the Kafka is like if anything goes wrong or like if something is going uh failures uh Kafka Works in a concept of like uh"
+        },
+        {
+          "seconds": 3389,
+          "clock": "56:29",
+          "text": "multiple uh Brokers so there will be like leaders and other one is like a followers or a worker nodes worker Brokers so"
+        }
+      ],
+      "ai_corrected_answer": "Kafka consumer lag means messages are arriving faster than a consumer group is finishing them—or the consumers have stopped making progress. I first check lag by partition, consumer errors, processing time, and slow downstream services. For example, if each message needs a slow database call, adding brokers won't fix that bottleneck. I may optimize processing or increase consumers, up to the useful partition limit. Fix the slow consumer, not just the number on the dashboard.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-21",
       "video_id": "YT-1",
-      "candidate_answer": "He said microservices exchange data through REST calls using RestTemplate or Feign, without going into client reliability.",
-      "ai_corrected_answer": "For synchronous HTTP use an appropriate typed client such as Spring RestClient, WebClient or OpenFeign. Define contracts, connection and request timeouts, retry policies only for safe/idempotent calls, circuit breakers, authentication and tracing. Use asynchronous messaging where workflows should not wait on another service.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "I can go with either uh rest template or a f client algorithms to communicate with the services but but uh but when it comes to system design uh I don't want to go in depth about the uh coding but when it comes to uh place order so when user place the order assign it to delivery patterns so here we are to use also use something called Saga design patterns because uh these three things I mean uh placing the order assign the delivery and also",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2442,
+          "clock": "40:42",
+          "text": "I can go with either uh rest template or a f client algorithms to communicate with"
+        },
+        {
+          "seconds": 2455,
+          "clock": "40:55",
+          "text": "the services but but uh but when it comes to system design uh I don't want to go in depth about the uh coding but when it comes to uh place order so when user place the order"
+        },
+        {
+          "seconds": 2472,
+          "clock": "41:12",
+          "text": "assign it to delivery patterns so here we are to use also use something called Saga design patterns because uh these three things I mean uh placing the order assign the delivery and also"
+        }
+      ],
+      "ai_corrected_answer": "For a quick request-and-response between Spring services, I use a clear HTTP client such as RestClient or OpenFeign. For example, an order service may need to check customer details before accepting a request. I set timeouts, secure the call, and handle the case where the customer service is down. If the work doesn't need an immediate answer, an event may be better. The best communication style depends on whether the business process must wait.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IA-22",
       "video_id": "YT-1",
-      "candidate_answer": "He leaned toward NoSQL for varied product/search schemas and MySQL for structured cart relations and consistency.",
-      "ai_corrected_answer": "Choose storage from query patterns and invariants, not simply “structured versus unstructured.” Search often benefits from a specialized index, catalogs may use SQL or document stores, and orders/inventory need strong transactional guarantees. Compare transactions, indexing, scaling, failure recovery and consistency explicitly.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "we can go with the Cassandra or mongodb it's up to I mean there's no problem but it's just like if you use Cassandra it's provide eventual consistency so I I will go with the Cassandra here okay so so basically you're going with no SQL for s Service yeah no SQL so it can be uh yeah it's need not be like no SQL but I find it here more relevant as a Cassandra I uh",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2131,
+          "clock": "35:31",
+          "text": "we can go with the Cassandra or mongodb it's up to I mean there's no problem but it's just like if you use Cassandra it's provide eventual consistency so I I will go with the Cassandra here okay so so"
+        },
+        {
+          "seconds": 2143,
+          "clock": "35:43",
+          "text": "basically you're going with no SQL for s Service yeah no SQL so it can be uh yeah it's need not be like no SQL but I find it here more relevant as a Cassandra I uh"
+        }
+      ],
+      "ai_corrected_answer": "I choose databases based on the question each service needs to answer. Product search benefits from a search index; a cart may benefit from SQL transactions; order history may fit a simple relational table. For example, storing products in MongoDB doesn't automatically give customers good full-text search. We still might need Elasticsearch. I compare access patterns, consistency, scale, and operational cost before deciding. Pick the database for the job, not because every service needs a different one.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "ID-1",
       "video_id": "YT-1",
-      "candidate_answer": "He suggested first profiling the slow query and checking indexes, then partitioning large datasets if the table itself is a bottleneck.",
-      "ai_corrected_answer": "Capture the slow SQL and use EXPLAIN/EXPLAIN ANALYZE plus query and database metrics. Check missing/poor indexes, selectivity, join plans, row counts, locking, statistics, overfetching and N+1 access. Benchmark changes and account for index write costs before trying partitioning, caching or sharding.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh the first thing is like I need to figure it out what is why it is taking time so couple of Reason could be possible one is uh if the query is taking time because uh it lack with the indexing then it's better we can add a index because indexing is nothing but a compound of data structure we use to get the items in a fast way so so that's the first thing I will check I mean it's called analyzing the query uh or profiling the query so get to know",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3250,
+          "clock": "54:10",
+          "text": "uh the first thing is like I need to figure it out what is why it is"
+        },
+        {
+          "seconds": 3262,
+          "clock": "54:22",
+          "text": "taking time so couple of Reason could be possible one is uh if the query is taking time because uh it lack with the indexing then it's better we can add a index because indexing is nothing but a"
+        },
+        {
+          "seconds": 3274,
+          "clock": "54:34",
+          "text": "compound of data structure we use to get the items in a fast way so so that's the first thing I will check I mean it's called analyzing the query uh or profiling the query so get to know"
+        }
+      ],
+      "ai_corrected_answer": "When a SQL query is slow, I measure before changing anything. I find the exact query, inspect its execution plan, and check whether it scans too many rows or misses a useful index. For example, searching a million orders by customer ID may be slow without the right index. I then test the change and watch its effect on reads and writes. Partitioning can help some workloads, but I'd never start by splitting the database just because one query is slow.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "ID-2",
       "video_id": "YT-1",
-      "candidate_answer": "He distinguished partitioning as splitting data within one server and sharding as distributing portions of the dataset across different servers or locations.",
-      "ai_corrected_answer": "Partitioning divides a table logically or physically by a key, often within one database instance, improving pruning and maintenance when queries align. Sharding distributes ownership of data across independent database instances/nodes. Both can span physical machines depending on implementation; explain shard keys, routing, cross-shard queries and rebalancing.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "there is no difference between much in the sharding and uh partitioning but the main difference is sharding means like we keep the database in a different uh servers like it's like a same uh same table but we keep it in a different places whereas like in partitioning it comes under the same servers but replica not replica like the partitioning happens in the same servers so since the e-commerce can be one in us one in India and everything so",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3296,
+          "clock": "54:56",
+          "text": "there is no difference between much in the sharding and uh partitioning"
+        },
+        {
+          "seconds": 3308,
+          "clock": "55:08",
+          "text": "but the main difference is sharding means like we keep the database in a different uh servers like it's like a same uh same table but we keep it in a different places whereas like in"
+        },
+        {
+          "seconds": 3319,
+          "clock": "55:19",
+          "text": "partitioning it comes under the same servers but replica not replica like the partitioning happens in the same servers so since the e-commerce can be one in us one in India and everything so"
+        }
+      ],
+      "ai_corrected_answer": "Partitioning and sharding both split data, but for different reasons. Partitioning divides a table into manageable pieces within a database setup, such as orders by month. Sharding spreads responsibility across separate database instances, perhaps by customer region or ID. For example, one large orders table could be partitioned by date before the business ever needs multiple shards. Partitioning helps organize and query data; sharding helps distribute ownership and scale, but adds complexity.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "ID-3",
       "video_id": "YT-1",
-      "candidate_answer": "He selected Cassandra/MongoDB for search-related product data and SQL for cart relationships; for shipment tracking he revised an initial NoSQL decision to SQL.",
-      "ai_corrected_answer": "For product catalog, choose SQL/document storage from update and query needs; maintain a search index separately for text queries. Use relational transactions where cart/order/stock invariants require them. Tracking is often an append-only relational event table. Operational simplicity and access patterns matter more than a rule that every microservice needs NoSQL.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "I will go with the Cassandra here okay so so basically you're going with no SQL for s Service yeah no SQL so it can be uh yeah it's need not be like no SQL but I find it here more relevant as a Cassandra I uh",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 2131,
+          "clock": "35:31",
+          "text": "I will go with the Cassandra here okay so so"
+        },
+        {
+          "seconds": 2143,
+          "clock": "35:43",
+          "text": "basically you're going with no SQL for s Service yeah no SQL so it can be uh yeah it's need not be like no SQL but I find it here more relevant as a Cassandra I uh"
+        }
+      ],
+      "ai_corrected_answer": "I wouldn't choose SQL or NoSQL just because a service is called 'search' or 'cart.' I'd ask what it reads and what must never go wrong. For example, product descriptions might live in SQL or a document store, while search uses a separate index. Cart and inventory updates often need reliable transactions. Order tracking may be a simple relational history table. Use the simplest database that meets the actual data and consistency needs.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "ID-4",
       "video_id": "YT-1",
-      "candidate_answer": "He said stale reads may be acceptable for social feeds but account balances must not show inaccurate values across users.",
-      "ai_corrected_answer": "Define required consistency for each operation. Feeds and recommendation caches may tolerate bounded staleness, while available balances and payment authorization should read from an authoritative consistent source or use transactional safeguards. Invalidate related caches on writes and document read-after-write requirements and acceptable delay.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "if it's highly Financial then I would say dirty read can't be something which we can compromise because we can't we don't want to see like the account balance something inaccurate on the two different accounts",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 861,
+          "clock": "14:21",
+          "text": "if it's highly Financial then I would say dirty read can't be something which we can compromise because we can't we don't want to see"
+        },
+        {
+          "seconds": 872,
+          "clock": "14:32",
+          "text": "like the account balance something inaccurate on the two different accounts"
+        }
+      ],
+      "ai_corrected_answer": "Not every piece of data needs to be fresh to the exact same millisecond. A social feed can often show a post a few seconds late without hurting anyone. A bank balance before a withdrawal is a different story: we need the authoritative value and transaction checks. I may cache read-heavy feed data, but I take a much stricter approach to financial decisions. Consistency is a business promise, not just a database setting.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-1",
       "video_id": "YT-1",
-      "candidate_answer": "He described feature branches, dev/QA stages, a preproduction branch and a stable production branch with testing between promotions.",
-      "ai_corrected_answer": "Use protected main/release branches or trunk-based development with short-lived feature branches, PR review and automated build/security/test gates. Promote a versioned, tested artifact through environments rather than rebuilding different code. Explain tagging, releases, rollback and how hotfixes flow back to main.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "we generally use the git for the versioning control and uh generally we have like a Dev branches and the QA and uh yeah generally we have like a master branch which is we also called like a stable branch and for every monthly releases we create a new Branch from that it depends on how many what's the scale of our team so if there are many team members in the team so in that case we also consider called a feature branch which uh so once the changes are done on the feature so we will do a kind of like a testing so this will get deployed on the testing",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3845,
+          "clock": "1:04:05",
+          "text": "we generally use the git for the versioning control and uh generally we have like a Dev branches and the QA and uh yeah generally we have like a master branch which is we also"
+        },
+        {
+          "seconds": 3860,
+          "clock": "1:04:20",
+          "text": "called like a stable branch and for every monthly releases we create a new Branch from that it depends on how many what's the scale of our team so if there are many team members in the team so in"
+        },
+        {
+          "seconds": 3872,
+          "clock": "1:04:32",
+          "text": "that case we also consider called a feature branch which uh so once the changes are done on the feature so we will do a kind of like a testing so this will get deployed on the testing"
+        }
+      ],
+      "ai_corrected_answer": "I like short-lived feature branches, pull requests, and one clear path to production. A developer finishes a change, automated tests run, teammates review it, and we build a versioned artifact. That same artifact moves through testing and staging before release. For example, if a release breaks checkout, we know exactly which version to roll back. Git branches organize work; tested builds and release gates make deployment dependable.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-2",
       "video_id": "YT-1",
-      "candidate_answer": "He described development branches progressing through QA and preproduction before stable production, with different environment settings.",
-      "ai_corrected_answer": "Treat environments as deployment targets, not necessarily one Git branch each. Build once and promote immutable artifacts through test, staging and production with approvals and environment-specific secrets/configuration. Use protected branches and clear release ownership to prevent drift.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "so once the qls also test we uh merge this to our a pre-pro branch it's not directly merch to the stable so in the pre-pro branch we going to it looks like a same production Branch uh like it but customers are not using that uh changes this will just to ensure that our changes are working fine in the customer environment once everything is looks fine then we deploy it on the production",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 3894,
+          "clock": "1:04:54",
+          "text": "so once the qls also test we uh merge this to our a pre-pro branch it's not directly merch to the stable so"
+        },
+        {
+          "seconds": 3905,
+          "clock": "1:05:05",
+          "text": "in the pre-pro branch we going to it looks like a same production Branch uh like it but customers are not using that uh changes this will just to ensure that our changes are working fine in the"
+        },
+        {
+          "seconds": 3916,
+          "clock": "1:05:16",
+          "text": "customer environment once everything is looks fine then we deploy it on the production"
+        }
+      ],
+      "ai_corrected_answer": "I don't assume every environment needs its own Git branch. I build the application once, test it, and move the same version through QA, staging, and production. Each environment supplies its own configuration and secrets. For example, staging uses a test payment provider while production uses the real one, but the application code is the same. Promoting one known build is safer than rebuilding something slightly different at each stage.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-3",
       "video_id": "YT-1",
-      "candidate_answer": "He said GitHub Actions or Jenkins notices a new commit/merge, runs tests and automatically deploys, suggesting it periodically checks changed commit IDs.",
-      "ai_corrected_answer": "A PR merge normally triggers a push/webhook or CI workflow event; it need not rely on periodic commit polling. The pipeline checks out an immutable commit, builds, runs tests/scans, publishes a versioned artifact and deploys under approval/health gates. Distinguish CI triggers, artifact promotion and production-release policy.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "GitHub action or it could be junkins so generally it will uh check periodic changes are available so that's the reason we use like continuous inte Integrations and deployment continuous deployment so this to ensure that uh every changes has to get deployed as soon as the new changes come into picture so it automatically see if there is any change in the commit IDs if it figure it out then it automatically start to run the continuous to run the test cases then it will automatically deploy the changes",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4005,
+          "clock": "1:06:45",
+          "text": "GitHub action or it could be junkins so generally it will uh check periodic changes are available so that's the reason we use like continuous inte Integrations and deployment continuous"
+        },
+        {
+          "seconds": 4015,
+          "clock": "1:06:55",
+          "text": "deployment so this to ensure that uh every changes has to get deployed as soon as the new changes come into picture so it automatically see if there is any change in the commit IDs if it"
+        },
+        {
+          "seconds": 4027,
+          "clock": "1:07:07",
+          "text": "figure it out then it automatically start to run the continuous to run the test cases then it will automatically deploy the changes"
+        }
+      ],
+      "ai_corrected_answer": "When a pull request is merged, GitHub Actions or Jenkins can start a pipeline from that push event. The pipeline checks out the commit, builds the code, runs tests, and publishes a versioned artifact. Depending on our release rules, it then deploys to staging or waits for production approval. For example, a failed security check should block deployment. A merge starts the process; passing the checks earns the release.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-4",
       "video_id": "YT-1",
-      "candidate_answer": "He said CI automates integration and test execution on commits, while CD moves verified changes toward deployment after passing tests.",
-      "ai_corrected_answer": "CI continuously merges/checks changes with builds, unit/integration tests and quality gates. Continuous delivery keeps releasable artifacts ready but may require production approval; continuous deployment automatically releases every change that passes gates. Include secure artifact publishing, rollback and environment-specific deployment verification.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "uh sure so as a name indicates CI is the continuous integration and uh continuous uh deliv deployments for the CD so when you see continuous integration means like uh generally I write my code uh so that uh I mean I also write something called junit so that my codes are more uh unit test case based and U we could also follow some some tdd patterns so ensure that our codes are more robust uh but once the changes is done we have to integrate with other component as well to find it whether it's working fine so that's where our CI come into picture so",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4050,
+          "clock": "1:07:30",
+          "text": "uh sure so as a name indicates CI is the continuous integration and uh continuous uh deliv deployments for the CD so when you see continuous integration means like uh generally I"
+        },
+        {
+          "seconds": 4064,
+          "clock": "1:07:44",
+          "text": "write my code uh so that uh I mean I also write something called junit so that my codes are more uh unit test case based and U we could also follow some some tdd patterns so ensure that our"
+        },
+        {
+          "seconds": 4075,
+          "clock": "1:07:55",
+          "text": "codes are more robust uh but once the changes is done we have to integrate with other component as well to find it whether it's working fine so that's where our CI come into picture so"
+        }
+      ],
+      "ai_corrected_answer": "CI means checking changes continuously so problems appear early. Every pull request can run a build, tests, and code checks. CD is what happens after that: continuous delivery keeps a tested release ready, while continuous deployment actually releases passing changes automatically. For example, a bank may require a human approval for production, even if its tests are green. I think of CI as 'Is it safe to merge?' and delivery as 'Is it ready to release?'",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-5",
       "video_id": "YT-1",
-      "candidate_answer": "He described a Dockerfile with JDK version, application startup entry point, exposed ports and dependencies that run a Java JAR.",
-      "ai_corrected_answer": "A Dockerfile describes an image build: select a suitable base runtime (up to Java 21 here), copy the built JAR, configure a non-root user and ENTRYPOINT, and optionally document EXPOSE. Images are immutable packages; containers are running instances. Inject secrets and environment config at runtime and scan/minimize image layers.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "in our same project uh we can have something called docka files which have like bunch of instruction so it's could be like uh what could be the our jdk person and uh I mean yeah what could be our entry point and what are the port should be enabled so these like a bunch of instruction helps the Dockers uh to uh in uh install these kind of packages and uh uh execute the jar files okay so basically your Docker container that would have everything every Library everything that you need for your running on your instances now",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4160,
+          "clock": "1:09:20",
+          "text": "in our same project uh we can have something called docka files which have like bunch of instruction so it's could be like uh what could be the our jdk person and uh"
+        },
+        {
+          "seconds": 4173,
+          "clock": "1:09:33",
+          "text": "I mean yeah what could be our entry point and what are the port should be enabled so these like a bunch of instruction helps the Dockers uh to uh in uh install these kind of packages and"
+        },
+        {
+          "seconds": 4185,
+          "clock": "1:09:45",
+          "text": "uh uh execute the jar files okay so basically your Docker container that would have everything every Library everything that you need for your running on your instances now"
+        }
+      ],
+      "ai_corrected_answer": "A Dockerfile is a recipe for packaging my Java application. It tells Docker which runtime image to use, where to copy the JAR, and how to start it. For example, I can build a small Java 21 runtime image and run the same container locally or in the cloud. The image is the packaged recipe; the container is a running instance of it. I keep secrets outside the image and don't run as root unless necessary.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-6",
       "video_id": "YT-1",
-      "candidate_answer": "He suggested Kubernetes orchestrates containers, adds/removes replicas based on load and runs packaged microservice images in production.",
-      "ai_corrected_answer": "Push immutable images to a container registry, deploy each workload via Kubernetes Deployment/Service resources, and configure health probes, resource requests/limits and autoscaling (HPA where appropriate). Kubernetes reconciles desired state but you must configure autoscaling policies, rollout strategy, networking and observability.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "we use uh popularly kubernetes for the orchestration as a tool so generally this the job of the kubernetes is like scaling of these containers so we can push or commit our uh images to our GitHub cloud and we can make it like very automated with our kubernetes so that whenever it sees like there is some over overhead in the services it can create a new instance from our container so from our image sorry from the image it will create a new containers or if something is not getting used then it will can do the reverse way",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4209,
+          "clock": "1:10:09",
+          "text": "we use uh popularly kubernetes for the orchestration as a tool so generally this the job of the kubernetes is like scaling of these"
+        },
+        {
+          "seconds": 4221,
+          "clock": "1:10:21",
+          "text": "containers so we can push or commit our uh images to our GitHub cloud and we can make it like very automated with our kubernetes so that whenever it sees like there is some over overhead in the"
+        },
+        {
+          "seconds": 4235,
+          "clock": "1:10:35",
+          "text": "services it can create a new instance from our container so from our image sorry from the image it will create a new containers or if something is not getting used then it will can do the reverse way"
+        }
+      ],
+      "ai_corrected_answer": "Kubernetes helps me run many service containers without managing each one by hand. For example, I can tell it I want three order-service pods. If one dies, Kubernetes works to restore the desired number. A Service routes traffic to healthy pods, and autoscaling can add replicas when configured metrics say they're needed. It's useful, but it still needs proper health checks, limits, and monitoring. Kubernetes manages the desired state; I define what healthy looks like.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-7",
       "video_id": "YT-1",
-      "candidate_answer": "He mentioned PagerDuty alerts and manual intervention when a pod repeatedly restarts; he said he had not implemented an additional automation solution.",
-      "ai_corrected_answer": "For CrashLoopBackOff inspect kubectl describe pod, events, logs --previous, exit codes/OOMKilled, configuration, secrets, dependencies and probes. Compare rollout changes, mitigate via rollback or corrected config, and monitor recovery. PagerDuty routes an incident; it is not the technical fix.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "so generally the developer will get pager Duty Call sometimes if if the periodic fail happens so we can still smart these alerts to think like something which can control or something which we can't for example if something is a my scale is going down which is something which we can't control so that we can't do anything until the database team has to fix but if server is going crash and our kubernetes is can't able to get it up the worst case is we have to manually bring this up uh but uh I I never encoun the case where uh we used",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4288,
+          "clock": "1:11:28",
+          "text": "so generally the developer will get pager Duty Call sometimes if if the periodic fail happens so we can still smart these alerts to think like"
+        },
+        {
+          "seconds": 4303,
+          "clock": "1:11:43",
+          "text": "something which can control or something which we can't for example if something is a my scale is going down which is something which we can't control so that we can't do anything until the database"
+        },
+        {
+          "seconds": 4313,
+          "clock": "1:11:53",
+          "text": "team has to fix but if server is going crash and our kubernetes is can't able to get it up the worst case is we have to manually bring this up uh but uh I I never encoun the case where uh we used"
+        }
+      ],
+      "ai_corrected_answer": "If a Kubernetes pod keeps crashing, I first find out why instead of restarting it repeatedly. I check the pod events, the previous container logs, and whether it ran out of memory, has bad configuration, or can't reach a dependency. For example, a missing environment variable can make every new pod fail immediately. If a new release caused it, I roll back and investigate. Restore the service first; fix the root cause next.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-8",
       "video_id": "YT-1",
-      "candidate_answer": "He said Docker images have versions and Kubernetes can go back to a previous version when the newest one fails, but the actual rollback mechanics were vague.",
-      "ai_corrected_answer": "Tag/digest images immutably, use rollout history and a controlled rollback such as kubectl rollout undo deployment/name or redeploy a known-good image. Kubernetes does not automatically roll back every failed Deployment by default. Verify readiness, error rates and dependencies after rollback.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "we also give something called versioning so it's like a name space followed by name and the version so it means like the kubernetes have the versioning of our of the image so it means if last version is not working fine so it automatically goes to the previous one and create a new instance out of it so sorry new container out of that image",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4379,
+          "clock": "1:12:59",
+          "text": "we also give something called versioning so it's like a name space followed by name and the version so it means like the kubernetes have the"
+        },
+        {
+          "seconds": 4391,
+          "clock": "1:13:11",
+          "text": "versioning of our of the image so it means if last version is not working fine so it automatically goes to the previous one and create a new instance out of it so sorry new container out of"
+        },
+        {
+          "seconds": 4402,
+          "clock": "1:13:22",
+          "text": "that image"
+        }
+      ],
+      "ai_corrected_answer": "I always keep a known-good application image so I can return to it after a bad release. If version 12 starts failing in production, I can roll back the Deployment to version 11 and check that requests recover. Kubernetes keeps rollout history when configured, but it doesn't automatically undo every failed release. I verify readiness, error rates, and customer impact after rollback. A rollback isn't finished when the command runs—it's finished when users are healthy again.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-9",
       "video_id": "YT-1",
-      "candidate_answer": "He described Pulumi as Terraform-like infrastructure automation, reported Azure authentication/alert work, but suggested Pulumi is mainly YAML configuration without real coding.",
-      "ai_corrected_answer": "Pulumi is infrastructure as code using TypeScript/JavaScript, Python, Go, C#, Java or YAML. Define resources and alerts in version-controlled projects, manage encrypted configuration/state and preview/apply changes through CI. Explain alert rules, thresholds, notification targets, permissions and drift/rollback management.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "I work with pumi which is like a terraform similar but yeah which can work as a infra as a service like where we can orchestrate the infrastructure understood so uh what all infrastructures have you uh orchestrated with pulumi uh we uh I mean I worked with Azure so the b2c is the one like we use it very heavily for the authentications and I really worked on the alert partings where uh we can trigger the alerts in a efficient way whenever something goes wrong so these two uh I worked and I made it bit automated with",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4466,
+          "clock": "1:14:26",
+          "text": "I work with pumi which is like a terraform similar but yeah which can work as a infra as a service like where we can orchestrate the infrastructure"
+        },
+        {
+          "seconds": 4481,
+          "clock": "1:14:41",
+          "text": "understood so uh what all infrastructures have you uh orchestrated with pulumi uh we uh I mean I worked with Azure so the b2c is the one like we use it very heavily for the authentications"
+        },
+        {
+          "seconds": 4499,
+          "clock": "1:14:59",
+          "text": "and I really worked on the alert partings where uh we can trigger the alerts in a efficient way whenever something goes wrong so these two uh I worked and I made it bit automated with"
+        }
+      ],
+      "ai_corrected_answer": "Infrastructure as code means creating cloud resources from version-controlled definitions instead of clicking around manually. With Pulumi, I can describe Azure resources and alert rules using supported programming languages or YAML. For example, I can create an alert that notifies on-call engineers when checkout errors rise. The team reviews the changes before applying them, just like application code. If we can review and repeat it, infrastructure becomes easier to trust.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-10",
       "video_id": "YT-1",
-      "candidate_answer": "He called Maven and Gradle build tools, associated Maven with pom.xml and said Gradle may feel faster although either can build the same project.",
-      "ai_corrected_answer": "Maven uses a declarative XML POM and standard lifecycle; Gradle supports Groovy/Kotlin DSL and incremental/cached builds. Both resolve dependencies, execute plugins/tasks and produce artifacts. Compare team conventions, build reproducibility, cacheability and measured performance—not blanket speed claims.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "these are called like a different way of uh writing the build build files so one is the build tools not build file build tools uh so when we generally I think all of you all of us like familiar with the mavin which we can easily see with pal. XML the gradal is also something which does similar uh we can see that whenever we use any uh packages we whenever we stck it in an mvn repository there are different flavors available one is mavin other one is Gradle so Gradle is like there is it's naming",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 5071,
+          "clock": "1:24:31",
+          "text": "these are called like a different way of uh writing the build build files so one is the build tools not build file build"
+        },
+        {
+          "seconds": 5086,
+          "clock": "1:24:46",
+          "text": "tools uh so when we generally I think all of you all of us like familiar with the mavin which we can easily see with pal. XML the gradal is also something which does similar uh we can see that"
+        },
+        {
+          "seconds": 5097,
+          "clock": "1:24:57",
+          "text": "whenever we use any uh packages we whenever we stck it in an mvn repository there are different flavors available one is mavin other one is Gradle so Gradle is like there is it's naming"
+        }
+      ],
+      "ai_corrected_answer": "Maven and Gradle solve the same big problem: building a Java project without manually managing every dependency and command. Maven usually uses pom.xml and a familiar lifecycle. Gradle uses a task-based build with Groovy or Kotlin scripts and can make strong use of caching. For example, both can run tests and produce the same Spring Boot JAR. I choose based on the team's build needs and consistency, not on a claim that one is always faster.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-11",
       "video_id": "YT-1",
-      "candidate_answer": "He said a POM declares required JARs and versions, letting Maven look locally first and then download missing artifacts instead of manually sharing library files.",
-      "ai_corrected_answer": "pom.xml defines project coordinates, dependencies, repositories, plugins and build lifecycle configuration. Maven resolves transitive dependencies through configured repositories, caching them locally; dependencyManagement controls versions. Explain reproducible builds, plugin goals and why secrets/absolute machine paths should not be embedded.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "the main problem if you don't use pom is like uh if you want to enhance our uh jar files to the next uh I mean next versing so the thing is like I have to do manually uh that's the main problem like I have to install the new version put it in the respective folder so that my code will be running as is it and another problem is like if I'm giving my project to someone else and the other user doesn't have the required",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 5120,
+          "clock": "1:25:20",
+          "text": "the main problem if you don't use pom is like uh if you want"
+        },
+        {
+          "seconds": 5136,
+          "clock": "1:25:36",
+          "text": "to enhance our uh jar files to the next uh I mean next versing so the thing is like I have to do manually uh that's the main problem like I have to install the new version put it in the respective"
+        },
+        {
+          "seconds": 5148,
+          "clock": "1:25:48",
+          "text": "folder so that my code will be running as is it and another problem is like if I'm giving my project to someone else and the other user doesn't have the required"
+        }
+      ],
+      "ai_corrected_answer": "pom.xml is the instruction sheet for a Maven project. It says which dependencies we need, which versions or version rules apply, and how to build the application. For example, when I add the PostgreSQL driver, Maven checks its local cache and downloads the dependency from a configured repository if necessary. Another developer can build the same project without manually hunting for JAR files. The POM makes the build repeatable and understandable.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IC-12",
       "video_id": "YT-1",
-      "candidate_answer": "He understood Kanban as adaptive Agile project management and admitted he had not worked on a fully Kanban-based team, only a mix with Scrum.",
-      "ai_corrected_answer": "Scrum organizes work into timeboxed sprints with defined accountabilities/events; Kanban optimizes continuous flow with a visual board, pull policies and work-in-progress limits. Teams can combine practices. Be explicit about personal experience and discuss lead/cycle time, bottlenecks and predictable delivery.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "I haven't uh worked in any team which uses can ban but sometimes the team uses mix of like can ban and also like uh uh scrum so yeah I uh I mean I work mainly in the scrum and the iel methodology IES and that's written in a resume you can be hit up on this oh okay I I did not check that no worries no worries just have a look with the SK band thing written in this I think this is more of the uh strict way of following the uh Sprint work as far as I understand okay um um so the next thing I would have asked you",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 5252,
+          "clock": "1:27:32",
+          "text": "I haven't uh worked in any team which uses can ban but sometimes the team uses mix of like can ban and also like uh uh scrum so"
+        },
+        {
+          "seconds": 5267,
+          "clock": "1:27:47",
+          "text": "yeah I uh I mean I work mainly in the scrum and the iel methodology IES and that's written in a resume you can be hit up on this oh okay I I did not check that no worries no worries just have a"
+        },
+        {
+          "seconds": 5282,
+          "clock": "1:28:02",
+          "text": "look with the SK band thing written in this I think this is more of the uh strict way of following the uh Sprint work as far as I understand okay um um so the next thing I would have asked you"
+        }
+      ],
+      "ai_corrected_answer": "Scrum and Kanban are two ways of keeping work visible and moving. Scrum plans work in timeboxed sprints, with review and planning routines. Kanban uses a flow board and limits work in progress, so the team finishes tasks before starting too many new ones. For example, a support team dealing with unpredictable incidents may prefer Kanban, while a product team may use Scrum. The best method helps the team deliver, not just attend meetings.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IT-1",
       "video_id": "YT-1",
-      "candidate_answer": "He said he tests methods using JUnit 5 and mocks, and uses coverage/static analysis tools. He did not clearly justify which statements or behaviors count toward 90–95 percent coverage.",
-      "ai_corrected_answer": "Coverage is a signal, not a target that proves correctness. Prioritize business branches, boundary cases, failures and contract behavior; inspect line/branch coverage and mutation testing when useful. Explain justified exclusions and quality gates, while avoiding trivial tests written solely to raise a percentage.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "Okay so when we write the automations I generally concentrate on the unit test cases like every method should have its own test cases and I write with a junit f which supports something called nested classes like uh so we can I can segregate the functionalities in the test cases and uh the mocking is something I use a lot because there are few things when you're checking about the functionality you don't have to make a DB call every time in that case we can mock those calls and test the you can Mark what data you want to back and",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4579,
+          "clock": "1:16:19",
+          "text": "Okay so when we write the automations I generally concentrate on the unit test cases like every method should have its own test cases and I write with a junit f which supports"
+        },
+        {
+          "seconds": 4593,
+          "clock": "1:16:33",
+          "text": "something called nested classes like uh so we can I can segregate the functionalities in the test cases and uh the mocking is something I use a lot because there are few things"
+        },
+        {
+          "seconds": 4605,
+          "clock": "1:16:45",
+          "text": "when you're checking about the functionality you don't have to make a DB call every time in that case we can mock those calls and test the you can Mark what data you want to back and"
+        }
+      ],
+      "ai_corrected_answer": "95% test coverage is a good number, but it doesn't mean our application is 95% bug-free. Coverage only tells us how much code our tests exercised. Imagine a payment service: testing successful payments isn't enough. We should also test failed payments and what happens when the bank doesn't respond. So I look at which important behaviors we test, not just the percentage. For me, good testing is about catching real problems, not chasing numbers.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IT-2",
       "video_id": "YT-1",
-      "candidate_answer": "He said JUnit 5 tests cover individual methods and mocks stand in for database calls or other external dependencies.",
-      "ai_corrected_answer": "Use JUnit 5 plus Mockito to inject mocked repositories/clients, arrange behavior, call the service and assert outputs and important interactions. Test edge/error cases without real external services in unit tests. Use separate integration tests with realistic dependencies for persistence and wire behavior.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "the mocking is something I use a lot because there are few things when you're checking about the functionality you don't have to make a DB call every time in that case we can mock those calls and test the you can Mark what data you want to back and write your functionality for the test cases so that will increase my test cases I also use some code coverage tool and also sonar Cube U to do the static analysis of my code base to see what",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4593,
+          "clock": "1:16:33",
+          "text": "the mocking is something I use a lot because there are few things"
+        },
+        {
+          "seconds": 4605,
+          "clock": "1:16:45",
+          "text": "when you're checking about the functionality you don't have to make a DB call every time in that case we can mock those calls and test the you can Mark what data you want to back and"
+        },
+        {
+          "seconds": 4615,
+          "clock": "1:16:55",
+          "text": "write your functionality for the test cases so that will increase my test cases I also use some code coverage tool and also sonar Cube U to do the static analysis of my code base to see what"
+        }
+      ],
+      "ai_corrected_answer": "I use JUnit to check what my service does and Mockito when I don't want to call a real database or API. For example, I can mock the repository to return one customer, call my service, and verify the result. Then I test what happens when the customer isn't found. Those are fast unit tests. Separate integration tests make sure the real database connection works. Mocking helps isolate the logic; integration tests make sure the pieces actually fit.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IT-3",
       "video_id": "YT-1",
-      "candidate_answer": "He said he used SonarQube for code/static analysis and configured its server URL/properties, but his described integration was mainly from an Android project.",
-      "ai_corrected_answer": "SonarQube analyzes source against code-quality/security rules and quality gates; feed it coverage reports such as JaCoCo output through the scanner/CI pipeline. Configure project identity, authentication, analysis path and branch/PR checks. It complements, rather than replaces, unit and integration tests.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "I also use some code coverage tool and also sonar Cube U to do the static analysis of my code base to see what could be the uh what are could be the some technical Dev not technical Dev like some technical issues which can be fixed and you have done that in local configured that as a plugin uh yes uh it just we how to write uh I I did that for the Android project not for the uh spring board one but it's pretty same I think uh we just have to uh mention a few of the properties in",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4615,
+          "clock": "1:16:55",
+          "text": "I also use some code coverage tool and also sonar Cube U to do the static analysis of my code base to see what"
+        },
+        {
+          "seconds": 4628,
+          "clock": "1:17:08",
+          "text": "could be the uh what are could be the some technical Dev not technical Dev like some technical issues which can be fixed and you have done that in local configured that as a"
+        },
+        {
+          "seconds": 4640,
+          "clock": "1:17:20",
+          "text": "plugin uh yes uh it just we how to write uh I I did that for the Android project not for the uh spring board one but it's pretty same I think uh we just have to uh mention a few of the properties in"
+        }
+      ],
+      "ai_corrected_answer": "SonarQube helps the team spot code-quality and security issues early. For example, it may flag a risky coding pattern or a piece of duplicated code in a pull request. Our CI pipeline sends the code and relevant test-coverage reports to SonarQube, and a quality gate can flag or block the change. But SonarQube can't prove the application works correctly. It's a useful second pair of eyes, not a replacement for good tests.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IT-4",
       "video_id": "YT-1",
-      "candidate_answer": "He agreed that testing every DTO getter/setter is low value and said Maven XML exclusion patterns can omit boilerplate packages from coverage reporting.",
-      "ai_corrected_answer": "Test behavior and meaningful serialization/validation contracts, not trivial accessors for percentages. Configure JaCoCo report exclusions or coverage rules explicitly, document why generated/DTO code is omitted, and do not use blanket exclusions to conceal untested logic.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "we can write like a rejects patterns which can uh exclude these kind of packages which we don't want to track in our coveres so uh we uh I mean have written in XML with mavin like we can specify like what kind of packages you can use like dot star for the dtos like generally we follow the vering sorry package patterns for all the files like some dto should go under dto package and entity should go so these Getters and Setters pojo files uh we don't have to",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4724,
+          "clock": "1:18:44",
+          "text": "we can write like a rejects patterns which can uh exclude these kind of"
+        },
+        {
+          "seconds": 4739,
+          "clock": "1:18:59",
+          "text": "packages which we don't want to track in our coveres so uh we uh I mean have written in XML with mavin like we can specify like what kind of packages you can use like dot star for the dtos like"
+        },
+        {
+          "seconds": 4754,
+          "clock": "1:19:14",
+          "text": "generally we follow the vering sorry package patterns for all the files like some dto should go under dto package and entity should go so these Getters and Setters pojo files uh we don't have to"
+        }
+      ],
+      "ai_corrected_answer": "I don't write tests for trivial getters just to make the coverage number look impressive. I spend that time on validation, calculations, and failure handling—places where bugs hurt customers. For example, a DTO getter usually needs no special test, but a custom JSON mapping or validation rule might. If generated boilerplate should be excluded, I configure and explain that in the coverage tool. The goal is honest coverage that reflects valuable tests.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IT-5",
       "video_id": "YT-1",
-      "candidate_answer": "He described calling actual REST endpoints across microservices in tests and checking responses, then agreed those calls should be separated from fast unit tests.",
-      "ai_corrected_answer": "Unit tests mock remote clients and run quickly. Integration tests check adapters and real dependencies (often via Testcontainers or stubbed services); contract tests validate provider/consumer interfaces. A small end-to-end suite exercises deployed service flows. Separate suites by CI stage to avoid flaky, slow unit builds.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "I have written the test cases but generally it's more like a integration test case only where we make the call to the uh rest template uh with by passing the payload so so one way we have to ensure like these uh services are running and also like the for this particular request the corresponding response is coming back or not so we don't have to test cases itself you have involved this particular part yes uh because like even when we make a call to different micros service",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 4816,
+          "clock": "1:20:16",
+          "text": "I have written the test cases but generally it's more like a integration test case only where"
+        },
+        {
+          "seconds": 4827,
+          "clock": "1:20:27",
+          "text": "we make the call to the uh rest template uh with by passing the payload so so one way we have to ensure like these uh services are running and also like the for this particular request the"
+        },
+        {
+          "seconds": 4840,
+          "clock": "1:20:40",
+          "text": "corresponding response is coming back or not so we don't have to test cases itself you have involved this particular part yes uh because like even when we make a call to different micros service"
+        }
+      ],
+      "ai_corrected_answer": "I keep three levels of testing separate. Unit tests check one service's logic quickly, using mocks for outside calls. Integration tests check real pieces working together, like a repository with a test database. A smaller end-to-end suite checks the full journey—for example, cart to order to payment—in a test environment. If every unit test calls ten live services, builds become slow and unreliable. Test small things quickly and complete journeys deliberately.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IJ-1",
       "video_id": "YT-1",
-      "candidate_answer": "He said HashMap iterators can fail when entries change during iteration, while ConcurrentHashMap handles concurrent writes without that iterator exception. He described an older segmented-locking model.",
-      "ai_corrected_answer": "HashMap is not thread-safe; fail-fast iteration is best-effort and does not make access safe. ConcurrentHashMap supports safe concurrent operations and weakly consistent iterators; modern implementations use fine-grained synchronization/CAS, not a fixed simple set of 16 segment locks. Use atomic APIs such as computeIfAbsent when coordination is needed.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "with the regular hashmap what we use is is something called like a a fail fast sorry it's a fail first uh hashing it means what like whenever uh we are iterating on this hash map and concurrently if something is going change in this hash let's say like we're adding new entries so it will throw an exception because it the uh the way it works in a different because it keep on check the hash size if something is getting changed it will throw the",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 5299,
+          "clock": "1:28:19",
+          "text": "with the regular hashmap what we use is is something called like a a fail fast"
+        },
+        {
+          "seconds": 5317,
+          "clock": "1:28:37",
+          "text": "sorry it's a fail first uh hashing it means what like whenever uh we are iterating on this hash map and concurrently if something is going change in this hash let's say like we're"
+        },
+        {
+          "seconds": 5326,
+          "clock": "1:28:46",
+          "text": "adding new entries so it will throw an exception because it the uh the way it works in a different because it keep on check the hash size if something is getting changed it will throw the"
+        }
+      ],
+      "ai_corrected_answer": "HashMap works well when one thread controls the data, but it isn't safe for unsynchronized concurrent updates. ConcurrentHashMap is built for multiple threads reading and updating the map together. For example, several requests may update different entries in a shared counter map. It offers operations such as compute that help update values safely, and its iterators can tolerate changes. It doesn't make every multi-step business operation atomic, so I still choose the right operation.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IJ-2",
       "video_id": "YT-1",
-      "candidate_answer": "He said a custom Employee key should override equals() and hashCode() to distinguish logically equal keys and avoid duplicate entries.",
-      "ai_corrected_answer": "Implement equals() and hashCode() consistently: equal objects must produce equal hash codes, and key fields should remain stable while stored. HashMap uses hash buckets and equality comparisons on collisions/matches. Prefer immutable identifiers/keys, and test equal, unequal and collision scenarios.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "if you want to make any object as the key uh the two things we have to override one is the equal method and other one is uh hash code so the main reason is like even though uh we have to ensure that whether these two object are same or not it can be easily distinguished based on these two methods so whenever uh when we we do any put it will automatically call these methods and get to ensure that whether it is a update to the same object or it is a new insert So based on the",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 5484,
+          "clock": "1:31:24",
+          "text": "if you want to make any object as the key uh the two things we have to override one is the"
+        },
+        {
+          "seconds": 5497,
+          "clock": "1:31:37",
+          "text": "equal method and other one is uh hash code so the main reason is like even though uh we have to ensure that whether these two object are same or not it can be easily distinguished based on these"
+        },
+        {
+          "seconds": 5509,
+          "clock": "1:31:49",
+          "text": "two methods so whenever uh when we we do any put it will automatically call these methods and get to ensure that whether it is a update to the same object or it is a new insert So based on the"
+        }
+      ],
+      "ai_corrected_answer": "If I use Employee objects as HashMap keys, Java needs to know when two Employee objects represent the same key. That's why I implement equals and hashCode consistently. For example, two objects with the same immutable employee ID should normally compare equal and return the same hash code. If the ID changes after insertion, lookup may break. The simple rule is: equal keys need equal hash codes, and keys should stay stable in the map.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     },
     {
       "question_id": "IJ-3",
       "video_id": "YT-1",
-      "candidate_answer": "He contrasted HashMap's iterator exception on structural changes with ConcurrentHashMap supporting changes during iteration, but named the exception imprecisely.",
-      "ai_corrected_answer": "HashMap iterators may throw ConcurrentModificationException on structural modification (fail-fast is best-effort, not a safety guarantee). ConcurrentHashMap iterators are weakly consistent: they neither throw that exception for concurrent updates nor promise a single atomic snapshot. Choose based on access and iteration-consistency requirements.",
-      "method": "Transcript-grounded paraphrase of candidate; technical correction authored by AI, not spoken in the video"
+      "answer_type": "interview_comparison",
+      "candidate_answer": "exception called concurrent hash exception to avoid this kind of like uh scenario we can go with like a new family of the uh hashing is called concurrent hashmap so it will works in efficient way so that even if you do add any entities to the hashmap while you are iterating so it will be uh efficient to handle that kind of scenarios so that will be very useful when we have a yeah exception will be uh I don't think any exception will come because this is kind of like a main uh uh hashing we use especially for the multi- thread environments when there are more than",
+      "candidate_answer_status": "verbatim_excerpt",
+      "candidate_transcript_rows": [
+        {
+          "seconds": 5336,
+          "clock": "1:28:56",
+          "text": "exception called concurrent hash exception to avoid this kind of like uh scenario we can go with like a new family of the uh hashing is called concurrent hashmap so it will works in"
+        },
+        {
+          "seconds": 5350,
+          "clock": "1:29:10",
+          "text": "efficient way so that even if you do add any entities to the hashmap while you are iterating so it will be uh efficient to handle that kind of scenarios so that will be very useful when we have a yeah"
+        },
+        {
+          "seconds": 5362,
+          "clock": "1:29:22",
+          "text": "exception will be uh I don't think any exception will come because this is kind of like a main uh uh hashing we use especially for the multi- thread environments when there are more than"
+        }
+      ],
+      "ai_corrected_answer": "A HashMap iterator usually notices structural changes and may throw ConcurrentModificationException, but that fail-fast behavior is only a best-effort warning. It isn't thread safety. ConcurrentHashMap uses weakly consistent iteration: another thread can update the map while I'm looping, without that exception, but I may not see a perfect snapshot. For example, a live metrics dashboard can often tolerate that. If I need an exact snapshot, I must coordinate it explicitly.",
+      "answer_style": "simple_spoken",
+      "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
     }
   ]
 }

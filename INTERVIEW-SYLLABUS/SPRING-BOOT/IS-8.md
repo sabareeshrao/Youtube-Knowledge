@@ -9,11 +9,11 @@
 | YT-1.31 | [16:47](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1007s) | 🟢 USEFUL | Why SessionFactory is expensive and shared |
 | YT-1.32 | [17:39](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1059s) | 🟢 USEFUL | Multiple databases and SessionFactory instances |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He said SessionFactory is expensive, should be reused as a singleton, and different databases generally need separate SessionFactory instances. He also compared one SessionFactory to one database connection. | SessionFactory is expensive to build but thread-safe and reused, typically one per persistence unit/configuration. It creates many short-lived Sessions and works with a connection pool; it is not one database connection. With multiple independently configured databases/persistence units, configure corresponding factories/entity managers and transaction boundaries. |
+| [16:47](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1007s) U first thing is like it's a costly<br>[17:00](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1020s) operation I would say but I mean in the normal words U this as same as like creating the instance of the database so we generally want it to be like U highly uh synchronized uh applications so that<br>[17:12](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=1032s) no two uh interactions can corrupt the datas so when we make it as single turn so that uh every time every new sessions we use the same uh sorry every uh New Creations will create the only one | I reuse SessionFactory because building it takes work: it holds Hibernate's mapping and database configuration. It isn't a single database connection. Think of it as a factory that creates many short-lived Sessions, usually using pooled connections underneath. If my application connects to three separately configured databases, I generally set up an appropriate factory or persistence unit for each. Reuse the factory; open and close sessions for the actual work. |
 

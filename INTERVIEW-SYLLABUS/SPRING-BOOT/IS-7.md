@@ -11,11 +11,11 @@
 | YT-1.29 | [15:55](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=955s) | 🟢 USEFUL | Default L1 and opt-in L2 cache |
 | YT-1.30 | [16:34](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=994s) | 🟢 USEFUL | Second-level cache beyond Session lifetime |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He associated Hibernate L1 with an individual Session and L2 with SessionFactory, saying L1 is enabled by default and L2 can share entities across sessions. | Hibernate’s first-level cache (persistence context) is mandatory and scoped to a Session/EntityManager. The optional second-level cache is managed at SessionFactory scope through a configured cache provider and caching policies. L2 is not a magical cache of every entity; explain regions, invalidation, transaction consistency and when it is appropriate. |
+| [15:55](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=955s) uh yes so session level uh is called L1 caching and session Factory is the L2 so by default we enable the session level caching which is like limited to particular session so<br>[16:10](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=970s) but if you want some data which should be like could be cached across the all the sessions then we put it in the L2 level caching which is under the session Factory | Hibernate has two useful cache levels. The first-level cache belongs to one Session and is always there. If I read the same entity twice in that session, Hibernate can avoid a second database fetch. The optional second-level cache can share eligible entity data across sessions using a configured provider. For example, product categories that rarely change might benefit from it. The memory trick is: L1 belongs to one conversation with the database; L2 can serve many conversations. |
 

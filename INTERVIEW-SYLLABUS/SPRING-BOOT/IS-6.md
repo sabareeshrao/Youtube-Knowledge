@@ -9,11 +9,11 @@
 | YT-1.17 | [10:30](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=630s) | 🟢 USEFUL | Duplicate scheduled jobs across replicas |
 | YT-1.18 | [11:14](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=674s) | 🟢 USEFUL | ShedLock for single scheduler execution |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He correctly noted that @Scheduled runs independently in each application replica and proposed ShedLock to prevent three instances from writing the same record. | A local Spring scheduler does not coordinate replicas. Use a shared distributed lock such as ShedLock with a properly configured persistent lock provider, or a dedicated scheduler/queue with leader election. Set lock durations carefully and still make the job idempotent, because retries and crashes can otherwise cause duplicates. |
+| [10:53](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=653s) uh yeah I mean generally we go with the spring scheduler but the drawback as you mentioned uh if there are multiple<br>[11:04](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=664s) instances the spring Schuler can't able to handle this instance it end up with running on all the three instance so we want something like a single turn Behavior here like for that we can go<br>[11:14](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=674s) with something called shedlock so how it orchestrate is like rather than uh it will let it to run only once and like and ra for the all the instances so that's how internal architectures are | If I run the same Spring scheduler on three servers, all three may execute the job. That's a problem if the job must send only one email or create only one record. I would use a shared lock, such as ShedLock backed by the database, so only one instance runs at a time. I would also make the job safe to retry after a crash. A scheduler knows when to run; a shared lock helps decide who runs. |
 

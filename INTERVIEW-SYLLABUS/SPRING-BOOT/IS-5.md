@@ -8,11 +8,11 @@
 |---|---|---|---|
 | YT-1.6 | [4:07](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=247s) | 🟢 USEFUL | Token expiration and refresh tokens |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He mentioned a short token lifetime and reauthentication after expiry; the interviewer introduced refresh tokens, which he acknowledged without explaining the refresh exchange. | Access tokens expire according to the exp claim. Before or after expiry, an authorized client can exchange a valid refresh token at the authorization server for a new access token; it does not re-send the user’s password on every API call. Protect refresh tokens, use rotation/revocation where supported, and handle expired or stolen tokens safely. |
+| **No substantive response; only this brief acknowledgement is captured.**<br>[4:07](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=247s) yes yeah exactly | An access token is a short-lived pass to call an API. When it expires, the user shouldn't necessarily have to sign in again. The app can use a properly protected refresh token to request a new access token from the authorization server. For example, while someone browses an online store, their session can continue without interrupting every few minutes. Refresh tokens need strong protection and sometimes rotation or revocation. Short-lived access plus carefully managed refresh is the balance. |
 

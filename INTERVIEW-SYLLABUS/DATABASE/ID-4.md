@@ -9,11 +9,11 @@
 | YT-1.24 | [13:44](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=824s) | 🟢 USEFUL | Cache consistency requirements |
 | YT-1.25 | [14:21](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=861s) | 🟢 USEFUL | Financial data and eventual consistency |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He said stale reads may be acceptable for social feeds but account balances must not show inaccurate values across users. | Define required consistency for each operation. Feeds and recommendation caches may tolerate bounded staleness, while available balances and payment authorization should read from an authoritative consistent source or use transactional safeguards. Invalidate related caches on writes and document read-after-write requirements and acceptable delay. |
+| [14:21](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=861s) if it's highly Financial then I would say dirty read can't be something which we can compromise because we can't we don't want to see<br>[14:32](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=872s) like the account balance something inaccurate on the two different accounts | Not every piece of data needs to be fresh to the exact same millisecond. A social feed can often show a post a few seconds late without hurting anyone. A bank balance before a withdrawal is a different story: we need the authoritative value and transaction checks. I may cache read-heavy feed data, but I take a much stricter approach to financial decisions. Consistency is a business promise, not just a database setting. |
 

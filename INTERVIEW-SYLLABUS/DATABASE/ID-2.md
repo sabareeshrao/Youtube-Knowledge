@@ -9,11 +9,11 @@
 | YT-1.83 | [54:45](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3285s) | 🟢 USEFUL | Database partitioning |
 | YT-1.84 | [55:08](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3308s) | 🟢 USEFUL | Sharding versus partitioning |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He distinguished partitioning as splitting data within one server and sharding as distributing portions of the dataset across different servers or locations. | Partitioning divides a table logically or physically by a key, often within one database instance, improving pruning and maintenance when queries align. Sharding distributes ownership of data across independent database instances/nodes. Both can span physical machines depending on implementation; explain shard keys, routing, cross-shard queries and rebalancing. |
+| [54:56](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3296s) there is no difference between much in the sharding and uh partitioning<br>[55:08](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3308s) but the main difference is sharding means like we keep the database in a different uh servers like it's like a same uh same table but we keep it in a different places whereas like in<br>[55:19](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=3319s) partitioning it comes under the same servers but replica not replica like the partitioning happens in the same servers so since the e-commerce can be one in us one in India and everything so | Partitioning and sharding both split data, but for different reasons. Partitioning divides a table into manageable pieces within a database setup, such as orders by month. Sharding spreads responsibility across separate database instances, perhaps by customer region or ID. For example, one large orders table could be partitioned by date before the business ever needs multiple shards. Partitioning helps organize and query data; sharding helps distribute ownership and scale, but adds complexity. |
 

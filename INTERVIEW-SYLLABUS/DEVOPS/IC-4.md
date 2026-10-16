@@ -10,11 +10,11 @@
 | YT-1.100 | [1:07:30](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4050s) | 🟢 USEFUL | Continuous integration checks |
 | YT-1.101 | [1:08:42](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4122s) | 🟢 USEFUL | Continuous delivery and deployment |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He said CI automates integration and test execution on commits, while CD moves verified changes toward deployment after passing tests. | CI continuously merges/checks changes with builds, unit/integration tests and quality gates. Continuous delivery keeps releasable artifacts ready but may require production approval; continuous deployment automatically releases every change that passes gates. Include secure artifact publishing, rollback and environment-specific deployment verification. |
+| [1:07:30](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4050s) uh sure so as a name indicates CI is the continuous integration and uh continuous uh deliv deployments for the CD so when you see continuous integration means like uh generally I<br>[1:07:44](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4064s) write my code uh so that uh I mean I also write something called junit so that my codes are more uh unit test case based and U we could also follow some some tdd patterns so ensure that our<br>[1:07:55](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4075s) codes are more robust uh but once the changes is done we have to integrate with other component as well to find it whether it's working fine so that's where our CI come into picture so | CI means checking changes continuously so problems appear early. Every pull request can run a build, tests, and code checks. CD is what happens after that: continuous delivery keeps a tested release ready, while continuous deployment actually releases passing changes automatically. For example, a bank may require a human approval for production, even if its tests are green. I think of CI as 'Is it safe to merge?' and delivery as 'Is it ready to release?' |
 

@@ -8,11 +8,11 @@
 |---|---|---|---|
 | YT-1.102 | [1:09:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4160s) | 🟢 USEFUL | Dockerfile, image and container |
 
-### Candidate answer vs. AI-corrected answer — YT-1
+### Original candidate transcript vs. simple AI answer — YT-1
 
-**Left:** Candidate's answer, paraphrased from the transcript. **Right:** Independently corrected technical answer, not spoken by the candidate.
+**Left:** Original caption excerpt, without rewritten wording. Speaker boundaries are inferred because the source does not label speakers; [read the entire original transcript](../../VIDEO-LIBRARY/YT-1/transcript.md). **Right:** New, independently authored spoken interview answer.
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| He described a Dockerfile with JDK version, application startup entry point, exposed ports and dependencies that run a Java JAR. | A Dockerfile describes an image build: select a suitable base runtime (up to Java 21 here), copy the built JAR, configure a non-root user and ENTRYPOINT, and optionally document EXPOSE. Images are immutable packages; containers are running instances. Inject secrets and environment config at runtime and scan/minimize image layers. |
+| [1:09:20](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4160s) in our same project uh we can have something called docka files which have like bunch of instruction so it's could be like uh what could be the our jdk person and uh<br>[1:09:33](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4173s) I mean yeah what could be our entry point and what are the port should be enabled so these like a bunch of instruction helps the Dockers uh to uh in uh install these kind of packages and<br>[1:09:45](https://www.youtube.com/watch?v=xMlcsFLk-CU&t=4185s) uh uh execute the jar files okay so basically your Docker container that would have everything every Library everything that you need for your running on your instances now | A Dockerfile is a recipe for packaging my Java application. It tells Docker which runtime image to use, where to copy the JAR, and how to start it. For example, I can build a small Java 21 runtime image and run the same container locally or in the cloud. The image is the packaged recipe; the container is a running instance of it. I keep secrets outside the image and don't run as root unless necessary. |
 
