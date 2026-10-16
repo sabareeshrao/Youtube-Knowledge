@@ -67,3 +67,7 @@ If the supplied transcript has no reliable timed captions or original video ID, 
 ## Mandatory answer writing instructions
 
 Read [docs/ANSWER-STYLE.md](docs/ANSWER-STYLE.md) for the full enforced standard. **Every new and revised interview answer must use simple spoken English, one relevant example, and a memorable takeaway. Interview candidate text is verbatim captions, not a paraphrase. Tutorials have only an AI answer.**
+
+## ⭐ Repeat-question marker — permanent rule
+
+When two or more interviews cover **the same specific interview question**, reuse the permanent subject ID, append the new video option, and put **⭐ on its question heading and timestamp table** in both the standalone video view and cross-video syllabus. Keep every source's original candidate caption excerpt and its AI answer separately. A question already registered before a new video is also starred. Do not merge merely related questions. Do not duplicate or renumber old IDs.

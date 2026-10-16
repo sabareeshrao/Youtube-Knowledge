@@ -41,6 +41,13 @@
             "YT-1.9",
             "YT-1.10"
           ]
+        },
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.14",
+            "YT-3.15"
+          ]
         }
       ]
     },
@@ -63,6 +70,13 @@
             "YT-1.12",
             "YT-1.13"
           ]
+        },
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.16",
+            "YT-3.17"
+          ]
         }
       ]
     },
@@ -83,6 +97,20 @@
           "timestamp_ids": [
             "YT-1.14",
             "YT-1.15"
+          ]
+        },
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.18"
+          ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.71",
+            "YT-4.72",
+            "YT-4.73"
           ]
         }
       ]
@@ -145,6 +173,18 @@
             "YT-1.28",
             "YT-1.29",
             "YT-1.30"
+          ]
+        },
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.27"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.18"
           ]
         }
       ]
@@ -209,6 +249,13 @@
             "YT-1.96",
             "YT-1.97"
           ]
+        },
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.34",
+            "YT-3.35"
+          ]
         }
       ]
     },
@@ -227,6 +274,13 @@
           "video_id": "YT-1",
           "timestamp_ids": [
             "YT-1.90"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.15",
+            "YT-7.16"
           ]
         }
       ]
@@ -360,6 +414,20 @@
             "YT-1.45",
             "YT-1.72"
           ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.16",
+            "YT-4.17"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.18",
+            "YT-8.19"
+          ]
         }
       ]
     },
@@ -491,6 +559,13 @@
             "YT-1.63",
             "YT-1.68",
             "YT-1.69"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.9",
+            "YT-8.10"
           ]
         }
       ]
@@ -637,6 +712,13 @@
           "timestamp_ids": [
             "YT-1.87"
           ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.11",
+            "YT-8.12"
+          ]
         }
       ]
     },
@@ -680,6 +762,12 @@
           "timestamp_ids": [
             "YT-1.85"
           ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.80"
+          ]
         }
       ]
     },
@@ -698,6 +786,14 @@
           "video_id": "YT-1",
           "timestamp_ids": [
             "YT-1.63"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.14",
+            "YT-8.15",
+            "YT-8.45"
           ]
         }
       ]
@@ -739,6 +835,13 @@
             "YT-1.81",
             "YT-1.82"
           ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.64",
+            "YT-4.65"
+          ]
         }
       ]
     },
@@ -758,6 +861,19 @@
           "timestamp_ids": [
             "YT-1.83",
             "YT-1.84"
+          ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.67"
+          ]
+        },
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.38",
+            "YT-6.39"
           ]
         }
       ]
@@ -780,6 +896,12 @@
             "YT-1.57",
             "YT-1.62",
             "YT-1.79"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.17"
           ]
         }
       ]
@@ -820,6 +942,14 @@
           "timestamp_ids": [
             "YT-1.95"
           ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.22",
+            "YT-8.23",
+            "YT-8.24"
+          ]
         }
       ]
     },
@@ -840,6 +970,14 @@
             "YT-1.95",
             "YT-1.96",
             "YT-1.98"
+          ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.31",
+            "YT-4.32",
+            "YT-4.33"
           ]
         }
       ]
@@ -882,6 +1020,33 @@
             "YT-1.100",
             "YT-1.101"
           ]
+        },
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.43",
+            "YT-3.44"
+          ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.78",
+            "YT-4.79"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.33",
+            "YT-7.34"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.37"
+          ]
         }
       ]
     },
@@ -900,6 +1065,13 @@
           "video_id": "YT-1",
           "timestamp_ids": [
             "YT-1.102"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.31",
+            "YT-8.32"
           ]
         }
       ]
@@ -920,6 +1092,20 @@
           "timestamp_ids": [
             "YT-1.103",
             "YT-1.104"
+          ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.34",
+            "YT-4.35"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.33",
+            "YT-8.34"
           ]
         }
       ]
@@ -1001,6 +1187,13 @@
           "timestamp_ids": [
             "YT-1.124"
           ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.28",
+            "YT-7.29"
+          ]
         }
       ]
     },
@@ -1020,6 +1213,12 @@
           "timestamp_ids": [
             "YT-1.125",
             "YT-1.126"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.30"
           ]
         }
       ]
@@ -1078,6 +1277,24 @@
           "video_id": "YT-1",
           "timestamp_ids": [
             "YT-1.112"
+          ]
+        },
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.52",
+            "YT-4.53",
+            "YT-4.54"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.28",
+            "YT-8.29",
+            "YT-8.30",
+            "YT-8.56",
+            "YT-8.57"
           ]
         }
       ]
@@ -1761,6 +1978,14 @@
             "YT-2.111",
             "YT-2.112"
           ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.50",
+            "YT-5.51",
+            "YT-5.52"
+          ]
         }
       ]
     },
@@ -2384,6 +2609,13 @@
             "YT-2.224",
             "YT-2.225",
             "YT-2.226"
+          ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.18",
+            "YT-5.19"
           ]
         }
       ]
@@ -3355,6 +3587,13 @@
             "YT-2.413",
             "YT-2.414"
           ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.14",
+            "YT-5.15"
+          ]
         }
       ]
     },
@@ -3583,6 +3822,14 @@
             "YT-2.454",
             "YT-2.455"
           ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.41",
+            "YT-5.42",
+            "YT-5.43"
+          ]
         }
       ]
     },
@@ -3803,6 +4050,12 @@
             "YT-2.504",
             "YT-2.505",
             "YT-2.506"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.5"
           ]
         }
       ]
@@ -4208,6 +4461,2805 @@
             "YT-2.586",
             "YT-2.587",
             "YT-2.588"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-23",
+      "subject": "ARCHITECTURE",
+      "question": "Why do microservices need service registration and discovery?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-23.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-24",
+      "subject": "ARCHITECTURE",
+      "question": "How is client-side load balancing related to service discovery?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-24.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-25",
+      "subject": "ARCHITECTURE",
+      "question": "Why is discovery especially valuable in cloud deployments?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-25.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.7",
+            "YT-3.8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-26",
+      "subject": "ARCHITECTURE",
+      "question": "How do you avoid a single point of failure in service discovery?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-26.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-27",
+      "subject": "ARCHITECTURE",
+      "question": "Why use an API gateway in front of microservices?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-27.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.10",
+            "YT-3.11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-13",
+      "subject": "SPRING-BOOT",
+      "question": "How would you configure role-based access to Spring Boot endpoints?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-13.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.12",
+            "YT-3.13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-28",
+      "subject": "ARCHITECTURE",
+      "question": "How do synchronous HTTP and asynchronous messaging differ between services?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-28.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-29",
+      "subject": "ARCHITECTURE",
+      "question": "How would you reduce latency between microservices?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-29.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.20",
+            "YT-3.21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-13",
+      "subject": "DEVOPS",
+      "question": "How do you centralize logs from many microservices?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-13.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-14",
+      "subject": "DEVOPS",
+      "question": "What are Elasticsearch, Logstash, Kibana, Prometheus, and Grafana used for?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-14.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.23",
+            "YT-3.24"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-14",
+      "subject": "SPRING-BOOT",
+      "question": "What are Spring Boot Actuator health and metrics endpoints used for?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-14.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.25"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.2",
+            "YT-8.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-15",
+      "subject": "SPRING-BOOT",
+      "question": "How can @Cacheable reduce repeated database calls?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-15.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.26"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-30",
+      "subject": "ARCHITECTURE",
+      "question": "How do you publish REST API documentation to consumers?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-30.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.28",
+            "YT-3.29"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-16",
+      "subject": "SPRING-BOOT",
+      "question": "How would you document only selected endpoints for one API consumer?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-16.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-31",
+      "subject": "ARCHITECTURE",
+      "question": "How do you version a REST API without breaking old clients?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-31.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.31",
+            "YT-3.32"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-146",
+      "subject": "JAVA",
+      "question": "When should shared Java logic be extracted into a utility class?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-146.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-17",
+      "subject": "SPRING-BOOT",
+      "question": "How can configuration changes reach running Spring services?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-17.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.36",
+            "YT-3.37",
+            "YT-3.38"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-15",
+      "subject": "DEVOPS",
+      "question": "How do Jenkins and Argo CD divide CI and CD responsibilities?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-15.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.39",
+            "YT-3.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-16",
+      "subject": "DEVOPS",
+      "question": "Why publish Docker images to a container registry?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-16.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.41",
+            "YT-3.42"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.35",
+            "YT-8.36"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-17",
+      "subject": "DEVOPS",
+      "question": "How does Argo CD detect and apply a new application image version?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-17.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.45",
+            "YT-3.46"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-18",
+      "subject": "DEVOPS",
+      "question": "How do you monitor Kubernetes services and alert the on-call team?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-18.md",
+      "sources": [
+        {
+          "video_id": "YT-3",
+          "timestamp_ids": [
+            "YT-3.47",
+            "YT-3.48"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-147",
+      "subject": "JAVA",
+      "question": "Which Java 8 features are most important for everyday backend code?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-147.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.2"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.2",
+            "YT-7.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-148",
+      "subject": "JAVA",
+      "question": "What is a functional interface and why is it useful?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-148.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-149",
+      "subject": "JAVA",
+      "question": "Why is Java not considered a purely object-oriented language?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-149.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.4"
+          ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-150",
+      "subject": "JAVA",
+      "question": "How does HashMap treeification improve collision performance in Java 8?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-150.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-151",
+      "subject": "JAVA",
+      "question": "What changed from PermGen to Metaspace in Java 8?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-151.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-152",
+      "subject": "JAVA",
+      "question": "Why were default methods added to Java interfaces?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-152.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.7",
+            "YT-4.8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-153",
+      "subject": "JAVA",
+      "question": "Why does Java disallow extending two classes but allow multiple interfaces?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-153.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.9",
+            "YT-4.10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-154",
+      "subject": "JAVA",
+      "question": "How do you resolve conflicting default methods from two Java interfaces?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-154.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.11",
+            "YT-4.12",
+            "YT-4.13"
+          ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.38",
+            "YT-5.39",
+            "YT-5.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-155",
+      "subject": "JAVA",
+      "question": "What are Optional.empty, of, and ofNullable used for?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-155.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.14",
+            "YT-4.15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-32",
+      "subject": "ARCHITECTURE",
+      "question": "How do Saga orchestration and choreography compare?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-32.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.18",
+            "YT-4.19",
+            "YT-4.20",
+            "YT-4.21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-18",
+      "subject": "SPRING-BOOT",
+      "question": "What does @Transactional do inside one Spring service?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-18.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-33",
+      "subject": "ARCHITECTURE",
+      "question": "How do an API gateway, service discovery, and load balancing differ?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-33.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.23",
+            "YT-4.24"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-19",
+      "subject": "DEVOPS",
+      "question": "How do trace IDs and span IDs help debug distributed calls?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-19.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.25",
+            "YT-4.26"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.42",
+            "YT-8.43"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-20",
+      "subject": "DEVOPS",
+      "question": "How would you send production alerts using AWS CloudWatch?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-20.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.27"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.44"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-21",
+      "subject": "DEVOPS",
+      "question": "How do application log statements reach Elasticsearch and Kibana?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-21.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-19",
+      "subject": "SPRING-BOOT",
+      "question": "How does Spring Cloud Config share configuration among microservices?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-19.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.29",
+            "YT-4.30"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-22",
+      "subject": "DEVOPS",
+      "question": "How do Kubernetes Services handle changing pod IP addresses?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-22.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.36"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-20",
+      "subject": "SPRING-BOOT",
+      "question": "What changed when moving to Spring Boot 3?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-20.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.37"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-21",
+      "subject": "SPRING-BOOT",
+      "question": "How can you replace embedded Tomcat in a Spring Boot application?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-21.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.38",
+            "YT-4.39"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-156",
+      "subject": "JAVA",
+      "question": "How do you implement a lazy Singleton safely in multithreaded Java?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-156.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.40",
+            "YT-4.41",
+            "YT-4.42",
+            "YT-4.43"
+          ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.28",
+            "YT-5.29",
+            "YT-5.30",
+            "YT-5.31"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-22",
+      "subject": "SPRING-BOOT",
+      "question": "What are singleton, prototype, request, and session bean scopes?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-22.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.44",
+            "YT-4.45"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.10",
+            "YT-7.11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-23",
+      "subject": "SPRING-BOOT",
+      "question": "Can changing a singleton Spring bean affect different consumers?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-23.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.46",
+            "YT-4.47"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-157",
+      "subject": "JAVA",
+      "question": "How is a classic Java Singleton different from a Spring singleton bean?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-157.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.48",
+            "YT-4.49",
+            "YT-4.50"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT-6",
+      "subject": "TESTING",
+      "question": "How do behavior-driven tests differ from test-driven development?",
+      "tags": [
+        "it",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/TESTING/IT-6.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.51"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT-7",
+      "subject": "TESTING",
+      "question": "What do JUnit 5 @BeforeEach and @BeforeAll do?",
+      "tags": [
+        "it",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/TESTING/IT-7.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.55",
+            "YT-4.56"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-34",
+      "subject": "ARCHITECTURE",
+      "question": "What does the SOLID single-responsibility principle mean?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-34.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.57",
+            "YT-4.58"
+          ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.21"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.41"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-35",
+      "subject": "ARCHITECTURE",
+      "question": "How does the open-closed principle apply to payment integrations?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-35.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.59"
+          ]
+        },
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-24",
+      "subject": "SPRING-BOOT",
+      "question": "How do JPA derived queries and @Query compare?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-24.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.60",
+            "YT-4.61",
+            "YT-4.62"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.26",
+            "YT-7.27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-158",
+      "subject": "JAVA",
+      "question": "Why must JPA repository ID types use wrapper types?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-158.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.63"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-159",
+      "subject": "JAVA",
+      "question": "When are parallel threads a poor substitute for query optimization?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-159.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.66"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-25",
+      "subject": "SPRING-BOOT",
+      "question": "How do you model a many-to-many JPA relationship?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-25.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.68"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-36",
+      "subject": "ARCHITECTURE",
+      "question": "What are Kafka topics, partitions, and consumer groups?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-36.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.69",
+            "YT-4.70"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-26",
+      "subject": "SPRING-BOOT",
+      "question": "How would you configure CORS for a Spring Boot API?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-26.md",
+      "sources": [
+        {
+          "video_id": "YT-4",
+          "timestamp_ids": [
+            "YT-4.74",
+            "YT-4.75",
+            "YT-4.76",
+            "YT-4.77"
+          ]
+        },
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.49",
+            "YT-7.50"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-160",
+      "subject": "JAVA",
+      "question": "Why choose Java for an enterprise backend application?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-160.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.2",
+            "YT-5.3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-161",
+      "subject": "JAVA",
+      "question": "What is the difference between the JDK, JRE, and JVM?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-161.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.5",
+            "YT-5.6",
+            "YT-5.7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-162",
+      "subject": "JAVA",
+      "question": "What does the JIT compiler do inside a JVM?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-162.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.8",
+            "YT-5.9",
+            "YT-5.10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-163",
+      "subject": "JAVA",
+      "question": "What are the four pillars of object-oriented programming?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-163.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.11",
+            "YT-5.12",
+            "YT-5.13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-164",
+      "subject": "JAVA",
+      "question": "How do interfaces and abstract classes support abstraction?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-164.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.16",
+            "YT-5.17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-37",
+      "subject": "ARCHITECTURE",
+      "question": "What do the five SOLID principles try to improve?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-37.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.20"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-38",
+      "subject": "ARCHITECTURE",
+      "question": "What is the interface segregation principle?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-38.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.23"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-39",
+      "subject": "ARCHITECTURE",
+      "question": "What is dependency inversion and how does Spring help?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-39.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.24",
+            "YT-5.25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-40",
+      "subject": "ARCHITECTURE",
+      "question": "When would you choose Factory, Singleton, or Builder patterns?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-40.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.26",
+            "YT-5.27"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.39",
+            "YT-8.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-41",
+      "subject": "ARCHITECTURE",
+      "question": "How does the Builder pattern help create objects?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-41.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.32"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-165",
+      "subject": "JAVA",
+      "question": "What do public, private, protected, and package-private mean?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-165.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.33",
+            "YT-5.34",
+            "YT-5.35"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-166",
+      "subject": "JAVA",
+      "question": "When do you extend a class instead of implementing an interface?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-166.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.36",
+            "YT-5.37"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-167",
+      "subject": "JAVA",
+      "question": "What is Java serialization and why might a field be transient?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-167.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.44",
+            "YT-5.45"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-168",
+      "subject": "JAVA",
+      "question": "How are heap, stack, and String pool related in Java?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-168.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.46",
+            "YT-5.47",
+            "YT-5.48",
+            "YT-5.49"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-169",
+      "subject": "JAVA",
+      "question": "How does garbage collection decide when an object is eligible?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-169.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.53"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-170",
+      "subject": "JAVA",
+      "question": "What does public static void main(String[] args) mean?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-170.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.54",
+            "YT-5.55",
+            "YT-5.56"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-171",
+      "subject": "JAVA",
+      "question": "Can a Java class overload its main method?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-171.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.57",
+            "YT-5.58"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-172",
+      "subject": "JAVA",
+      "question": "What does final mean for a variable, method, or class?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-172.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.59",
+            "YT-5.60"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-173",
+      "subject": "JAVA",
+      "question": "What is the difference between final, finally, and finalize?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-173.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.61",
+            "YT-5.62"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-174",
+      "subject": "JAVA",
+      "question": "When do this and super refer to different members?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-174.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.63",
+            "YT-5.64",
+            "YT-5.65",
+            "YT-5.66"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-175",
+      "subject": "JAVA",
+      "question": "Is Java pass-by-value or pass-by-reference?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-175.md",
+      "sources": [
+        {
+          "video_id": "YT-5",
+          "timestamp_ids": [
+            "YT-5.67",
+            "YT-5.68",
+            "YT-5.69",
+            "YT-5.70"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-42",
+      "subject": "ARCHITECTURE",
+      "question": "How would you define functional requirements for a YouTube-like service?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-42.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.2",
+            "YT-6.3",
+            "YT-6.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-43",
+      "subject": "ARCHITECTURE",
+      "question": "Which nonfunctional requirements matter for a video platform?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-43.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.5",
+            "YT-6.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-44",
+      "subject": "ARCHITECTURE",
+      "question": "How would you estimate daily active users and video viewing volume?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-44.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.7",
+            "YT-6.8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-45",
+      "subject": "ARCHITECTURE",
+      "question": "How do you estimate daily video storage requirements?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-45.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.9",
+            "YT-6.10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-46",
+      "subject": "ARCHITECTURE",
+      "question": "How would you estimate CDN bandwidth and delivery costs?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-46.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.11",
+            "YT-6.12",
+            "YT-6.13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-47",
+      "subject": "ARCHITECTURE",
+      "question": "How does autoscaling help a video streaming service?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-47.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.14",
+            "YT-6.15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-48",
+      "subject": "ARCHITECTURE",
+      "question": "Why are replication and fault tolerance important for video data?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-48.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.16"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-49",
+      "subject": "ARCHITECTURE",
+      "question": "How would you make large video uploads resumable?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-49.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.17",
+            "YT-6.18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-50",
+      "subject": "ARCHITECTURE",
+      "question": "Why does video transcoding produce multiple resolutions and bitrates?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-50.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-51",
+      "subject": "ARCHITECTURE",
+      "question": "How does adaptive bitrate streaming avoid long playback delays?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-51.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.20",
+            "YT-6.21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-52",
+      "subject": "ARCHITECTURE",
+      "question": "How would you detect and retry missing video upload chunks?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-52.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.22",
+            "YT-6.23",
+            "YT-6.24"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-53",
+      "subject": "ARCHITECTURE",
+      "question": "What services participate in an end-to-end video upload pipeline?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-53.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.25",
+            "YT-6.26",
+            "YT-6.27",
+            "YT-6.28",
+            "YT-6.29",
+            "YT-6.30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID-5",
+      "subject": "DATABASE",
+      "question": "How would you choose SQL or NoSQL for video metadata?",
+      "tags": [
+        "id",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DATABASE/ID-5.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.31",
+            "YT-6.32"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-54",
+      "subject": "ARCHITECTURE",
+      "question": "Why deliver processed videos through a CDN?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-54.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.33",
+            "YT-6.34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-55",
+      "subject": "ARCHITECTURE",
+      "question": "How would you manage video upload status and completion notifications?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-55.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.35",
+            "YT-6.36",
+            "YT-6.37"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ID-6",
+      "subject": "DATABASE",
+      "question": "What is the difference between data partitioning and replication?",
+      "tags": [
+        "id",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DATABASE/ID-6.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.40",
+            "YT-6.41"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-56",
+      "subject": "ARCHITECTURE",
+      "question": "How can a video ID route a request to the correct metadata shard?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-56.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.42",
+            "YT-6.43"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-57",
+      "subject": "ARCHITECTURE",
+      "question": "How would you design the watch-video request path?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-57.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.44"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-58",
+      "subject": "ARCHITECTURE",
+      "question": "What is MPEG-DASH or adaptive streaming over HTTP?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-58.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.45",
+            "YT-6.46",
+            "YT-6.47"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-59",
+      "subject": "ARCHITECTURE",
+      "question": "How does global upload latency differ from playback latency?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-59.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.48",
+            "YT-6.49",
+            "YT-6.50"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-60",
+      "subject": "ARCHITECTURE",
+      "question": "How would you collect video engagement signals for recommendations?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-60.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.51",
+            "YT-6.52"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-61",
+      "subject": "ARCHITECTURE",
+      "question": "How do you keep popular videos hot in a CDN cache?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-61.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.53",
+            "YT-6.54",
+            "YT-6.55"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-62",
+      "subject": "ARCHITECTURE",
+      "question": "How would you build creator analytics for views and watch time?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-62.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.56",
+            "YT-6.57",
+            "YT-6.58",
+            "YT-6.59"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-63",
+      "subject": "ARCHITECTURE",
+      "question": "How do likes, comments, and click-through rate influence recommendations?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-63.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.60",
+            "YT-6.61"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-64",
+      "subject": "ARCHITECTURE",
+      "question": "How would you store video thumbnails and generate previews?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-64.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.62",
+            "YT-6.63",
+            "YT-6.64"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-65",
+      "subject": "ARCHITECTURE",
+      "question": "What are codecs and why do they matter to video platforms?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-65.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.65",
+            "YT-6.66"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-66",
+      "subject": "ARCHITECTURE",
+      "question": "How do bitrate, frame rate, and resolution affect video storage?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-66.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.67",
+            "YT-6.68",
+            "YT-6.69",
+            "YT-6.70"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-67",
+      "subject": "ARCHITECTURE",
+      "question": "How do background workers process video transcoding jobs reliably?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-67.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.71",
+            "YT-6.72",
+            "YT-6.73"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-68",
+      "subject": "ARCHITECTURE",
+      "question": "What components make up a video transcoding architecture?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-68.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.74",
+            "YT-6.75",
+            "YT-6.76"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-69",
+      "subject": "ARCHITECTURE",
+      "question": "How do job queues and priorities control video transcoding work?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-69.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.77",
+            "YT-6.78",
+            "YT-6.79",
+            "YT-6.80",
+            "YT-6.81"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-70",
+      "subject": "ARCHITECTURE",
+      "question": "How can presigned URLs safely authorize media uploads or downloads?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-70.md",
+      "sources": [
+        {
+          "video_id": "YT-6",
+          "timestamp_ids": [
+            "YT-6.82",
+            "YT-6.83"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-176",
+      "subject": "JAVA",
+      "question": "What are Java Stream map, filter, and reduce used for?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-176.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.4",
+            "YT-7.37",
+            "YT-7.38",
+            "YT-7.39",
+            "YT-7.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-27",
+      "subject": "SPRING-BOOT",
+      "question": "How do you map a Java entity to a database table with JPA?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-27.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-28",
+      "subject": "SPRING-BOOT",
+      "question": "How do @Bean and @Component differ in Spring?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-28.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.7",
+            "YT-7.8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-29",
+      "subject": "SPRING-BOOT",
+      "question": "What does dependency injection mean in Spring?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-29.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-30",
+      "subject": "SPRING-BOOT",
+      "question": "When does Spring destroy a singleton bean?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-30.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-31",
+      "subject": "SPRING-BOOT",
+      "question": "What is the difference between BeanFactory and ApplicationContext?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-31.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.13",
+            "YT-7.14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-32",
+      "subject": "SPRING-BOOT",
+      "question": "How do @ControllerAdvice and @ExceptionHandler work?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-32.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.19",
+            "YT-7.20",
+            "YT-7.21"
+          ]
+        },
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.6",
+            "YT-8.7",
+            "YT-8.8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-33",
+      "subject": "SPRING-BOOT",
+      "question": "How do you propagate and translate database exceptions in a Spring application?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-33.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.22",
+            "YT-7.23"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-177",
+      "subject": "JAVA",
+      "question": "What is the difference between throw and throws for checked exceptions?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-177.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.24",
+            "YT-7.25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-23",
+      "subject": "DEVOPS",
+      "question": "How would you package a Spring Boot project as a WAR instead of a JAR?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-23.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.31",
+            "YT-7.32"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IT-8",
+      "subject": "TESTING",
+      "question": "How can JUnit 5 assert that code throws an expected exception?",
+      "tags": [
+        "it",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/TESTING/IT-8.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.35",
+            "YT-7.36"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-178",
+      "subject": "JAVA",
+      "question": "What are intermediate and terminal Stream operations?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-178.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.41",
+            "YT-7.42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-179",
+      "subject": "JAVA",
+      "question": "How do method references work in Java Streams?",
+      "tags": [
+        "ij",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-179.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.43",
+            "YT-7.44"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-71",
+      "subject": "ARCHITECTURE",
+      "question": "How does an Angular-to-Spring Boot API request travel through the layers?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-71.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.45",
+            "YT-7.46",
+            "YT-7.47",
+            "YT-7.48"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-72",
+      "subject": "ARCHITECTURE",
+      "question": "How does Angular property binding differ from event binding?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-72.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.51"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-73",
+      "subject": "ARCHITECTURE",
+      "question": "What do interpolation and two-way binding mean in Angular?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-73.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.52",
+            "YT-7.53"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-74",
+      "subject": "ARCHITECTURE",
+      "question": "Why is Angular called a single-page application framework?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-74.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.54",
+            "YT-7.55"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-75",
+      "subject": "ARCHITECTURE",
+      "question": "Why use TypeScript instead of plain JavaScript in Angular?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-75.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.56",
+            "YT-7.57"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-76",
+      "subject": "ARCHITECTURE",
+      "question": "What are Angular selectors, templates, and styles?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-76.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.58",
+            "YT-7.59"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-77",
+      "subject": "ARCHITECTURE",
+      "question": "What are built-in and custom Angular pipes?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-77.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.60",
+            "YT-7.61",
+            "YT-7.62"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-78",
+      "subject": "ARCHITECTURE",
+      "question": "How do Angular AOT and JIT compilation differ?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-78.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.63",
+            "YT-7.64"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-79",
+      "subject": "ARCHITECTURE",
+      "question": "How do JavaScript Promises compare with RxJS Observables?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-79.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.65",
+            "YT-7.66",
+            "YT-7.67"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-80",
+      "subject": "ARCHITECTURE",
+      "question": "How do Angular components share data with one another?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-80.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.68",
+            "YT-7.69",
+            "YT-7.70"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-81",
+      "subject": "ARCHITECTURE",
+      "question": "How does Angular Router switch views without a full reload?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-81.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.71",
+            "YT-7.72"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-82",
+      "subject": "ARCHITECTURE",
+      "question": "What are Angular HTTP interceptors used for?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-82.md",
+      "sources": [
+        {
+          "video_id": "YT-7",
+          "timestamp_ids": [
+            "YT-7.73"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-34",
+      "subject": "SPRING-BOOT",
+      "question": "How can an application expose Actuator on a different management port?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-34.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.4",
+            "YT-8.49",
+            "YT-8.50"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-35",
+      "subject": "SPRING-BOOT",
+      "question": "When is Spring AOP useful and how is it different from ControllerAdvice?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-35.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-83",
+      "subject": "ARCHITECTURE",
+      "question": "What does a circuit breaker and fallback do when a service fails?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-83.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-84",
+      "subject": "ARCHITECTURE",
+      "question": "How do OpenFeign and RestTemplate differ?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-84.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.16"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-36",
+      "subject": "SPRING-BOOT",
+      "question": "What roles do an authorization server and resource server play?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-36.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.20",
+            "YT-8.21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-24",
+      "subject": "DEVOPS",
+      "question": "What should you review in a teammate's pull request?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-24.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.26",
+            "YT-8.27",
+            "YT-8.54",
+            "YT-8.55"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IC-25",
+      "subject": "DEVOPS",
+      "question": "What is infrastructure as code with Terraform?",
+      "tags": [
+        "ic",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/DEVOPS/IC-25.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.38"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IA-85",
+      "subject": "ARCHITECTURE",
+      "question": "When is asynchronous messaging better than a direct REST call?",
+      "tags": [
+        "ia",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/ARCHITECTURE/IA-85.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.46",
+            "YT-8.47",
+            "YT-8.48"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IS-37",
+      "subject": "SPRING-BOOT",
+      "question": "How can Spring AOP record method entry and exit automatically?",
+      "tags": [
+        "is",
+        "mock-interview"
+      ],
+      "path": "INTERVIEW-SYLLABUS/SPRING-BOOT/IS-37.md",
+      "sources": [
+        {
+          "video_id": "YT-8",
+          "timestamp_ids": [
+            "YT-8.51",
+            "YT-8.52",
+            "YT-8.53"
           ]
         }
       ]

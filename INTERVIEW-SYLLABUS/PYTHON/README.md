@@ -1,7 +1,8 @@
 # Python interview syllabus
 
-Questions have permanent IDs. Each question keeps video options and code discussions separated by source video.
+**0 permanent interview questions.** ⭐ marks a question covered in more than one source video.
 
-No questions have been registered in this subject yet.
+| ID | Question | Video options |
+|---|---|---|
 
-[All interview subjects](../README.md) · [Pure video library](../../VIDEO-LIBRARY/)
+[All subjects](../README.md) · [Video library](../../INDEX.md)

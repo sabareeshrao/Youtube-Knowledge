@@ -88,3 +88,7 @@ The same canonical `IJ-n` question may have a **YT-1 interview video option** wi
 ## YT-2 — Complete Java Full Course (12-hour tutorial)
 
 [Browse the 71-chapter Java course](VIDEO-LIBRARY/YT-2/timestamps.md) with **142 Java interview questions**, **588 curated clickable timestamps**, and the **2,693 original subtitles** preserved. All 142 answer blocks are AI-only, in simple spoken interview style—there is no fabricated candidate. [Pure video chronology](VIDEO-LIBRARY/YT-2/timeline.md) · [Coverage audit](VIDEO-LIBRARY/YT-2/coverage-audit.md).
+
+## Six new mock interviews
+
+[Browse YT-3 through YT-8](INDEX.md) — 1796 original linked subtitle entries, 429 clickable curated timestamps, 194 separate question/video comparisons, and ⭐ on repeated canonical question tables. [All questions by subject](INTERVIEW-SYLLABUS/README.md).

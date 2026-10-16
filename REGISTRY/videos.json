@@ -38,6 +38,96 @@
       "transcript": "VIDEO-LIBRARY/YT-2/transcript.md",
       "timestamps": "VIDEO-LIBRARY/YT-2/timestamps.md",
       "timeline": "VIDEO-LIBRARY/YT-2/timeline.md"
+    },
+    {
+      "id": "YT-3",
+      "youtube_id": "d22oNW1W6ms",
+      "title": "Mock Interview | Core Java Mock Interview Question and Answers | Code Decode",
+      "type": "interview",
+      "tags": [
+        "interview",
+        "java",
+        "spring-boot",
+        "microservices"
+      ],
+      "transcript": "VIDEO-LIBRARY/YT-3/transcript.md",
+      "timestamps": "VIDEO-LIBRARY/YT-3/timestamps.md",
+      "timeline": "VIDEO-LIBRARY/YT-3/timeline.md"
+    },
+    {
+      "id": "YT-4",
+      "youtube_id": "ekLB9t9DBAk",
+      "title": "Mock Interview 3+ years experience | SDE-1 | Microservice | Java 8 | Spring boot | Code Decode |",
+      "type": "interview",
+      "tags": [
+        "interview",
+        "java",
+        "spring-boot",
+        "microservices"
+      ],
+      "transcript": "VIDEO-LIBRARY/YT-4/transcript.md",
+      "timestamps": "VIDEO-LIBRARY/YT-4/timestamps.md",
+      "timeline": "VIDEO-LIBRARY/YT-4/timeline.md"
+    },
+    {
+      "id": "YT-5",
+      "youtube_id": "AgM4UFkROQ0",
+      "title": "Mock Interview | Core Java Mock Interview Question and Answers | Code Decode",
+      "type": "interview",
+      "tags": [
+        "interview",
+        "java",
+        "spring-boot",
+        "microservices"
+      ],
+      "transcript": "VIDEO-LIBRARY/YT-5/transcript.md",
+      "timestamps": "VIDEO-LIBRARY/YT-5/timestamps.md",
+      "timeline": "VIDEO-LIBRARY/YT-5/timeline.md"
+    },
+    {
+      "id": "YT-6",
+      "youtube_id": "35lPXRd00-8",
+      "title": "System Design of Youtube | Mock Interview 5+ years of Experience | HLD | Code Decode",
+      "type": "interview",
+      "tags": [
+        "interview",
+        "system-design",
+        "youtube",
+        "video-streaming"
+      ],
+      "transcript": "VIDEO-LIBRARY/YT-6/transcript.md",
+      "timestamps": "VIDEO-LIBRARY/YT-6/timestamps.md",
+      "timeline": "VIDEO-LIBRARY/YT-6/timeline.md"
+    },
+    {
+      "id": "YT-7",
+      "youtube_id": "X2bPVTRruUM",
+      "title": "Java Full-Stack Web Developer Mock Interview 4+ year experience | Angular Spring Boot | Code Decode",
+      "type": "interview",
+      "tags": [
+        "interview",
+        "java",
+        "spring-boot",
+        "microservices"
+      ],
+      "transcript": "VIDEO-LIBRARY/YT-7/transcript.md",
+      "timestamps": "VIDEO-LIBRARY/YT-7/timestamps.md",
+      "timeline": "VIDEO-LIBRARY/YT-7/timeline.md"
+    },
+    {
+      "id": "YT-8",
+      "youtube_id": "PHIQJeKzMCU",
+      "title": "Mock Interview 8+ year Experience Java Developer | Spring Boot | Microservices | Code Decode",
+      "type": "interview",
+      "tags": [
+        "interview",
+        "java",
+        "spring-boot",
+        "microservices"
+      ],
+      "transcript": "VIDEO-LIBRARY/YT-8/transcript.md",
+      "timestamps": "VIDEO-LIBRARY/YT-8/timestamps.md",
+      "timeline": "VIDEO-LIBRARY/YT-8/timeline.md"
     }
   ]
 }

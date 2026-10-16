@@ -129,3 +129,7 @@ Given the next transcript:
 ## New permanent answer-writing standard
 
 All AI answers must follow [docs/ANSWER-STYLE.md](ANSWER-STYLE.md): spoken, direct, simple, one useful example, a memorable final takeaway, usually 65–100 words, technically accurate. The candidate side must contain original verbatim subtitle excerpts, not AI summaries. Store each excerpt's source caption times and verbatim text in `candidate_transcript_rows`; if no substantive answer exists, mark it explicitly. For tutorial/non-interview video sections, use only one AI-answer column with the same simple spoken style.
+
+## Marking reused questions with ⭐
+
+Before assigning IDs, compare the new prompt semantically against the registry. For exact conceptual repeats, use the existing permanent ID and add ⭐ to that video's question table and isolated video-option heading. The same ID may link to many videos, but candidate answer excerpts and timestamp IDs are never copied from another video. If the underlying question tests a different concept, give it a new ID without a star unless it reappears elsewhere.
