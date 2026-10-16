@@ -21,4 +21,6 @@ Each question gets a clear full question heading and an isolated timestamp table
 
 ## Answer mode for video sections
 
-Under each question's table, show the source-appropriate answer: real mock interview = two-column candidate-versus-AI comparison; instructor tutorial = one-column `### AI answer — YT-n` and `| AI answer |`. Consult [tutorial-video-timestamps.md](tutorial-video-timestamps.md) for the AI-only layout. Video pages must not mix separate video IDs.
+Under each question's table, show the source-appropriate answer: real mock interview = two-column **verbatim source caption excerpt** versus **simple spoken AI answer**; instructor tutorial = one-column `### AI answer — YT-n` and `| AI answer |`. Consult [tutorial-video-timestamps.md](tutorial-video-timestamps.md) for the AI-only layout. Video pages must not mix separate video IDs.
+
+Interview caption text is never paraphrased. Show original time-linked rows and acknowledge uncertain speaker turn boundaries. Interview-style AI answers use the [ANSWER-STYLE](../docs/ANSWER-STYLE.md) rules; tutorial AI answers use the same style without a candidate column.

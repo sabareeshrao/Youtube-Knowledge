@@ -8,7 +8,7 @@ Look at who is actually speaking:
 
 | Source | Questions generated | Answer display |
 |---|---|---|
-| Mock interview, with candidate responses | Interview questions from interviewer prompts and relevant follow-ups | **Two columns:** source-grounded candidate paraphrase vs AI-corrected answer |
+| Mock interview, with candidate responses | Interview questions from interviewer prompts and relevant follow-ups | **Two columns:** source-grounded verbatim candidate transcript excerpt vs AI-corrected answer |
 | Tutorial / lecture / demo / lesson / programming walkthrough | Realistic interview-style questions distilled from topics in the tutor's explanation, including prerequisites when relevant | **One column:** AI answer only; do **not** show a candidate column |
 | A tutorial narrator asks rhetorical interview questions | Interview-style questions based on taught content | **One column:** AI answer only; rhetorical questions are not candidate responses |
 | A combined recording where an actual candidate answers some questions and an instructor teaches others | Evaluate **each video/question pair** accurately | Interview comparison for actual candidate responses; AI-only for instructor-only content |
@@ -64,7 +64,7 @@ Canonical registry `REGISTRY/answer-comparisons.json` is historically named for 
 {
   "question_id": "IJ-1",
   "video_id": "YT-1",
-  "candidate_answer": "Faithful paraphrase of what the actual candidate said.",
+  "candidate_answer": "Verbatim original candidate caption excerpt (do not rewrite).",
   "ai_corrected_answer": "Technically corrected interview response, separately authored."
 }
 ```
@@ -74,9 +74,9 @@ Corresponding **2-column** Markdown table *under that video*:
 ```md
 ### Candidate answer vs. AI-corrected answer — YT-1
 
-| Candidate answer (paraphrased from YT-1) | AI-corrected interview answer |
+| Candidate response — original caption transcript (unedited excerpt) | AI answer — clear interview explanation |
 |---|---|
-| Candidate described the current use of HashMap... | Explain hashing, collisions, equals and hashCode correctly... |
+| Exact subtitle words copied without grammatical changes... | Explain hashing, collisions, equals and hashCode correctly... |
 ```
 
 **Tutorial source** (no actual candidate exists):
@@ -125,3 +125,7 @@ Given the next transcript:
 - [ ] Existing canonical interview question reused where topic already exists
 - [ ] Video-option timestamps/answers separated by YT ID
 - [ ] Registries/index updated; validation and GitHub Actions pass
+
+## New permanent answer-writing standard
+
+All AI answers must follow [docs/ANSWER-STYLE.md](ANSWER-STYLE.md): spoken, direct, simple, one useful example, a memorable final takeaway, usually 65–100 words, technically accurate. The candidate side must contain original verbatim subtitle excerpts, not AI summaries. Store each excerpt's source caption times and verbatim text in `candidate_transcript_rows`; if no substantive answer exists, mark it explicitly. For tutorial/non-interview video sections, use only one AI-answer column with the same simple spoken style.

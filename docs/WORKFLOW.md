@@ -94,7 +94,7 @@ The validator detects duplicate *IDs*, duplicate original YouTube video IDs, dan
 
 ## Candidate answer vs. AI correction, per source video
 
-For **every question supported by an actual candidate interview video**, display a 2-column Markdown table directly beneath that video's timestamp table: **Candidate answer (paraphrased from YT-n)** on the left and **AI-corrected interview answer** on the right. The candidate cell must faithfully summarize only what is supported by the video transcript; if the candidate fails to answer, say so. Never fabricate candidate responses or present AI additions as spoken answers. Corrections should be independently technically accurate.
+For **every question supported by an actual candidate interview video**, display a 2-column Markdown table directly beneath that video's timestamp table: **Candidate response — original caption transcript (unedited excerpt)** on the left and **AI-corrected interview answer** on the right. The candidate cell must preserve the source caption text verbatim without correcting grammar or replacing it with a summary; if the candidate fails to answer, say so. Never fabricate candidate responses or present AI additions as spoken answers. Corrections should be independently technically accurate.
 
 Use `REGISTRY/answer-comparisons.json` as the source of truth, keyed by the permanent `question_id` plus `video_id` pair. Maintain distinct answer pairs for videos discussing the same question. Also display that pair under the same question on the video-only `timestamps.md` page; leave `timeline.md` and the full transcript unmodified.
 
@@ -105,3 +105,7 @@ Use `REGISTRY/answer-comparisons.json` as the source of truth, keyed by the perm
 Register the video type (`interview` or `tutorial`) in `REGISTRY/videos.json`. Keep the full original transcript, independent chronological `timeline.md`, and interview-question-grouped `timestamps.md`. The syllabus continues to organize by canonical question IDs, with each video's timestamp table isolated from all others.
 
 For tutorial-only segments, write **one AI-answer column** (`### AI answer — YT-n` + `| AI answer |`). Do not invent a candidate or leave a misleading empty candidate column. Store an `answer_type: "ai_only"` record containing `ai_answer`, with no `candidate_answer` and no `ai_corrected_answer`, in the existing `REGISTRY/answer-comparisons.json`. The validator checks answer mode per question-video pair. Legacy YT-1 mock-interview comparisons remain valid.
+
+## Mandatory simple interview answers and verbatim speech
+
+[docs/ANSWER-STYLE.md](ANSWER-STYLE.md) overrides earlier wording that suggested rewriting candidate responses. **Candidate = untouched raw caption words with real timestamps. AI answer = short, memorable natural speech with one example and a takeaway.** Keep every video independent. Each question/video pair's answer registry record may contain `candidate_transcript_rows` for exact text verification. If no substantive candidate response exists, label that condition rather than inventing one. Tutorials retain one AI-answer column only.

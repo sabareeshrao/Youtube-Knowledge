@@ -70,13 +70,17 @@ See [INDEX.md](INDEX.md) to browse, [docs/WORKFLOW.md](docs/WORKFLOW.md) for the
 
 ## Side-by-side candidate and AI-corrected answers
 
-Every interview-question page now contains a **two-column comparison** under the timestamp table of each source video. Left: candidate's answer paraphrased from the linked transcript. Right: independently authored AI correction, including missing details or fixes. The [answer-comparison registry](REGISTRY/answer-comparisons.json) keeps the pair associated with its question ID and video ID. These answers also appear on the question-grouped video page.
+Every interview-question page now contains a **two-column comparison** under the timestamp table of each source video. Left: candidate's original timestamped caption excerpt, copied without rewriting. Right: independently authored AI correction, including missing details or fixes. The [answer-comparison registry](REGISTRY/answer-comparisons.json) keeps the pair associated with its question ID and video ID. These answers also appear on the question-grouped video page.
 
 ## Interview versus tutorial answer modes
 
 | Uploaded recording | Question treatment | Answer section below each video's timestamps |
 |---|---|---|
-| Mock interview with candidate | Existing interviewer questions plus meaningful follow-ups | **Two columns:** candidate answer (faithful paraphrase) **vs** AI-corrected answer |
+| Mock interview with candidate | Existing interviewer questions plus meaningful follow-ups | **Two columns:** candidate response (verbatim raw transcript excerpt) **vs** AI-corrected answer |
 | Tutorial, lecture, walkthrough, lesson, coding demonstration | Convert taught concepts into realistic interview-style questions | **One column:** AI answer only — no candidate column, no invented candidate |
 
 The same canonical `IJ-n` question may have a **YT-1 interview video option** with a candidate comparison and a **YT-2 tutorial option** with an AI-only answer. IDs, timestamp tables, and video code are never mixed. The backend stores both formats in [REGISTRY/answer-comparisons.json](REGISTRY/answer-comparisons.json); tutorial records have `answer_type: "ai_only"` and `ai_answer`. See the [playbook](docs/TRANSCRIPT-INGESTION.md).
+
+## Permanent answer standard (applies to all future transcripts)
+
+**Read [ANSWER-STYLE](docs/ANSWER-STYLE.md) before generating answers.** AI answers are **simple spoken interview responses**: direct explanation, one concrete example, memorable takeaway, usually 65–100 words. The actual candidate column is an **unaltered excerpt of original timed captions**, never a paraphrase. Uncertain speaker boundaries are identified honestly. [Browse IT-1 as the model](INTERVIEW-SYLLABUS/TESTING/IT-1.md).

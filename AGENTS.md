@@ -20,7 +20,7 @@ Turn **any timestamped video transcript**, including ordinary tutorials, lecture
 
 ## Decide source type by actual conversation, not filename
 
-- **`interview`**: An identifiable candidate actually answers questions. Use a **2-column comparison table** under each video's timestamp group: `Candidate answer (paraphrased from YT-n)` | `AI-corrected interview answer`. If there is no response, say that instead of inventing one.
+- **`interview`**: An identifiable candidate actually answers questions. Use a **2-column comparison table** under each video's timestamp group: `Candidate response — original caption transcript (unedited excerpt)` | `AI answer — clear interview explanation`. If there is no response, say that instead of inventing one.
 - **`tutorial`**: A single instructor teaches, codes, demonstrates, narrates, or explains (even if the instructor asks rhetorical questions or the video title says “interview”). **No candidate answer column.** Show a **1-column AI answer table**, immediately below the related timestamp table, headed `### AI answer — YT-n`. Explain the concept accurately and in a natural interview-answer voice, explicitly separating facts taught in the source from added AI clarification.
 - Different videos linked to the **same question** may use different answer modes, because the mode is per **source video**, not per question.
 - Videos with both a real candidate interview and tutorial segments should classify each question/video source accurately, using a mode override only if necessary; avoid attributing instructor explanations to the candidate. See the playbook.
@@ -48,7 +48,7 @@ Turn **any timestamped video transcript**, including ordinary tutorials, lecture
 
 Canonical file: `REGISTRY/answer-comparisons.json`, **one record per** `(question_id, video_id)`.
 
-- Interview: `{"question_id":"IJ-1","video_id":"YT-1","candidate_answer":"Source-grounded paraphrase...","ai_corrected_answer":"Correct and complete technical response..."}`.
+- Interview: `{"question_id":"IJ-1","video_id":"YT-1","candidate_answer":"Verbatim candidate caption text...","candidate_transcript_rows":[{"seconds":12,"clock":"0:12","text":"Verbatim caption text..."}],"ai_corrected_answer":"Clear spoken interview answer with one example..."}`.
 - Tutorial: `{"question_id":"IJ-1","video_id":"YT-2","answer_type":"ai_only","ai_answer":"Accurate AI-authored response..."}`. **Omit** `candidate_answer` and `ai_corrected_answer`.
 - Mark each video in `REGISTRY/videos.json` with `"type":"interview"` or `"type":"tutorial"`. Existing video `YT-1` is `interview`. Legacy interview records with no `answer_type` remain valid.
 - Optional mixed-mode override `"answer_type":"ai_only"` is only for a video section with no candidate at all; an otherwise interviewed candidate must not be silently erased. Consult detailed rules before overriding.
@@ -63,3 +63,7 @@ Canonical file: `REGISTRY/answer-comparisons.json`, **one record per** `(questio
 5. Commit a coherent update (prefer one atomic commit or PR), verify GitHub Actions passes, and report created/reused IDs and links. **Never claim success before verification.**
 
 If the supplied transcript has no reliable timed captions or original video ID, obtain the missing input rather than inventing timestamps or videos.
+
+## Mandatory answer writing instructions
+
+Read [docs/ANSWER-STYLE.md](docs/ANSWER-STYLE.md) for the full enforced standard. **Every new and revised interview answer must use simple spoken English, one relevant example, and a memorable takeaway. Interview candidate text is verbatim captions, not a paraphrase. Tutorials have only an AI answer.**

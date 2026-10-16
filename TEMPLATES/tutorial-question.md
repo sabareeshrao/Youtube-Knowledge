@@ -32,3 +32,7 @@
 | A HashMap locates a bucket using a key's hash. Colliding keys are distinguished by equality checks; implementation choices depend on Java version. This is an AI-authored explanation, not a nonexistent candidate's reply. |
 
 > The mock interview and tutorial are two **separate** video choices for the same question. Each source gets only its own relevant timestamp table and answer mode. The tutorial has NO candidate-answer column.
+
+## Answer writing rule
+
+An instructor is not a candidate. **Only the AI answer column** belongs below a tutorial video section. Write that answer as a natural 30–60-second interview response: direct point, simple explanation, one real example, final takeaway. See [ANSWER-STYLE](../docs/ANSWER-STYLE.md).
