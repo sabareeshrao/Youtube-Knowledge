@@ -2,7 +2,7 @@
 
 **Source:** [Full original linked transcript](transcript.md) · [Chronological timeline](timeline.md).
 
-The 2,693 original caption links are preserved unchanged. **{sid} curated video navigation links** are distributed across **71 course chapters**, with **142 question-specific AI-only answers**.
+The 2,693 original caption links are preserved unchanged. **588 curated video navigation links** are distributed across **71 course chapters**, with **142 question-specific AI-only answers**.
 
 | Chapter | Topic | Original subtitles | Selected links | Questions | First source timestamp drift |
 |---|---|---:|---:|---|---:|

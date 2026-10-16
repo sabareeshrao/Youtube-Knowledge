@@ -16,3 +16,5 @@ jobs:
         run: python scripts/validate.py
       - name: Test interview and tutorial answer modes
         run: python scripts/test_validator_modes.py
+      - name: Audit 12-hour Java course completeness
+        run: python scripts/validate_mega.py
