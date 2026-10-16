@@ -1,0 +1,1668 @@
+{
+  "source_video": "xTtL8E4LzTQ",
+  "new_video_id": "YT-2",
+  "captions": 2693,
+  "chapters": 71,
+  "curated_timestamps": 588,
+  "new_questions": 142,
+  "first_new_question": "IJ-4",
+  "last_new_question": "IJ-145",
+  "transcript_sha256": "3e67597d034240b3c03ef65409f219a2286705467fdf70c4223f705385347abe",
+  "files_count": 149,
+  "max_gap_seconds": 135,
+  "chapter_audit": [
+    {
+      "chapter": 1,
+      "name": "Introduction to Java",
+      "official_start_seconds": 0,
+      "first_caption": 0,
+      "last_caption": 649,
+      "source_subtitles": 45,
+      "question_ids": [
+        "IJ-4",
+        "IJ-5"
+      ],
+      "section_ids": [
+        "YT-2.1",
+        "YT-2.2",
+        "YT-2.3",
+        "YT-2.4",
+        "YT-2.5",
+        "YT-2.6",
+        "YT-2.7",
+        "YT-2.8"
+      ],
+      "subtitle_start_drift_seconds": 0
+    },
+    {
+      "chapter": 2,
+      "name": "Variables",
+      "official_start_seconds": 658,
+      "first_caption": 664,
+      "last_caption": 1880,
+      "source_subtitles": 70,
+      "question_ids": [
+        "IJ-6",
+        "IJ-7"
+      ],
+      "section_ids": [
+        "YT-2.9",
+        "YT-2.10",
+        "YT-2.11",
+        "YT-2.12",
+        "YT-2.13",
+        "YT-2.14",
+        "YT-2.15",
+        "YT-2.16",
+        "YT-2.17",
+        "YT-2.18",
+        "YT-2.19",
+        "YT-2.20",
+        "YT-2.21",
+        "YT-2.22"
+      ],
+      "subtitle_start_drift_seconds": 6
+    },
+    {
+      "chapter": 3,
+      "name": "User input",
+      "official_start_seconds": 1890,
+      "first_caption": 1892,
+      "last_caption": 2803,
+      "source_subtitles": 55,
+      "question_ids": [
+        "IJ-8",
+        "IJ-9"
+      ],
+      "section_ids": [
+        "YT-2.23",
+        "YT-2.24",
+        "YT-2.25",
+        "YT-2.26",
+        "YT-2.27",
+        "YT-2.28",
+        "YT-2.29",
+        "YT-2.30",
+        "YT-2.31",
+        "YT-2.32",
+        "YT-2.33",
+        "YT-2.34"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 4,
+      "name": "Mad Libs game",
+      "official_start_seconds": 2845,
+      "first_caption": 2849,
+      "last_caption": 3238,
+      "source_subtitles": 21,
+      "question_ids": [
+        "IJ-10",
+        "IJ-11"
+      ],
+      "section_ids": [
+        "YT-2.35",
+        "YT-2.36",
+        "YT-2.37",
+        "YT-2.38",
+        "YT-2.39",
+        "YT-2.40"
+      ],
+      "subtitle_start_drift_seconds": 4
+    },
+    {
+      "chapter": 5,
+      "name": "Arithmetic",
+      "official_start_seconds": 3248,
+      "first_caption": 3252,
+      "last_caption": 3743,
+      "source_subtitles": 30,
+      "question_ids": [
+        "IJ-12",
+        "IJ-13"
+      ],
+      "section_ids": [
+        "YT-2.41",
+        "YT-2.42",
+        "YT-2.43",
+        "YT-2.44",
+        "YT-2.45",
+        "YT-2.46",
+        "YT-2.47",
+        "YT-2.48"
+      ],
+      "subtitle_start_drift_seconds": 4
+    },
+    {
+      "chapter": 6,
+      "name": "Shopping cart program",
+      "official_start_seconds": 3749,
+      "first_caption": 3754,
+      "last_caption": 4134,
+      "source_subtitles": 23,
+      "question_ids": [
+        "IJ-14",
+        "IJ-15"
+      ],
+      "section_ids": [
+        "YT-2.49",
+        "YT-2.50",
+        "YT-2.51",
+        "YT-2.52",
+        "YT-2.53",
+        "YT-2.54"
+      ],
+      "subtitle_start_drift_seconds": 5
+    },
+    {
+      "chapter": 7,
+      "name": "If statements",
+      "official_start_seconds": 4140,
+      "first_caption": 4147,
+      "last_caption": 4947,
+      "source_subtitles": 47,
+      "question_ids": [
+        "IJ-16",
+        "IJ-17"
+      ],
+      "section_ids": [
+        "YT-2.55",
+        "YT-2.56",
+        "YT-2.57",
+        "YT-2.58",
+        "YT-2.59",
+        "YT-2.60",
+        "YT-2.61",
+        "YT-2.62",
+        "YT-2.63",
+        "YT-2.64"
+      ],
+      "subtitle_start_drift_seconds": 7
+    },
+    {
+      "chapter": 8,
+      "name": "Random numbers",
+      "official_start_seconds": 4948,
+      "first_caption": 4957,
+      "last_caption": 5240,
+      "source_subtitles": 16,
+      "question_ids": [
+        "IJ-18",
+        "IJ-19"
+      ],
+      "section_ids": [
+        "YT-2.65",
+        "YT-2.66",
+        "YT-2.67",
+        "YT-2.68",
+        "YT-2.69",
+        "YT-2.70"
+      ],
+      "subtitle_start_drift_seconds": 9
+    },
+    {
+      "chapter": 9,
+      "name": "Math class",
+      "official_start_seconds": 5248,
+      "first_caption": 5254,
+      "last_caption": 6150,
+      "source_subtitles": 48,
+      "question_ids": [
+        "IJ-20",
+        "IJ-21"
+      ],
+      "section_ids": [
+        "YT-2.71",
+        "YT-2.72",
+        "YT-2.73",
+        "YT-2.74",
+        "YT-2.75",
+        "YT-2.76",
+        "YT-2.77",
+        "YT-2.78",
+        "YT-2.79",
+        "YT-2.80",
+        "YT-2.81",
+        "YT-2.82"
+      ],
+      "subtitle_start_drift_seconds": 6
+    },
+    {
+      "chapter": 10,
+      "name": "printf",
+      "official_start_seconds": 6157,
+      "first_caption": 6164,
+      "last_caption": 6969,
+      "source_subtitles": 46,
+      "question_ids": [
+        "IJ-22",
+        "IJ-23"
+      ],
+      "section_ids": [
+        "YT-2.83",
+        "YT-2.84",
+        "YT-2.85",
+        "YT-2.86",
+        "YT-2.87",
+        "YT-2.88",
+        "YT-2.89",
+        "YT-2.90",
+        "YT-2.91",
+        "YT-2.92"
+      ],
+      "subtitle_start_drift_seconds": 7
+    },
+    {
+      "chapter": 11,
+      "name": "Compound interest calculator",
+      "official_start_seconds": 6974,
+      "first_caption": 6982,
+      "last_caption": 7426,
+      "source_subtitles": 24,
+      "question_ids": [
+        "IJ-24",
+        "IJ-25"
+      ],
+      "section_ids": [
+        "YT-2.93",
+        "YT-2.94",
+        "YT-2.95",
+        "YT-2.96",
+        "YT-2.97",
+        "YT-2.98"
+      ],
+      "subtitle_start_drift_seconds": 8
+    },
+    {
+      "chapter": 12,
+      "name": "Nested if statements",
+      "official_start_seconds": 7427,
+      "first_caption": 7438,
+      "last_caption": 7819,
+      "source_subtitles": 22,
+      "question_ids": [
+        "IJ-26",
+        "IJ-27"
+      ],
+      "section_ids": [
+        "YT-2.99",
+        "YT-2.100",
+        "YT-2.101",
+        "YT-2.102",
+        "YT-2.103",
+        "YT-2.104"
+      ],
+      "subtitle_start_drift_seconds": 11
+    },
+    {
+      "chapter": 13,
+      "name": "String methods",
+      "official_start_seconds": 7820,
+      "first_caption": 7830,
+      "last_caption": 8334,
+      "source_subtitles": 28,
+      "question_ids": [
+        "IJ-28",
+        "IJ-29"
+      ],
+      "section_ids": [
+        "YT-2.105",
+        "YT-2.106",
+        "YT-2.107",
+        "YT-2.108",
+        "YT-2.109",
+        "YT-2.110",
+        "YT-2.111",
+        "YT-2.112"
+      ],
+      "subtitle_start_drift_seconds": 10
+    },
+    {
+      "chapter": 14,
+      "name": "Substrings",
+      "official_start_seconds": 8335,
+      "first_caption": 8346,
+      "last_caption": 8814,
+      "source_subtitles": 30,
+      "question_ids": [
+        "IJ-30",
+        "IJ-31"
+      ],
+      "section_ids": [
+        "YT-2.113",
+        "YT-2.114",
+        "YT-2.115",
+        "YT-2.116",
+        "YT-2.117",
+        "YT-2.118"
+      ],
+      "subtitle_start_drift_seconds": 11
+    },
+    {
+      "chapter": 15,
+      "name": "Weight converter",
+      "official_start_seconds": 8820,
+      "first_caption": 8827,
+      "last_caption": 9302,
+      "source_subtitles": 28,
+      "question_ids": [
+        "IJ-32",
+        "IJ-33"
+      ],
+      "section_ids": [
+        "YT-2.119",
+        "YT-2.120",
+        "YT-2.121",
+        "YT-2.122",
+        "YT-2.123",
+        "YT-2.124"
+      ],
+      "subtitle_start_drift_seconds": 7
+    },
+    {
+      "chapter": 16,
+      "name": "Ternary operator",
+      "official_start_seconds": 9319,
+      "first_caption": 9320,
+      "last_caption": 9663,
+      "source_subtitles": 20,
+      "question_ids": [
+        "IJ-34",
+        "IJ-35"
+      ],
+      "section_ids": [
+        "YT-2.125",
+        "YT-2.126",
+        "YT-2.127",
+        "YT-2.128",
+        "YT-2.129",
+        "YT-2.130"
+      ],
+      "subtitle_start_drift_seconds": 1
+    },
+    {
+      "chapter": 17,
+      "name": "Temperature converter",
+      "official_start_seconds": 9670,
+      "first_caption": 9675,
+      "last_caption": 10137,
+      "source_subtitles": 30,
+      "question_ids": [
+        "IJ-36",
+        "IJ-37"
+      ],
+      "section_ids": [
+        "YT-2.131",
+        "YT-2.132",
+        "YT-2.133",
+        "YT-2.134",
+        "YT-2.135",
+        "YT-2.136"
+      ],
+      "subtitle_start_drift_seconds": 5
+    },
+    {
+      "chapter": 18,
+      "name": "Enhanced switches",
+      "official_start_seconds": 10145,
+      "first_caption": 10152,
+      "last_caption": 10656,
+      "source_subtitles": 30,
+      "question_ids": [
+        "IJ-38",
+        "IJ-39"
+      ],
+      "section_ids": [
+        "YT-2.137",
+        "YT-2.138",
+        "YT-2.139",
+        "YT-2.140",
+        "YT-2.141",
+        "YT-2.142",
+        "YT-2.143",
+        "YT-2.144"
+      ],
+      "subtitle_start_drift_seconds": 7
+    },
+    {
+      "chapter": 19,
+      "name": "Calculator program",
+      "official_start_seconds": 10662,
+      "first_caption": 10668,
+      "last_caption": 11393,
+      "source_subtitles": 41,
+      "question_ids": [
+        "IJ-40",
+        "IJ-41"
+      ],
+      "section_ids": [
+        "YT-2.145",
+        "YT-2.146",
+        "YT-2.147",
+        "YT-2.148",
+        "YT-2.149",
+        "YT-2.150",
+        "YT-2.151",
+        "YT-2.152",
+        "YT-2.153",
+        "YT-2.154"
+      ],
+      "subtitle_start_drift_seconds": 6
+    },
+    {
+      "chapter": 20,
+      "name": "Logical operators",
+      "official_start_seconds": 11398,
+      "first_caption": 11407,
+      "last_caption": 12072,
+      "source_subtitles": 40,
+      "question_ids": [
+        "IJ-42",
+        "IJ-43"
+      ],
+      "section_ids": [
+        "YT-2.155",
+        "YT-2.156",
+        "YT-2.157",
+        "YT-2.158",
+        "YT-2.159",
+        "YT-2.160",
+        "YT-2.161",
+        "YT-2.162"
+      ],
+      "subtitle_start_drift_seconds": 9
+    },
+    {
+      "chapter": 21,
+      "name": "While loops",
+      "official_start_seconds": 12083,
+      "first_caption": 12088,
+      "last_caption": 12817,
+      "source_subtitles": 47,
+      "question_ids": [
+        "IJ-44",
+        "IJ-45"
+      ],
+      "section_ids": [
+        "YT-2.163",
+        "YT-2.164",
+        "YT-2.165",
+        "YT-2.166",
+        "YT-2.167",
+        "YT-2.168",
+        "YT-2.169",
+        "YT-2.170",
+        "YT-2.171",
+        "YT-2.172"
+      ],
+      "subtitle_start_drift_seconds": 5
+    },
+    {
+      "chapter": 22,
+      "name": "Number guessing game",
+      "official_start_seconds": 12827,
+      "first_caption": 12830,
+      "last_caption": 13412,
+      "source_subtitles": 36,
+      "question_ids": [
+        "IJ-46",
+        "IJ-47"
+      ],
+      "section_ids": [
+        "YT-2.173",
+        "YT-2.174",
+        "YT-2.175",
+        "YT-2.176",
+        "YT-2.177",
+        "YT-2.178",
+        "YT-2.179",
+        "YT-2.180"
+      ],
+      "subtitle_start_drift_seconds": 3
+    },
+    {
+      "chapter": 23,
+      "name": "For loops",
+      "official_start_seconds": 13413,
+      "first_caption": 13425,
+      "last_caption": 14008,
+      "source_subtitles": 34,
+      "question_ids": [
+        "IJ-48",
+        "IJ-49"
+      ],
+      "section_ids": [
+        "YT-2.181",
+        "YT-2.182",
+        "YT-2.183",
+        "YT-2.184",
+        "YT-2.185",
+        "YT-2.186",
+        "YT-2.187",
+        "YT-2.188"
+      ],
+      "subtitle_start_drift_seconds": 12
+    },
+    {
+      "chapter": 24,
+      "name": "Break and continue",
+      "official_start_seconds": 14013,
+      "first_caption": 14022,
+      "last_caption": 14130,
+      "source_subtitles": 8,
+      "question_ids": [
+        "IJ-50",
+        "IJ-51"
+      ],
+      "section_ids": [
+        "YT-2.189",
+        "YT-2.190",
+        "YT-2.191",
+        "YT-2.192",
+        "YT-2.193",
+        "YT-2.194"
+      ],
+      "subtitle_start_drift_seconds": 9
+    },
+    {
+      "chapter": 25,
+      "name": "Nested loops",
+      "official_start_seconds": 14145,
+      "first_caption": 14145,
+      "last_caption": 14655,
+      "source_subtitles": 31,
+      "question_ids": [
+        "IJ-52",
+        "IJ-53"
+      ],
+      "section_ids": [
+        "YT-2.195",
+        "YT-2.196",
+        "YT-2.197",
+        "YT-2.198",
+        "YT-2.199",
+        "YT-2.200",
+        "YT-2.201",
+        "YT-2.202"
+      ],
+      "subtitle_start_drift_seconds": 0
+    },
+    {
+      "chapter": 26,
+      "name": "Methods",
+      "official_start_seconds": 14667,
+      "first_caption": 14667,
+      "last_caption": 15582,
+      "source_subtitles": 63,
+      "question_ids": [
+        "IJ-54",
+        "IJ-55"
+      ],
+      "section_ids": [
+        "YT-2.203",
+        "YT-2.204",
+        "YT-2.205",
+        "YT-2.206",
+        "YT-2.207",
+        "YT-2.208",
+        "YT-2.209",
+        "YT-2.210",
+        "YT-2.211",
+        "YT-2.212",
+        "YT-2.213",
+        "YT-2.214"
+      ],
+      "subtitle_start_drift_seconds": 0
+    },
+    {
+      "chapter": 27,
+      "name": "Overloaded methods",
+      "official_start_seconds": 15591,
+      "first_caption": 15595,
+      "last_caption": 15947,
+      "source_subtitles": 24,
+      "question_ids": [
+        "IJ-56",
+        "IJ-57"
+      ],
+      "section_ids": [
+        "YT-2.215",
+        "YT-2.216",
+        "YT-2.217",
+        "YT-2.218",
+        "YT-2.219",
+        "YT-2.220"
+      ],
+      "subtitle_start_drift_seconds": 4
+    },
+    {
+      "chapter": 28,
+      "name": "Variable scope",
+      "official_start_seconds": 15959,
+      "first_caption": 15961,
+      "last_caption": 16243,
+      "source_subtitles": 21,
+      "question_ids": [
+        "IJ-58",
+        "IJ-59"
+      ],
+      "section_ids": [
+        "YT-2.221",
+        "YT-2.222",
+        "YT-2.223",
+        "YT-2.224",
+        "YT-2.225",
+        "YT-2.226"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 29,
+      "name": "Banking program",
+      "official_start_seconds": 16257,
+      "first_caption": 16257,
+      "last_caption": 17470,
+      "source_subtitles": 76,
+      "question_ids": [
+        "IJ-60",
+        "IJ-61"
+      ],
+      "section_ids": [
+        "YT-2.227",
+        "YT-2.228",
+        "YT-2.229",
+        "YT-2.230",
+        "YT-2.231",
+        "YT-2.232",
+        "YT-2.233",
+        "YT-2.234",
+        "YT-2.235",
+        "YT-2.236",
+        "YT-2.237",
+        "YT-2.238",
+        "YT-2.239",
+        "YT-2.240"
+      ],
+      "subtitle_start_drift_seconds": 0
+    },
+    {
+      "chapter": 30,
+      "name": "Dice roller program",
+      "official_start_seconds": 17486,
+      "first_caption": 17487,
+      "last_caption": 18191,
+      "source_subtitles": 43,
+      "question_ids": [
+        "IJ-62",
+        "IJ-63"
+      ],
+      "section_ids": [
+        "YT-2.241",
+        "YT-2.242",
+        "YT-2.243",
+        "YT-2.244",
+        "YT-2.245",
+        "YT-2.246",
+        "YT-2.247",
+        "YT-2.248",
+        "YT-2.249",
+        "YT-2.250"
+      ],
+      "subtitle_start_drift_seconds": 1
+    },
+    {
+      "chapter": 31,
+      "name": "Arrays",
+      "official_start_seconds": 18206,
+      "first_caption": 18208,
+      "last_caption": 18744,
+      "source_subtitles": 38,
+      "question_ids": [
+        "IJ-64",
+        "IJ-65"
+      ],
+      "section_ids": [
+        "YT-2.251",
+        "YT-2.252",
+        "YT-2.253",
+        "YT-2.254",
+        "YT-2.255",
+        "YT-2.256",
+        "YT-2.257",
+        "YT-2.258"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 32,
+      "name": "User input into array",
+      "official_start_seconds": 18755,
+      "first_caption": 18756,
+      "last_caption": 19229,
+      "source_subtitles": 33,
+      "question_ids": [
+        "IJ-66",
+        "IJ-67"
+      ],
+      "section_ids": [
+        "YT-2.259",
+        "YT-2.260",
+        "YT-2.261",
+        "YT-2.262",
+        "YT-2.263",
+        "YT-2.264"
+      ],
+      "subtitle_start_drift_seconds": 1
+    },
+    {
+      "chapter": 33,
+      "name": "Search an array",
+      "official_start_seconds": 19238,
+      "first_caption": 19241,
+      "last_caption": 19666,
+      "source_subtitles": 27,
+      "question_ids": [
+        "IJ-68",
+        "IJ-69"
+      ],
+      "section_ids": [
+        "YT-2.265",
+        "YT-2.266",
+        "YT-2.267",
+        "YT-2.268",
+        "YT-2.269",
+        "YT-2.270"
+      ],
+      "subtitle_start_drift_seconds": 3
+    },
+    {
+      "chapter": 34,
+      "name": "Varargs",
+      "official_start_seconds": 19687,
+      "first_caption": 19688,
+      "last_caption": 20070,
+      "source_subtitles": 27,
+      "question_ids": [
+        "IJ-70",
+        "IJ-71"
+      ],
+      "section_ids": [
+        "YT-2.271",
+        "YT-2.272",
+        "YT-2.273",
+        "YT-2.274",
+        "YT-2.275",
+        "YT-2.276"
+      ],
+      "subtitle_start_drift_seconds": 1
+    },
+    {
+      "chapter": 35,
+      "name": "2D arrays",
+      "official_start_seconds": 20076,
+      "first_caption": 20086,
+      "last_caption": 20646,
+      "source_subtitles": 32,
+      "question_ids": [
+        "IJ-72",
+        "IJ-73"
+      ],
+      "section_ids": [
+        "YT-2.277",
+        "YT-2.278",
+        "YT-2.279",
+        "YT-2.280",
+        "YT-2.281",
+        "YT-2.282",
+        "YT-2.283",
+        "YT-2.284"
+      ],
+      "subtitle_start_drift_seconds": 10
+    },
+    {
+      "chapter": 36,
+      "name": "Quiz game",
+      "official_start_seconds": 20653,
+      "first_caption": 20657,
+      "last_caption": 21553,
+      "source_subtitles": 53,
+      "question_ids": [
+        "IJ-74",
+        "IJ-75"
+      ],
+      "section_ids": [
+        "YT-2.285",
+        "YT-2.286",
+        "YT-2.287",
+        "YT-2.288",
+        "YT-2.289",
+        "YT-2.290",
+        "YT-2.291",
+        "YT-2.292",
+        "YT-2.293",
+        "YT-2.294",
+        "YT-2.295",
+        "YT-2.296"
+      ],
+      "subtitle_start_drift_seconds": 4
+    },
+    {
+      "chapter": 37,
+      "name": "Rock paper scissors",
+      "official_start_seconds": 21554,
+      "first_caption": 21564,
+      "last_caption": 22496,
+      "source_subtitles": 58,
+      "question_ids": [
+        "IJ-76",
+        "IJ-77"
+      ],
+      "section_ids": [
+        "YT-2.297",
+        "YT-2.298",
+        "YT-2.299",
+        "YT-2.300",
+        "YT-2.301",
+        "YT-2.302",
+        "YT-2.303",
+        "YT-2.304",
+        "YT-2.305",
+        "YT-2.306",
+        "YT-2.307",
+        "YT-2.308"
+      ],
+      "subtitle_start_drift_seconds": 10
+    },
+    {
+      "chapter": 38,
+      "name": "Slot machine",
+      "official_start_seconds": 22502,
+      "first_caption": 22510,
+      "last_caption": 24091,
+      "source_subtitles": 97,
+      "question_ids": [
+        "IJ-78",
+        "IJ-79"
+      ],
+      "section_ids": [
+        "YT-2.309",
+        "YT-2.310",
+        "YT-2.311",
+        "YT-2.312",
+        "YT-2.313",
+        "YT-2.314",
+        "YT-2.315",
+        "YT-2.316",
+        "YT-2.317",
+        "YT-2.318",
+        "YT-2.319",
+        "YT-2.320",
+        "YT-2.321",
+        "YT-2.322",
+        "YT-2.323",
+        "YT-2.324",
+        "YT-2.325",
+        "YT-2.326"
+      ],
+      "subtitle_start_drift_seconds": 8
+    },
+    {
+      "chapter": 39,
+      "name": "Object-oriented programming",
+      "official_start_seconds": 24107,
+      "first_caption": 24109,
+      "last_caption": 24697,
+      "source_subtitles": 36,
+      "question_ids": [
+        "IJ-80",
+        "IJ-81"
+      ],
+      "section_ids": [
+        "YT-2.327",
+        "YT-2.328",
+        "YT-2.329",
+        "YT-2.330",
+        "YT-2.331",
+        "YT-2.332",
+        "YT-2.333",
+        "YT-2.334"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 40,
+      "name": "Constructors",
+      "official_start_seconds": 24698,
+      "first_caption": 24710,
+      "last_caption": 25291,
+      "source_subtitles": 38,
+      "question_ids": [
+        "IJ-82",
+        "IJ-83"
+      ],
+      "section_ids": [
+        "YT-2.335",
+        "YT-2.336",
+        "YT-2.337",
+        "YT-2.338",
+        "YT-2.339",
+        "YT-2.340",
+        "YT-2.341",
+        "YT-2.342"
+      ],
+      "subtitle_start_drift_seconds": 12
+    },
+    {
+      "chapter": 41,
+      "name": "Overloaded constructors",
+      "official_start_seconds": 25305,
+      "first_caption": 25307,
+      "last_caption": 25701,
+      "source_subtitles": 23,
+      "question_ids": [
+        "IJ-84",
+        "IJ-85"
+      ],
+      "section_ids": [
+        "YT-2.343",
+        "YT-2.344",
+        "YT-2.345",
+        "YT-2.346",
+        "YT-2.347",
+        "YT-2.348"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 42,
+      "name": "Array of objects",
+      "official_start_seconds": 25702,
+      "first_caption": 25710,
+      "last_caption": 26033,
+      "source_subtitles": 22,
+      "question_ids": [
+        "IJ-86",
+        "IJ-87"
+      ],
+      "section_ids": [
+        "YT-2.349",
+        "YT-2.350",
+        "YT-2.351",
+        "YT-2.352",
+        "YT-2.353",
+        "YT-2.354"
+      ],
+      "subtitle_start_drift_seconds": 8
+    },
+    {
+      "chapter": 43,
+      "name": "Static keyword",
+      "official_start_seconds": 26047,
+      "first_caption": 26047,
+      "last_caption": 26515,
+      "source_subtitles": 35,
+      "question_ids": [
+        "IJ-88",
+        "IJ-89"
+      ],
+      "section_ids": [
+        "YT-2.355",
+        "YT-2.356",
+        "YT-2.357",
+        "YT-2.358",
+        "YT-2.359",
+        "YT-2.360"
+      ],
+      "subtitle_start_drift_seconds": 0
+    },
+    {
+      "chapter": 44,
+      "name": "Inheritance",
+      "official_start_seconds": 26524,
+      "first_caption": 26526,
+      "last_caption": 27068,
+      "source_subtitles": 35,
+      "question_ids": [
+        "IJ-90",
+        "IJ-91"
+      ],
+      "section_ids": [
+        "YT-2.361",
+        "YT-2.362",
+        "YT-2.363",
+        "YT-2.364",
+        "YT-2.365",
+        "YT-2.366",
+        "YT-2.367",
+        "YT-2.368"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 45,
+      "name": "Super keyword",
+      "official_start_seconds": 27069,
+      "first_caption": 27082,
+      "last_caption": 27680,
+      "source_subtitles": 37,
+      "question_ids": [
+        "IJ-92",
+        "IJ-93"
+      ],
+      "section_ids": [
+        "YT-2.369",
+        "YT-2.370",
+        "YT-2.371",
+        "YT-2.372",
+        "YT-2.373",
+        "YT-2.374",
+        "YT-2.375",
+        "YT-2.376"
+      ],
+      "subtitle_start_drift_seconds": 13
+    },
+    {
+      "chapter": 46,
+      "name": "Method overriding",
+      "official_start_seconds": 27697,
+      "first_caption": 27699,
+      "last_caption": 27961,
+      "source_subtitles": 19,
+      "question_ids": [
+        "IJ-94",
+        "IJ-95"
+      ],
+      "section_ids": [
+        "YT-2.377",
+        "YT-2.378",
+        "YT-2.379",
+        "YT-2.380",
+        "YT-2.381",
+        "YT-2.382"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 47,
+      "name": "toString method",
+      "official_start_seconds": 27968,
+      "first_caption": 27973,
+      "last_caption": 28312,
+      "source_subtitles": 24,
+      "question_ids": [
+        "IJ-96",
+        "IJ-97"
+      ],
+      "section_ids": [
+        "YT-2.383",
+        "YT-2.384",
+        "YT-2.385",
+        "YT-2.386",
+        "YT-2.387",
+        "YT-2.388"
+      ],
+      "subtitle_start_drift_seconds": 5
+    },
+    {
+      "chapter": 48,
+      "name": "Abstraction",
+      "official_start_seconds": 28318,
+      "first_caption": 28323,
+      "last_caption": 28879,
+      "source_subtitles": 37,
+      "question_ids": [
+        "IJ-98",
+        "IJ-99"
+      ],
+      "section_ids": [
+        "YT-2.389",
+        "YT-2.390",
+        "YT-2.391",
+        "YT-2.392",
+        "YT-2.393",
+        "YT-2.394",
+        "YT-2.395",
+        "YT-2.396"
+      ],
+      "subtitle_start_drift_seconds": 5
+    },
+    {
+      "chapter": 49,
+      "name": "Interfaces",
+      "official_start_seconds": 28890,
+      "first_caption": 28891,
+      "last_caption": 29256,
+      "source_subtitles": 26,
+      "question_ids": [
+        "IJ-100",
+        "IJ-101"
+      ],
+      "section_ids": [
+        "YT-2.397",
+        "YT-2.398",
+        "YT-2.399",
+        "YT-2.400",
+        "YT-2.401",
+        "YT-2.402"
+      ],
+      "subtitle_start_drift_seconds": 1
+    },
+    {
+      "chapter": 50,
+      "name": "Polymorphism",
+      "official_start_seconds": 29264,
+      "first_caption": 29266,
+      "last_caption": 29655,
+      "source_subtitles": 26,
+      "question_ids": [
+        "IJ-102",
+        "IJ-103"
+      ],
+      "section_ids": [
+        "YT-2.403",
+        "YT-2.404",
+        "YT-2.405",
+        "YT-2.406",
+        "YT-2.407",
+        "YT-2.408"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 51,
+      "name": "Runtime polymorphism",
+      "official_start_seconds": 29667,
+      "first_caption": 29667,
+      "last_caption": 29968,
+      "source_subtitles": 20,
+      "question_ids": [
+        "IJ-104",
+        "IJ-105"
+      ],
+      "section_ids": [
+        "YT-2.409",
+        "YT-2.410",
+        "YT-2.411",
+        "YT-2.412",
+        "YT-2.413",
+        "YT-2.414"
+      ],
+      "subtitle_start_drift_seconds": 0
+    },
+    {
+      "chapter": 52,
+      "name": "Getters and setters",
+      "official_start_seconds": 29975,
+      "first_caption": 29978,
+      "last_caption": 30568,
+      "source_subtitles": 39,
+      "question_ids": [
+        "IJ-106",
+        "IJ-107"
+      ],
+      "section_ids": [
+        "YT-2.415",
+        "YT-2.416",
+        "YT-2.417",
+        "YT-2.418",
+        "YT-2.419",
+        "YT-2.420",
+        "YT-2.421",
+        "YT-2.422"
+      ],
+      "subtitle_start_drift_seconds": 3
+    },
+    {
+      "chapter": 53,
+      "name": "Aggregation",
+      "official_start_seconds": 30579,
+      "first_caption": 30581,
+      "last_caption": 31139,
+      "source_subtitles": 37,
+      "question_ids": [
+        "IJ-108",
+        "IJ-109"
+      ],
+      "section_ids": [
+        "YT-2.423",
+        "YT-2.424",
+        "YT-2.425",
+        "YT-2.426",
+        "YT-2.427",
+        "YT-2.428",
+        "YT-2.429",
+        "YT-2.430"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 54,
+      "name": "Composition",
+      "official_start_seconds": 31142,
+      "first_caption": 31151,
+      "last_caption": 31514,
+      "source_subtitles": 23,
+      "question_ids": [
+        "IJ-110",
+        "IJ-111"
+      ],
+      "section_ids": [
+        "YT-2.431",
+        "YT-2.432",
+        "YT-2.433",
+        "YT-2.434",
+        "YT-2.435",
+        "YT-2.436"
+      ],
+      "subtitle_start_drift_seconds": 9
+    },
+    {
+      "chapter": 55,
+      "name": "Wrapper classes",
+      "official_start_seconds": 31517,
+      "first_caption": 31527,
+      "last_caption": 32144,
+      "source_subtitles": 45,
+      "question_ids": [
+        "IJ-112",
+        "IJ-113"
+      ],
+      "section_ids": [
+        "YT-2.437",
+        "YT-2.438",
+        "YT-2.439",
+        "YT-2.440",
+        "YT-2.441",
+        "YT-2.442",
+        "YT-2.443",
+        "YT-2.444"
+      ],
+      "subtitle_start_drift_seconds": 10
+    },
+    {
+      "chapter": 56,
+      "name": "ArrayLists",
+      "official_start_seconds": 32151,
+      "first_caption": 32153,
+      "last_caption": 32718,
+      "source_subtitles": 39,
+      "question_ids": [
+        "IJ-114",
+        "IJ-115"
+      ],
+      "section_ids": [
+        "YT-2.445",
+        "YT-2.446",
+        "YT-2.447",
+        "YT-2.448",
+        "YT-2.449",
+        "YT-2.450",
+        "YT-2.451",
+        "YT-2.452"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 57,
+      "name": "Exception handling",
+      "official_start_seconds": 32729,
+      "first_caption": 32731,
+      "last_caption": 33196,
+      "source_subtitles": 34,
+      "question_ids": [
+        "IJ-116",
+        "IJ-117"
+      ],
+      "section_ids": [
+        "YT-2.453",
+        "YT-2.454",
+        "YT-2.455",
+        "YT-2.456",
+        "YT-2.457",
+        "YT-2.458"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 58,
+      "name": "Write files",
+      "official_start_seconds": 33208,
+      "first_caption": 33210,
+      "last_caption": 33717,
+      "source_subtitles": 35,
+      "question_ids": [
+        "IJ-118",
+        "IJ-119"
+      ],
+      "section_ids": [
+        "YT-2.459",
+        "YT-2.460",
+        "YT-2.461",
+        "YT-2.462",
+        "YT-2.463",
+        "YT-2.464",
+        "YT-2.465",
+        "YT-2.466"
+      ],
+      "subtitle_start_drift_seconds": 2
+    },
+    {
+      "chapter": 59,
+      "name": "Read files",
+      "official_start_seconds": 33718,
+      "first_caption": 33728,
+      "last_caption": 34124,
+      "source_subtitles": 29,
+      "question_ids": [
+        "IJ-120",
+        "IJ-121"
+      ],
+      "section_ids": [
+        "YT-2.467",
+        "YT-2.468",
+        "YT-2.469",
+        "YT-2.470",
+        "YT-2.471",
+        "YT-2.472"
+      ],
+      "subtitle_start_drift_seconds": 10
+    },
+    {
+      "chapter": 60,
+      "name": "Music player",
+      "official_start_seconds": 34130,
+      "first_caption": 34137,
+      "last_caption": 34985,
+      "source_subtitles": 56,
+      "question_ids": [
+        "IJ-122",
+        "IJ-123"
+      ],
+      "section_ids": [
+        "YT-2.473",
+        "YT-2.474",
+        "YT-2.475",
+        "YT-2.476",
+        "YT-2.477",
+        "YT-2.478",
+        "YT-2.479",
+        "YT-2.480",
+        "YT-2.481",
+        "YT-2.482"
+      ],
+      "subtitle_start_drift_seconds": 7
+    },
+    {
+      "chapter": 61,
+      "name": "Hangman game",
+      "official_start_seconds": 34990,
+      "first_caption": 34996,
+      "last_caption": 36699,
+      "source_subtitles": 112,
+      "question_ids": [
+        "IJ-124",
+        "IJ-125"
+      ],
+      "section_ids": [
+        "YT-2.483",
+        "YT-2.484",
+        "YT-2.485",
+        "YT-2.486",
+        "YT-2.487",
+        "YT-2.488",
+        "YT-2.489",
+        "YT-2.490",
+        "YT-2.491",
+        "YT-2.492",
+        "YT-2.493",
+        "YT-2.494",
+        "YT-2.495",
+        "YT-2.496",
+        "YT-2.497",
+        "YT-2.498",
+        "YT-2.499",
+        "YT-2.500",
+        "YT-2.501",
+        "YT-2.502"
+      ],
+      "subtitle_start_drift_seconds": 6
+    },
+    {
+      "chapter": 62,
+      "name": "Dates and times",
+      "official_start_seconds": 36702,
+      "first_caption": 36709,
+      "last_caption": 37219,
+      "source_subtitles": 31,
+      "question_ids": [
+        "IJ-126",
+        "IJ-127"
+      ],
+      "section_ids": [
+        "YT-2.503",
+        "YT-2.504",
+        "YT-2.505",
+        "YT-2.506",
+        "YT-2.507",
+        "YT-2.508",
+        "YT-2.509",
+        "YT-2.510"
+      ],
+      "subtitle_start_drift_seconds": 7
+    },
+    {
+      "chapter": 63,
+      "name": "Anonymous classes",
+      "official_start_seconds": 37224,
+      "first_caption": 37230,
+      "last_caption": 37518,
+      "source_subtitles": 21,
+      "question_ids": [
+        "IJ-128",
+        "IJ-129"
+      ],
+      "section_ids": [
+        "YT-2.511",
+        "YT-2.512",
+        "YT-2.513",
+        "YT-2.514",
+        "YT-2.515",
+        "YT-2.516"
+      ],
+      "subtitle_start_drift_seconds": 6
+    },
+    {
+      "chapter": 64,
+      "name": "TimerTasks",
+      "official_start_seconds": 37523,
+      "first_caption": 37533,
+      "last_caption": 37899,
+      "source_subtitles": 25,
+      "question_ids": [
+        "IJ-130",
+        "IJ-131"
+      ],
+      "section_ids": [
+        "YT-2.517",
+        "YT-2.518",
+        "YT-2.519",
+        "YT-2.520",
+        "YT-2.521",
+        "YT-2.522"
+      ],
+      "subtitle_start_drift_seconds": 10
+    },
+    {
+      "chapter": 65,
+      "name": "Countdown timer",
+      "official_start_seconds": 37905,
+      "first_caption": 37909,
+      "last_caption": 38292,
+      "source_subtitles": 27,
+      "question_ids": [
+        "IJ-132",
+        "IJ-133"
+      ],
+      "section_ids": [
+        "YT-2.523",
+        "YT-2.524",
+        "YT-2.525",
+        "YT-2.526",
+        "YT-2.527",
+        "YT-2.528"
+      ],
+      "subtitle_start_drift_seconds": 4
+    },
+    {
+      "chapter": 66,
+      "name": "Generics",
+      "official_start_seconds": 38296,
+      "first_caption": 38303,
+      "last_caption": 39121,
+      "source_subtitles": 58,
+      "question_ids": [
+        "IJ-134",
+        "IJ-135"
+      ],
+      "section_ids": [
+        "YT-2.529",
+        "YT-2.530",
+        "YT-2.531",
+        "YT-2.532",
+        "YT-2.533",
+        "YT-2.534",
+        "YT-2.535",
+        "YT-2.536",
+        "YT-2.537",
+        "YT-2.538"
+      ],
+      "subtitle_start_drift_seconds": 7
+    },
+    {
+      "chapter": 67,
+      "name": "HashMaps",
+      "official_start_seconds": 39129,
+      "first_caption": 39135,
+      "last_caption": 39757,
+      "source_subtitles": 44,
+      "question_ids": [
+        "IJ-136",
+        "IJ-137"
+      ],
+      "section_ids": [
+        "YT-2.539",
+        "YT-2.540",
+        "YT-2.541",
+        "YT-2.542",
+        "YT-2.543",
+        "YT-2.544",
+        "YT-2.545",
+        "YT-2.546"
+      ],
+      "subtitle_start_drift_seconds": 6
+    },
+    {
+      "chapter": 68,
+      "name": "Enums",
+      "official_start_seconds": 39758,
+      "first_caption": 39769,
+      "last_caption": 40352,
+      "source_subtitles": 38,
+      "question_ids": [
+        "IJ-138",
+        "IJ-139"
+      ],
+      "section_ids": [
+        "YT-2.547",
+        "YT-2.548",
+        "YT-2.549",
+        "YT-2.550",
+        "YT-2.551",
+        "YT-2.552",
+        "YT-2.553",
+        "YT-2.554"
+      ],
+      "subtitle_start_drift_seconds": 11
+    },
+    {
+      "chapter": 69,
+      "name": "Threading",
+      "official_start_seconds": 40365,
+      "first_caption": 40365,
+      "last_caption": 40979,
+      "source_subtitles": 46,
+      "question_ids": [
+        "IJ-140",
+        "IJ-141"
+      ],
+      "section_ids": [
+        "YT-2.555",
+        "YT-2.556",
+        "YT-2.557",
+        "YT-2.558",
+        "YT-2.559",
+        "YT-2.560",
+        "YT-2.561",
+        "YT-2.562"
+      ],
+      "subtitle_start_drift_seconds": 0
+    },
+    {
+      "chapter": 70,
+      "name": "Multithreading",
+      "official_start_seconds": 40984,
+      "first_caption": 40992,
+      "last_caption": 41456,
+      "source_subtitles": 30,
+      "question_ids": [
+        "IJ-142",
+        "IJ-143"
+      ],
+      "section_ids": [
+        "YT-2.563",
+        "YT-2.564",
+        "YT-2.565",
+        "YT-2.566",
+        "YT-2.567",
+        "YT-2.568"
+      ],
+      "subtitle_start_drift_seconds": 8
+    },
+    {
+      "chapter": 71,
+      "name": "Alarm clock",
+      "official_start_seconds": 41462,
+      "first_caption": 41469,
+      "last_caption": 43195,
+      "source_subtitles": 104,
+      "question_ids": [
+        "IJ-144",
+        "IJ-145"
+      ],
+      "section_ids": [
+        "YT-2.569",
+        "YT-2.570",
+        "YT-2.571",
+        "YT-2.572",
+        "YT-2.573",
+        "YT-2.574",
+        "YT-2.575",
+        "YT-2.576",
+        "YT-2.577",
+        "YT-2.578",
+        "YT-2.579",
+        "YT-2.580",
+        "YT-2.581",
+        "YT-2.582",
+        "YT-2.583",
+        "YT-2.584",
+        "YT-2.585",
+        "YT-2.586",
+        "YT-2.587",
+        "YT-2.588"
+      ],
+      "subtitle_start_drift_seconds": 7
+    }
+  ]
+}

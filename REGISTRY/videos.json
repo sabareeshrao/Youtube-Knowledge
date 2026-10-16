@@ -21,6 +21,23 @@
       "timestamps": "VIDEO-LIBRARY/YT-1/timestamps.md",
       "timeline": "VIDEO-LIBRARY/YT-1/timeline.md",
       "type": "interview"
+    },
+    {
+      "id": "YT-2",
+      "youtube_id": "xTtL8E4LzTQ",
+      "title": "Java Full Course for free ☕",
+      "type": "tutorial",
+      "tags": [
+        "java",
+        "java-basics",
+        "java-oop",
+        "java-collections",
+        "java-threading",
+        "java-projects"
+      ],
+      "transcript": "VIDEO-LIBRARY/YT-2/transcript.md",
+      "timestamps": "VIDEO-LIBRARY/YT-2/timestamps.md",
+      "timeline": "VIDEO-LIBRARY/YT-2/timeline.md"
     }
   ]
 }

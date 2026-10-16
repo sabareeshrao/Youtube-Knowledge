@@ -1209,6 +1209,3008 @@
           ]
         }
       ]
+    },
+    {
+      "id": "IJ-4",
+      "subject": "JAVA",
+      "question": "What do you need to write and run your first Java program?",
+      "tags": [
+        "java",
+        "introduction-to-java"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-4.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.1",
+            "YT-2.2",
+            "YT-2.3",
+            "YT-2.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-5",
+      "subject": "JAVA",
+      "question": "What do the main method and println do in Java?",
+      "tags": [
+        "java",
+        "introduction-to-java"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-5.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.5",
+            "YT-2.6",
+            "YT-2.7",
+            "YT-2.8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-6",
+      "subject": "JAVA",
+      "question": "What are variables and primitive data types in Java?",
+      "tags": [
+        "java",
+        "variables"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-6.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.9",
+            "YT-2.10",
+            "YT-2.11",
+            "YT-2.12",
+            "YT-2.13",
+            "YT-2.14",
+            "YT-2.15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-7",
+      "subject": "JAVA",
+      "question": "How do you declare, assign, and print Java variables?",
+      "tags": [
+        "java",
+        "variables"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-7.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.16",
+            "YT-2.17",
+            "YT-2.18",
+            "YT-2.19",
+            "YT-2.20",
+            "YT-2.21",
+            "YT-2.22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-8",
+      "subject": "JAVA",
+      "question": "How can a Java program accept user input using Scanner?",
+      "tags": [
+        "java",
+        "user-input"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-8.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.23",
+            "YT-2.24",
+            "YT-2.25",
+            "YT-2.26",
+            "YT-2.27",
+            "YT-2.28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-9",
+      "subject": "JAVA",
+      "question": "Why can nextLine skip input after nextInt?",
+      "tags": [
+        "java",
+        "user-input"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-9.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.29",
+            "YT-2.30",
+            "YT-2.31",
+            "YT-2.32",
+            "YT-2.33",
+            "YT-2.34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-10",
+      "subject": "JAVA",
+      "question": "How would you build a Mad Libs game in Java?",
+      "tags": [
+        "java",
+        "mad-libs-game"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-10.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.35",
+            "YT-2.36",
+            "YT-2.37"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-11",
+      "subject": "JAVA",
+      "question": "How do you keep several pieces of user input organized?",
+      "tags": [
+        "java",
+        "mad-libs-game"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-11.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.38",
+            "YT-2.39",
+            "YT-2.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-12",
+      "subject": "JAVA",
+      "question": "What arithmetic operators are available in Java?",
+      "tags": [
+        "java",
+        "arithmetic"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-12.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.41",
+            "YT-2.42",
+            "YT-2.43",
+            "YT-2.44"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-13",
+      "subject": "JAVA",
+      "question": "What do ++, +=, and operator precedence mean?",
+      "tags": [
+        "java",
+        "arithmetic"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-13.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.45",
+            "YT-2.46",
+            "YT-2.47",
+            "YT-2.48"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-14",
+      "subject": "JAVA",
+      "question": "How can you calculate the total price in a basic shopping cart?",
+      "tags": [
+        "java",
+        "shopping-cart-program"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-14.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.49",
+            "YT-2.50",
+            "YT-2.51"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-15",
+      "subject": "JAVA",
+      "question": "Why should quantity and price use different Java types?",
+      "tags": [
+        "java",
+        "shopping-cart-program"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-15.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.52",
+            "YT-2.53",
+            "YT-2.54"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-16",
+      "subject": "JAVA",
+      "question": "How do if, else if, and else work in Java?",
+      "tags": [
+        "java",
+        "if-statements"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-16.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.55",
+            "YT-2.56",
+            "YT-2.57",
+            "YT-2.58",
+            "YT-2.59"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-17",
+      "subject": "JAVA",
+      "question": "Why does the order of else-if conditions matter?",
+      "tags": [
+        "java",
+        "if-statements"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-17.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.60",
+            "YT-2.61",
+            "YT-2.62",
+            "YT-2.63",
+            "YT-2.64"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-18",
+      "subject": "JAVA",
+      "question": "How do you generate random values with Java Random?",
+      "tags": [
+        "java",
+        "random-numbers"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-18.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.65",
+            "YT-2.66",
+            "YT-2.67"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-19",
+      "subject": "JAVA",
+      "question": "Why is the upper bound excluded from Random.nextInt?",
+      "tags": [
+        "java",
+        "random-numbers"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-19.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.68",
+            "YT-2.69",
+            "YT-2.70"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-20",
+      "subject": "JAVA",
+      "question": "Which Java Math methods are useful for calculations?",
+      "tags": [
+        "java",
+        "math-class"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-20.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.71",
+            "YT-2.72",
+            "YT-2.73",
+            "YT-2.74",
+            "YT-2.75",
+            "YT-2.76"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-21",
+      "subject": "JAVA",
+      "question": "How can you calculate a triangle's hypotenuse using Java?",
+      "tags": [
+        "java",
+        "math-class"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-21.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.77",
+            "YT-2.78",
+            "YT-2.79",
+            "YT-2.80",
+            "YT-2.81",
+            "YT-2.82"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-22",
+      "subject": "JAVA",
+      "question": "What does printf provide that println does not?",
+      "tags": [
+        "java",
+        "printf"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-22.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.83",
+            "YT-2.84",
+            "YT-2.85",
+            "YT-2.86",
+            "YT-2.87"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-23",
+      "subject": "JAVA",
+      "question": "How do Java printf format specifiers work?",
+      "tags": [
+        "java",
+        "printf"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-23.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.88",
+            "YT-2.89",
+            "YT-2.90",
+            "YT-2.91",
+            "YT-2.92"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-24",
+      "subject": "JAVA",
+      "question": "How would you build a compound-interest calculator in Java?",
+      "tags": [
+        "java",
+        "compound-interest-calculator"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-24.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.93",
+            "YT-2.94",
+            "YT-2.95"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-25",
+      "subject": "JAVA",
+      "question": "Why must percentages and compounding periods be converted carefully?",
+      "tags": [
+        "java",
+        "compound-interest-calculator"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-25.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.96",
+            "YT-2.97",
+            "YT-2.98"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-26",
+      "subject": "JAVA",
+      "question": "What is a nested if statement in Java?",
+      "tags": [
+        "java",
+        "nested-if-statements"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-26.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.99",
+            "YT-2.100",
+            "YT-2.101"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-27",
+      "subject": "JAVA",
+      "question": "When can logical operators replace nested if statements?",
+      "tags": [
+        "java",
+        "nested-if-statements"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-27.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.102",
+            "YT-2.103",
+            "YT-2.104"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-28",
+      "subject": "JAVA",
+      "question": "Which Java String methods are especially useful?",
+      "tags": [
+        "java",
+        "string-methods"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-28.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.105",
+            "YT-2.106",
+            "YT-2.107",
+            "YT-2.108"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-29",
+      "subject": "JAVA",
+      "question": "Why use equals rather than == for Strings?",
+      "tags": [
+        "java",
+        "string-methods"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-29.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.109",
+            "YT-2.110",
+            "YT-2.111",
+            "YT-2.112"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-30",
+      "subject": "JAVA",
+      "question": "How does substring extract text from a Java String?",
+      "tags": [
+        "java",
+        "substrings"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-30.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.113",
+            "YT-2.114",
+            "YT-2.115"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-31",
+      "subject": "JAVA",
+      "question": "How can you extract the username before an email's @ symbol?",
+      "tags": [
+        "java",
+        "substrings"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-31.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.116",
+            "YT-2.117",
+            "YT-2.118"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-32",
+      "subject": "JAVA",
+      "question": "How can you build a unit or weight converter in Java?",
+      "tags": [
+        "java",
+        "weight-converter"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-32.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.119",
+            "YT-2.120",
+            "YT-2.121"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-33",
+      "subject": "JAVA",
+      "question": "How should a converter respond to an invalid choice?",
+      "tags": [
+        "java",
+        "weight-converter"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-33.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.122",
+            "YT-2.123",
+            "YT-2.124"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-34",
+      "subject": "JAVA",
+      "question": "What does the ternary operator do in Java?",
+      "tags": [
+        "java",
+        "ternary-operator"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-34.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.125",
+            "YT-2.126",
+            "YT-2.127"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-35",
+      "subject": "JAVA",
+      "question": "When should you avoid nested ternary expressions?",
+      "tags": [
+        "java",
+        "ternary-operator"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-35.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.128",
+            "YT-2.129",
+            "YT-2.130"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-36",
+      "subject": "JAVA",
+      "question": "How do you convert between Celsius and Fahrenheit in Java?",
+      "tags": [
+        "java",
+        "temperature-converter"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-36.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.131",
+            "YT-2.132",
+            "YT-2.133"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-37",
+      "subject": "JAVA",
+      "question": "How can you test a temperature conversion program?",
+      "tags": [
+        "java",
+        "temperature-converter"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-37.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.134",
+            "YT-2.135",
+            "YT-2.136"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-38",
+      "subject": "JAVA",
+      "question": "What is an enhanced switch expression in Java?",
+      "tags": [
+        "java",
+        "enhanced-switches"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-38.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.137",
+            "YT-2.138",
+            "YT-2.139",
+            "YT-2.140"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-39",
+      "subject": "JAVA",
+      "question": "How do you handle several matching labels in a switch?",
+      "tags": [
+        "java",
+        "enhanced-switches"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-39.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.141",
+            "YT-2.142",
+            "YT-2.143",
+            "YT-2.144"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-40",
+      "subject": "JAVA",
+      "question": "How would you build a simple Java calculator?",
+      "tags": [
+        "java",
+        "calculator-program"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-40.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.145",
+            "YT-2.146",
+            "YT-2.147",
+            "YT-2.148",
+            "YT-2.149"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-41",
+      "subject": "JAVA",
+      "question": "Why does division by zero need special handling?",
+      "tags": [
+        "java",
+        "calculator-program"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-41.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.150",
+            "YT-2.151",
+            "YT-2.152",
+            "YT-2.153",
+            "YT-2.154"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-42",
+      "subject": "JAVA",
+      "question": "How do &&, ||, and ! work in Java?",
+      "tags": [
+        "java",
+        "logical-operators"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-42.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.155",
+            "YT-2.156",
+            "YT-2.157",
+            "YT-2.158"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-43",
+      "subject": "JAVA",
+      "question": "What is short-circuit evaluation?",
+      "tags": [
+        "java",
+        "logical-operators"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-43.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.159",
+            "YT-2.160",
+            "YT-2.161",
+            "YT-2.162"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-44",
+      "subject": "JAVA",
+      "question": "When is a while loop a good choice?",
+      "tags": [
+        "java",
+        "while-loops"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-44.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.163",
+            "YT-2.164",
+            "YT-2.165",
+            "YT-2.166",
+            "YT-2.167"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-45",
+      "subject": "JAVA",
+      "question": "What is the difference between while and do-while?",
+      "tags": [
+        "java",
+        "while-loops"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-45.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.168",
+            "YT-2.169",
+            "YT-2.170",
+            "YT-2.171",
+            "YT-2.172"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-46",
+      "subject": "JAVA",
+      "question": "How would you implement a number-guessing game?",
+      "tags": [
+        "java",
+        "number-guessing-game"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-46.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.173",
+            "YT-2.174",
+            "YT-2.175",
+            "YT-2.176"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-47",
+      "subject": "JAVA",
+      "question": "How can a number-guessing game count attempts?",
+      "tags": [
+        "java",
+        "number-guessing-game"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-47.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.177",
+            "YT-2.178",
+            "YT-2.179",
+            "YT-2.180"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-48",
+      "subject": "JAVA",
+      "question": "When do you prefer a for loop over a while loop?",
+      "tags": [
+        "java",
+        "for-loops"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-48.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.181",
+            "YT-2.182",
+            "YT-2.183",
+            "YT-2.184"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-49",
+      "subject": "JAVA",
+      "question": "How do you avoid off-by-one errors with array loops?",
+      "tags": [
+        "java",
+        "for-loops"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-49.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.185",
+            "YT-2.186",
+            "YT-2.187",
+            "YT-2.188"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-50",
+      "subject": "JAVA",
+      "question": "What is the difference between break and continue?",
+      "tags": [
+        "java",
+        "break-and-continue"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-50.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.189",
+            "YT-2.190",
+            "YT-2.191"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-51",
+      "subject": "JAVA",
+      "question": "When are break and continue harmful to readability?",
+      "tags": [
+        "java",
+        "break-and-continue"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-51.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.192",
+            "YT-2.193",
+            "YT-2.194"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-52",
+      "subject": "JAVA",
+      "question": "What are nested loops and when would you use them?",
+      "tags": [
+        "java",
+        "nested-loops"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-52.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.195",
+            "YT-2.196",
+            "YT-2.197",
+            "YT-2.198"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-53",
+      "subject": "JAVA",
+      "question": "Why can nested loops become expensive?",
+      "tags": [
+        "java",
+        "nested-loops"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-53.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.199",
+            "YT-2.200",
+            "YT-2.201",
+            "YT-2.202"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-54",
+      "subject": "JAVA",
+      "question": "Why are methods useful in Java?",
+      "tags": [
+        "java",
+        "methods"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-54.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.203",
+            "YT-2.204",
+            "YT-2.205",
+            "YT-2.206",
+            "YT-2.207",
+            "YT-2.208"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-55",
+      "subject": "JAVA",
+      "question": "What is the difference between parameters and return values?",
+      "tags": [
+        "java",
+        "methods"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-55.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.209",
+            "YT-2.210",
+            "YT-2.211",
+            "YT-2.212",
+            "YT-2.213",
+            "YT-2.214"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-56",
+      "subject": "JAVA",
+      "question": "What is method overloading in Java?",
+      "tags": [
+        "java",
+        "overloaded-methods"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-56.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.215",
+            "YT-2.216",
+            "YT-2.217"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-57",
+      "subject": "JAVA",
+      "question": "Can you overload a Java method by return type alone?",
+      "tags": [
+        "java",
+        "overloaded-methods"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-57.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.218",
+            "YT-2.219",
+            "YT-2.220"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-58",
+      "subject": "JAVA",
+      "question": "What does variable scope mean in Java?",
+      "tags": [
+        "java",
+        "variable-scope"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-58.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.221",
+            "YT-2.222",
+            "YT-2.223"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-59",
+      "subject": "JAVA",
+      "question": "How do local variables differ from instance fields?",
+      "tags": [
+        "java",
+        "variable-scope"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-59.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.224",
+            "YT-2.225",
+            "YT-2.226"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-60",
+      "subject": "JAVA",
+      "question": "How would you design a beginner Java banking program?",
+      "tags": [
+        "java",
+        "banking-program"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-60.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.227",
+            "YT-2.228",
+            "YT-2.229",
+            "YT-2.230",
+            "YT-2.231",
+            "YT-2.232",
+            "YT-2.233"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-61",
+      "subject": "JAVA",
+      "question": "How can you prevent an invalid withdrawal?",
+      "tags": [
+        "java",
+        "banking-program"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-61.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.234",
+            "YT-2.235",
+            "YT-2.236",
+            "YT-2.237",
+            "YT-2.238",
+            "YT-2.239",
+            "YT-2.240"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-62",
+      "subject": "JAVA",
+      "question": "How do you simulate rolling multiple dice in Java?",
+      "tags": [
+        "java",
+        "dice-roller-program"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-62.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.241",
+            "YT-2.242",
+            "YT-2.243",
+            "YT-2.244",
+            "YT-2.245"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-63",
+      "subject": "JAVA",
+      "question": "How should a dice program validate the number of rolls?",
+      "tags": [
+        "java",
+        "dice-roller-program"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-63.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.246",
+            "YT-2.247",
+            "YT-2.248",
+            "YT-2.249",
+            "YT-2.250"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-64",
+      "subject": "JAVA",
+      "question": "What is an array in Java?",
+      "tags": [
+        "java",
+        "arrays"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-64.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.251",
+            "YT-2.252",
+            "YT-2.253",
+            "YT-2.254"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-65",
+      "subject": "JAVA",
+      "question": "How do you safely iterate over an array?",
+      "tags": [
+        "java",
+        "arrays"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-65.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.255",
+            "YT-2.256",
+            "YT-2.257",
+            "YT-2.258"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-66",
+      "subject": "JAVA",
+      "question": "How do you fill a Java array using Scanner?",
+      "tags": [
+        "java",
+        "user-input-into-array"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-66.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.259",
+            "YT-2.260",
+            "YT-2.261"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-67",
+      "subject": "JAVA",
+      "question": "Why can't an array automatically grow as the user adds more values?",
+      "tags": [
+        "java",
+        "user-input-into-array"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-67.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.262",
+            "YT-2.263",
+            "YT-2.264"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-68",
+      "subject": "JAVA",
+      "question": "How do you search for an element in a Java array?",
+      "tags": [
+        "java",
+        "search-an-array"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-68.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.265",
+            "YT-2.266",
+            "YT-2.267"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-69",
+      "subject": "JAVA",
+      "question": "Why use equals when searching a String array?",
+      "tags": [
+        "java",
+        "search-an-array"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-69.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.268",
+            "YT-2.269",
+            "YT-2.270"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-70",
+      "subject": "JAVA",
+      "question": "What are variable arguments, or varargs, in Java?",
+      "tags": [
+        "java",
+        "varargs"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-70.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.271",
+            "YT-2.272",
+            "YT-2.273"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-71",
+      "subject": "JAVA",
+      "question": "What restrictions apply to varargs parameters?",
+      "tags": [
+        "java",
+        "varargs"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-71.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.274",
+            "YT-2.275",
+            "YT-2.276"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-72",
+      "subject": "JAVA",
+      "question": "What is a two-dimensional array in Java?",
+      "tags": [
+        "java",
+        "2d-arrays"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-72.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.277",
+            "YT-2.278",
+            "YT-2.279",
+            "YT-2.280"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-73",
+      "subject": "JAVA",
+      "question": "How do you traverse a Java 2D array safely?",
+      "tags": [
+        "java",
+        "2d-arrays"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-73.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.281",
+            "YT-2.282",
+            "YT-2.283",
+            "YT-2.284"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-74",
+      "subject": "JAVA",
+      "question": "How would you build a console quiz game in Java?",
+      "tags": [
+        "java",
+        "quiz-game"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-74.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.285",
+            "YT-2.286",
+            "YT-2.287",
+            "YT-2.288",
+            "YT-2.289",
+            "YT-2.290"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-75",
+      "subject": "JAVA",
+      "question": "How do you calculate a percentage score without losing decimals?",
+      "tags": [
+        "java",
+        "quiz-game"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-75.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.291",
+            "YT-2.292",
+            "YT-2.293",
+            "YT-2.294",
+            "YT-2.295",
+            "YT-2.296"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-76",
+      "subject": "JAVA",
+      "question": "How would you implement rock-paper-scissors in Java?",
+      "tags": [
+        "java",
+        "rock-paper-scissors"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-76.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.297",
+            "YT-2.298",
+            "YT-2.299",
+            "YT-2.300",
+            "YT-2.301",
+            "YT-2.302"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-77",
+      "subject": "JAVA",
+      "question": "How do you recognize a tie and invalid input?",
+      "tags": [
+        "java",
+        "rock-paper-scissors"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-77.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.303",
+            "YT-2.304",
+            "YT-2.305",
+            "YT-2.306",
+            "YT-2.307",
+            "YT-2.308"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-78",
+      "subject": "JAVA",
+      "question": "How can a slot-machine simulation be structured in Java?",
+      "tags": [
+        "java",
+        "slot-machine"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-78.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.309",
+            "YT-2.310",
+            "YT-2.311",
+            "YT-2.312",
+            "YT-2.313",
+            "YT-2.314",
+            "YT-2.315",
+            "YT-2.316",
+            "YT-2.317"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-79",
+      "subject": "JAVA",
+      "question": "Why should the payout calculation be a separate method?",
+      "tags": [
+        "java",
+        "slot-machine"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-79.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.318",
+            "YT-2.319",
+            "YT-2.320",
+            "YT-2.321",
+            "YT-2.322",
+            "YT-2.323",
+            "YT-2.324",
+            "YT-2.325",
+            "YT-2.326"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-80",
+      "subject": "JAVA",
+      "question": "What is the difference between a class and an object?",
+      "tags": [
+        "java",
+        "object-oriented-programming"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-80.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.327",
+            "YT-2.328",
+            "YT-2.329",
+            "YT-2.330"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-81",
+      "subject": "JAVA",
+      "question": "How do fields and methods describe an object's behavior?",
+      "tags": [
+        "java",
+        "object-oriented-programming"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-81.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.331",
+            "YT-2.332",
+            "YT-2.333",
+            "YT-2.334"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-82",
+      "subject": "JAVA",
+      "question": "What is the purpose of a constructor in Java?",
+      "tags": [
+        "java",
+        "constructors"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-82.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.335",
+            "YT-2.336",
+            "YT-2.337",
+            "YT-2.338"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-83",
+      "subject": "JAVA",
+      "question": "How is a constructor different from an ordinary method?",
+      "tags": [
+        "java",
+        "constructors"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-83.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.339",
+            "YT-2.340",
+            "YT-2.341",
+            "YT-2.342"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-84",
+      "subject": "JAVA",
+      "question": "Why would a class have more than one constructor?",
+      "tags": [
+        "java",
+        "overloaded-constructors"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-84.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.343",
+            "YT-2.344",
+            "YT-2.345"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-85",
+      "subject": "JAVA",
+      "question": "How can this(...) reduce duplicated constructor code?",
+      "tags": [
+        "java",
+        "overloaded-constructors"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-85.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.346",
+            "YT-2.347",
+            "YT-2.348"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-86",
+      "subject": "JAVA",
+      "question": "How do you store multiple objects in a Java array?",
+      "tags": [
+        "java",
+        "array-of-objects"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-86.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.349",
+            "YT-2.350",
+            "YT-2.351"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-87",
+      "subject": "JAVA",
+      "question": "Why are new object-array elements initially null?",
+      "tags": [
+        "java",
+        "array-of-objects"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-87.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.352",
+            "YT-2.353",
+            "YT-2.354"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-88",
+      "subject": "JAVA",
+      "question": "What does static mean in Java?",
+      "tags": [
+        "java",
+        "static-keyword"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-88.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.355",
+            "YT-2.356",
+            "YT-2.357"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-89",
+      "subject": "JAVA",
+      "question": "Why should a bank-account balance not be static?",
+      "tags": [
+        "java",
+        "static-keyword"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-89.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.358",
+            "YT-2.359",
+            "YT-2.360"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-90",
+      "subject": "JAVA",
+      "question": "What does inheritance allow Java classes to do?",
+      "tags": [
+        "java",
+        "inheritance"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-90.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.361",
+            "YT-2.362",
+            "YT-2.363",
+            "YT-2.364"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-91",
+      "subject": "JAVA",
+      "question": "How do parent and child classes relate?",
+      "tags": [
+        "java",
+        "inheritance"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-91.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.365",
+            "YT-2.366",
+            "YT-2.367",
+            "YT-2.368"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-92",
+      "subject": "JAVA",
+      "question": "What is the purpose of super in Java?",
+      "tags": [
+        "java",
+        "super-keyword"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-92.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.369",
+            "YT-2.370",
+            "YT-2.371",
+            "YT-2.372"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-93",
+      "subject": "JAVA",
+      "question": "When do you need an explicit super constructor call?",
+      "tags": [
+        "java",
+        "super-keyword"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-93.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.373",
+            "YT-2.374",
+            "YT-2.375",
+            "YT-2.376"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-94",
+      "subject": "JAVA",
+      "question": "What does method overriding mean in Java?",
+      "tags": [
+        "java",
+        "method-overriding"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-94.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.377",
+            "YT-2.378",
+            "YT-2.379"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-95",
+      "subject": "JAVA",
+      "question": "How does the @Override annotation help?",
+      "tags": [
+        "java",
+        "method-overriding"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-95.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.380",
+            "YT-2.381",
+            "YT-2.382"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-96",
+      "subject": "JAVA",
+      "question": "Why override the toString method?",
+      "tags": [
+        "java",
+        "tostring-method"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-96.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.383",
+            "YT-2.384",
+            "YT-2.385"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-97",
+      "subject": "JAVA",
+      "question": "What happens when you print an object directly?",
+      "tags": [
+        "java",
+        "tostring-method"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-97.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.386",
+            "YT-2.387",
+            "YT-2.388"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-98",
+      "subject": "JAVA",
+      "question": "What does abstraction mean in object-oriented Java?",
+      "tags": [
+        "java",
+        "abstraction"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-98.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.389",
+            "YT-2.390",
+            "YT-2.391",
+            "YT-2.392"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-99",
+      "subject": "JAVA",
+      "question": "What is an abstract class?",
+      "tags": [
+        "java",
+        "abstraction"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-99.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.393",
+            "YT-2.394",
+            "YT-2.395",
+            "YT-2.396"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-100",
+      "subject": "JAVA",
+      "question": "What is an interface in Java?",
+      "tags": [
+        "java",
+        "interfaces"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-100.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.397",
+            "YT-2.398",
+            "YT-2.399"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-101",
+      "subject": "JAVA",
+      "question": "How do interfaces support interchangeable implementations?",
+      "tags": [
+        "java",
+        "interfaces"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-101.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.400",
+            "YT-2.401",
+            "YT-2.402"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-102",
+      "subject": "JAVA",
+      "question": "What is polymorphism in Java?",
+      "tags": [
+        "java",
+        "polymorphism"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-102.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.403",
+            "YT-2.404",
+            "YT-2.405"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-103",
+      "subject": "JAVA",
+      "question": "How does polymorphism simplify adding a new payment type?",
+      "tags": [
+        "java",
+        "polymorphism"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-103.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.406",
+            "YT-2.407",
+            "YT-2.408"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-104",
+      "subject": "JAVA",
+      "question": "How does Java choose an overridden method at runtime?",
+      "tags": [
+        "java",
+        "runtime-polymorphism"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-104.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.409",
+            "YT-2.410",
+            "YT-2.411"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-105",
+      "subject": "JAVA",
+      "question": "What is the difference between overloading and overriding?",
+      "tags": [
+        "java",
+        "runtime-polymorphism"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-105.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.412",
+            "YT-2.413",
+            "YT-2.414"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-106",
+      "subject": "JAVA",
+      "question": "Why do Java classes use getters and setters?",
+      "tags": [
+        "java",
+        "getters-and-setters"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-106.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.415",
+            "YT-2.416",
+            "YT-2.417",
+            "YT-2.418"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-107",
+      "subject": "JAVA",
+      "question": "Why avoid making every field public?",
+      "tags": [
+        "java",
+        "getters-and-setters"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-107.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.419",
+            "YT-2.420",
+            "YT-2.421",
+            "YT-2.422"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-108",
+      "subject": "JAVA",
+      "question": "What is aggregation in Java OOP?",
+      "tags": [
+        "java",
+        "aggregation"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-108.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.423",
+            "YT-2.424",
+            "YT-2.425",
+            "YT-2.426"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-109",
+      "subject": "JAVA",
+      "question": "How does aggregation differ from inheritance?",
+      "tags": [
+        "java",
+        "aggregation"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-109.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.427",
+            "YT-2.428",
+            "YT-2.429",
+            "YT-2.430"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-110",
+      "subject": "JAVA",
+      "question": "What is composition in Java?",
+      "tags": [
+        "java",
+        "composition"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-110.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.431",
+            "YT-2.432",
+            "YT-2.433"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-111",
+      "subject": "JAVA",
+      "question": "How are aggregation and composition different?",
+      "tags": [
+        "java",
+        "composition"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-111.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.434",
+            "YT-2.435",
+            "YT-2.436"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-112",
+      "subject": "JAVA",
+      "question": "What are wrapper classes used for in Java?",
+      "tags": [
+        "java",
+        "wrapper-classes"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-112.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.437",
+            "YT-2.438",
+            "YT-2.439",
+            "YT-2.440"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-113",
+      "subject": "JAVA",
+      "question": "Why can unboxing an Integer cause a NullPointerException?",
+      "tags": [
+        "java",
+        "wrapper-classes"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-113.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.441",
+            "YT-2.442",
+            "YT-2.443",
+            "YT-2.444"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-114",
+      "subject": "JAVA",
+      "question": "When should you choose ArrayList over a Java array?",
+      "tags": [
+        "java",
+        "arraylists"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-114.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.445",
+            "YT-2.446",
+            "YT-2.447",
+            "YT-2.448"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-115",
+      "subject": "JAVA",
+      "question": "How do you safely remove items while iterating an ArrayList?",
+      "tags": [
+        "java",
+        "arraylists"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-115.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.449",
+            "YT-2.450",
+            "YT-2.451",
+            "YT-2.452"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-116",
+      "subject": "JAVA",
+      "question": "How do try, catch, and finally work in Java?",
+      "tags": [
+        "java",
+        "exception-handling"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-116.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.453",
+            "YT-2.454",
+            "YT-2.455"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-117",
+      "subject": "JAVA",
+      "question": "Why is catching Exception and doing nothing dangerous?",
+      "tags": [
+        "java",
+        "exception-handling"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-117.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.456",
+            "YT-2.457",
+            "YT-2.458"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-118",
+      "subject": "JAVA",
+      "question": "How do you write text to a file using Java?",
+      "tags": [
+        "java",
+        "write-files"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-118.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.459",
+            "YT-2.460",
+            "YT-2.461",
+            "YT-2.462"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-119",
+      "subject": "JAVA",
+      "question": "What is the difference between appending and overwriting a file?",
+      "tags": [
+        "java",
+        "write-files"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-119.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.463",
+            "YT-2.464",
+            "YT-2.465",
+            "YT-2.466"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-120",
+      "subject": "JAVA",
+      "question": "How can you read a text file in Java?",
+      "tags": [
+        "java",
+        "read-files"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-120.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.467",
+            "YT-2.468",
+            "YT-2.469"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-121",
+      "subject": "JAVA",
+      "question": "Why is line-by-line reading useful for large files?",
+      "tags": [
+        "java",
+        "read-files"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-121.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.470",
+            "YT-2.471",
+            "YT-2.472"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-122",
+      "subject": "JAVA",
+      "question": "How can a Java application play an audio file?",
+      "tags": [
+        "java",
+        "music-player"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-122.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.473",
+            "YT-2.474",
+            "YT-2.475",
+            "YT-2.476",
+            "YT-2.477"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-123",
+      "subject": "JAVA",
+      "question": "Why should an audio Clip be stopped and closed?",
+      "tags": [
+        "java",
+        "music-player"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-123.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.478",
+            "YT-2.479",
+            "YT-2.480",
+            "YT-2.481",
+            "YT-2.482"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-124",
+      "subject": "JAVA",
+      "question": "How would you create Hangman in Java?",
+      "tags": [
+        "java",
+        "hangman-game"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-124.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.483",
+            "YT-2.484",
+            "YT-2.485",
+            "YT-2.486",
+            "YT-2.487",
+            "YT-2.488",
+            "YT-2.489",
+            "YT-2.490",
+            "YT-2.491",
+            "YT-2.492"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-125",
+      "subject": "JAVA",
+      "question": "How do you prevent repeated Hangman guesses?",
+      "tags": [
+        "java",
+        "hangman-game"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-125.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.493",
+            "YT-2.494",
+            "YT-2.495",
+            "YT-2.496",
+            "YT-2.497",
+            "YT-2.498",
+            "YT-2.499",
+            "YT-2.500",
+            "YT-2.501",
+            "YT-2.502"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-126",
+      "subject": "JAVA",
+      "question": "Which java.time classes should beginners know?",
+      "tags": [
+        "java",
+        "dates-and-times"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-126.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.503",
+            "YT-2.504",
+            "YT-2.505",
+            "YT-2.506"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-127",
+      "subject": "JAVA",
+      "question": "Why does scheduling need time-zone information?",
+      "tags": [
+        "java",
+        "dates-and-times"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-127.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.507",
+            "YT-2.508",
+            "YT-2.509",
+            "YT-2.510"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-128",
+      "subject": "JAVA",
+      "question": "What is an anonymous class in Java?",
+      "tags": [
+        "java",
+        "anonymous-classes"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-128.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.511",
+            "YT-2.512",
+            "YT-2.513"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-129",
+      "subject": "JAVA",
+      "question": "When is a named class better than an anonymous class?",
+      "tags": [
+        "java",
+        "anonymous-classes"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-129.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.514",
+            "YT-2.515",
+            "YT-2.516"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-130",
+      "subject": "JAVA",
+      "question": "What are Timer and TimerTask used for?",
+      "tags": [
+        "java",
+        "timertasks"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-130.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.517",
+            "YT-2.518",
+            "YT-2.519"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-131",
+      "subject": "JAVA",
+      "question": "Why should scheduled tasks handle unexpected failures?",
+      "tags": [
+        "java",
+        "timertasks"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-131.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.520",
+            "YT-2.521",
+            "YT-2.522"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-132",
+      "subject": "JAVA",
+      "question": "How would you build a countdown timer in Java?",
+      "tags": [
+        "java",
+        "countdown-timer"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-132.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.523",
+            "YT-2.524",
+            "YT-2.525"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-133",
+      "subject": "JAVA",
+      "question": "Why separate countdown logic from display code?",
+      "tags": [
+        "java",
+        "countdown-timer"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-133.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.526",
+            "YT-2.527",
+            "YT-2.528"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-134",
+      "subject": "JAVA",
+      "question": "What problem do Java generics solve?",
+      "tags": [
+        "java",
+        "generics"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-134.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.529",
+            "YT-2.530",
+            "YT-2.531",
+            "YT-2.532",
+            "YT-2.533"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-135",
+      "subject": "JAVA",
+      "question": "Why are generic methods useful?",
+      "tags": [
+        "java",
+        "generics"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-135.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.534",
+            "YT-2.535",
+            "YT-2.536",
+            "YT-2.537",
+            "YT-2.538"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-136",
+      "subject": "JAVA",
+      "question": "What is a HashMap and when should you use one?",
+      "tags": [
+        "java",
+        "hashmaps"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-136.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.539",
+            "YT-2.540",
+            "YT-2.541",
+            "YT-2.542"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-137",
+      "subject": "JAVA",
+      "question": "What happens when you put the same key into a HashMap twice?",
+      "tags": [
+        "java",
+        "hashmaps"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-137.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.543",
+            "YT-2.544",
+            "YT-2.545",
+            "YT-2.546"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-138",
+      "subject": "JAVA",
+      "question": "What is an enum in Java?",
+      "tags": [
+        "java",
+        "enums"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-138.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.547",
+            "YT-2.548",
+            "YT-2.549",
+            "YT-2.550"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-139",
+      "subject": "JAVA",
+      "question": "Why prefer enums to magic strings?",
+      "tags": [
+        "java",
+        "enums"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-139.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.551",
+            "YT-2.552",
+            "YT-2.553",
+            "YT-2.554"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-140",
+      "subject": "JAVA",
+      "question": "What is a thread in Java?",
+      "tags": [
+        "java",
+        "threading"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-140.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.555",
+            "YT-2.556",
+            "YT-2.557",
+            "YT-2.558"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-141",
+      "subject": "JAVA",
+      "question": "Why use start instead of run on a Thread?",
+      "tags": [
+        "java",
+        "threading"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-141.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.559",
+            "YT-2.560",
+            "YT-2.561",
+            "YT-2.562"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-142",
+      "subject": "JAVA",
+      "question": "Why do Java applications use multithreading?",
+      "tags": [
+        "java",
+        "multithreading"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-142.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.563",
+            "YT-2.564",
+            "YT-2.565"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-143",
+      "subject": "JAVA",
+      "question": "What is a race condition in multithreaded Java code?",
+      "tags": [
+        "java",
+        "multithreading"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-143.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.566",
+            "YT-2.567",
+            "YT-2.568"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-144",
+      "subject": "JAVA",
+      "question": "How would you build a Java alarm clock that plays audio?",
+      "tags": [
+        "java",
+        "alarm-clock"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-144.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.569",
+            "YT-2.570",
+            "YT-2.571",
+            "YT-2.572",
+            "YT-2.573",
+            "YT-2.574",
+            "YT-2.575",
+            "YT-2.576",
+            "YT-2.577",
+            "YT-2.578"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IJ-145",
+      "subject": "JAVA",
+      "question": "How can the user stop a Java alarm without freezing everything?",
+      "tags": [
+        "java",
+        "alarm-clock"
+      ],
+      "path": "INTERVIEW-SYLLABUS/JAVA/IJ-145.md",
+      "sources": [
+        {
+          "video_id": "YT-2",
+          "timestamp_ids": [
+            "YT-2.579",
+            "YT-2.580",
+            "YT-2.581",
+            "YT-2.582",
+            "YT-2.583",
+            "YT-2.584",
+            "YT-2.585",
+            "YT-2.586",
+            "YT-2.587",
+            "YT-2.588"
+          ]
+        }
+      ]
     }
   ]
 }

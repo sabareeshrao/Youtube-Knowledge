@@ -20,3 +20,7 @@
 ## ID registry
 
 [Questions and tags](REGISTRY/questions.json) · [Unique videos](REGISTRY/videos.json) · [Counters](REGISTRY/counters.json) · [Rules](docs/WORKFLOW.md)
+
+## YT-2 — Complete 12-hour Java Course ☕
+
+[142 question-headed video tables](VIDEO-LIBRARY/YT-2/timestamps.md) · [588 chronological timestamps](VIDEO-LIBRARY/YT-2/timeline.md) · [Original 2,693-caption transcript](VIDEO-LIBRARY/YT-2/transcript.md) · [71-chapter audit](VIDEO-LIBRARY/YT-2/coverage-audit.md) · [Question index](VIDEO-LIBRARY/YT-2/question-index.md)

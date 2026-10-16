@@ -1526,6 +1526,1000 @@
       "ai_corrected_answer": "A HashMap iterator usually notices structural changes and may throw ConcurrentModificationException, but that fail-fast behavior is only a best-effort warning. It isn't thread safety. ConcurrentHashMap uses weakly consistent iteration: another thread can update the map while I'm looping, without that exception, but I may not see a perfect snapshot. For example, a live metrics dashboard can often tolerate that. If I need an exact snapshot, I must coordinate it explicitly.",
       "answer_style": "simple_spoken",
       "source_note": "Caption text copied unchanged from the timestamped transcript, with interview speaker boundaries inferred; a displayed excerpt may omit parts of the answer."
+    },
+    {
+      "question_id": "IJ-4",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I install a JDK and open IntelliJ IDEA. The JDK contains tools to compile and run Java programs, while IntelliJ makes it easier to write and debug them. For example, I create a Main class, add a main method, and run it. My first goal is simple: get one small program working before adding complexity.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-5",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "The main method is the usual starting point for a beginner Java program. Inside it, System.out.println prints a message and moves to a new line. For example, printing Hello Java confirms the project can run. It is a small first step, but it checks that my tools and code are connected correctly.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-6",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A variable gives a name to a value. Java has primitives such as int for whole numbers, double for decimal numbers, char for a character, and boolean for true or false. For example, int quantity = 3 stores a shopping quantity. Strings are objects, not primitives. The type helps Java catch mistakes before the program runs.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-7",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I declare the type and name, then assign a value, sometimes on the same line. For example, int age = 25 creates a variable, and println can display it alongside text using +. I use double quotes for a String and single quotes for a char. Clear names help someone understand the code without guessing.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-8",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I create a Scanner using System.in and then read values with methods such as nextLine, nextInt, or nextDouble. For example, I can ask for a customer's name and read the entire line with nextLine. It turns a fixed program into an interactive one. I use the method that matches the type I expect.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-9",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "nextInt reads the number but leaves the Enter key's newline in the input stream. The next call to nextLine can consume that leftover newline instead of waiting. For example, after reading an age, I can call one extra nextLine before reading a full name. The key is understanding what remains in the input buffer.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-10",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd write a story with missing words, ask the user for nouns, adjectives, and verbs, then insert their answers. For example, a player might produce a story about a sleepy gorilla at the zoo. It is a fun way to practice Scanner, Strings, variables, and output. The flow is collect words, build story, show result.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-11",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I give each input a clear variable name, such as adjectiveOne or animal, and prompt for them in order. Scanner.nextLine is useful if someone types a phrase with spaces. For example, very funny should stay together as one answer. Named variables make assembling the final story much easier to follow.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-12",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Java supports addition, subtraction, multiplication, division, and the remainder operator %. For example, 10 % 3 is 1, useful when checking whether a number is even. One important detail is that dividing two integers discards the decimal part. I check the types before trusting the calculation.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-13",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "The ++ operator increases a number by one, while += adds a value back into the same variable. For example, count++ is a shortcut for count = count + 1. Java also evaluates multiplication before addition unless parentheses change the order. I use parentheses whenever they make a calculation clearer.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-14",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I ask for an item name, its price, and a quantity, then multiply price by quantity. For example, three items costing 4.99 each give a total of 14.97 before tax. This combines Scanner, variables, and arithmetic. In a production checkout, I'd also validate input and use precise money calculations.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-15",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Quantity is usually a whole number, so int makes sense. Price can have a decimal part, so a beginner exercise might use double. For example, quantity 3 and price 4.99 produce a total. In real financial code I'd normally use BigDecimal to avoid floating-point rounding surprises. Data types are business decisions too.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-16",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An if statement runs only when its condition is true. An else if checks another possibility, and else handles the remaining case. For example, a program might display child, adult, or senior based on age. Java takes the first matching branch. So I order conditions carefully instead of assuming all branches will run.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-17",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If I check age >= 18 before age >= 65, a 70-year-old matches the adult branch and never reaches senior. I'd put the more specific senior condition first. This is a great example of code where every comparison looks correct, but the order changes the result. Rules should be checked in a logical sequence.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-18",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I create a Random object and use nextInt for integers, nextDouble for decimal numbers, or nextBoolean for a coin flip. For example, nextInt(1, 7) simulates a six-sided die. Random is useful for games and practice programs. For security-sensitive values, I'd choose SecureRandom instead.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-19",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "In nextInt(origin, bound), the origin can appear but the bound cannot. That means nextInt(1, 6) only gives 1 through 5, while nextInt(1, 7) includes 6. In a dice program, that difference matters. I remember it as inclusive beginning, exclusive end.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-20",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Math provides operations such as abs, sqrt, pow, min, max, round, floor, and ceil. For example, Math.sqrt(9) gives 3.0. Constants like Math.PI are ready to use. I prefer these standard methods to inventing my own versions of basic calculations. They make code easy to understand and test.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-21",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "For a right triangle, the hypotenuse is the square root of one side squared plus the other side squared. For example, sides 3 and 4 give a result of 5. Java's Math.sqrt and Math.pow can express that formula. This connects built-in methods with a real geometry problem.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-22",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "println prints values as they are, while printf lets me describe the output format. For example, I can print a price with two decimal places or align numbers in a receipt. This is useful whenever presentation matters. The choice is between simple output and controlled formatting.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-23",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A specifier tells printf what kind of value to display. For example, %s is for text, %d is for integers, and %.2f formats a decimal with two digits after the point. A price of 19.5 can then display as 19.50. I keep each specifier compatible with its argument.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-24",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd read the starting amount, annual interest rate, number of years, and compounding frequency. Then I use Math.pow in the compound-interest formula and print the result. For example, investing 1000 at five percent grows over time as interest earns interest. It practices input, math, and formatting together.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-25",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If the user enters 5 percent, the formula needs 0.05, not 5. For monthly compounding, I divide the annual rate by 12 and multiply the years by 12. For example, ten years means 120 monthly periods. A correct formula with wrong units still gives a wrong answer.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-26",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A nested if is simply a decision inside another decision. For example, I might first check whether someone has a ticket and then check whether it is valid. It can match a natural decision process. I keep nesting shallow because too many levels make code hard to follow.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-27",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If two checks must both be true, I may combine them with && rather than put one if inside another. For example, a discount may require membership and a minimum purchase. I use whichever style makes the business rule easiest to read. Short code isn't always clearer code.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-28",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I use length to count characters, equals to compare content, contains to search, and trim or strip to remove surrounding spaces. For example, a registration form can reject a blank username. Strings are immutable, so a method often returns a new result. These small tools appear everywhere in Java applications.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-29",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "equals compares the characters in the Strings. The == operator compares whether two references point to the very same object. For example, two separately created Strings can both say Java without having the same reference. When I care about a customer's text, equals is the right test.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-30",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "substring returns the part of a String starting at an index, optionally ending before a second index. For example, JavaCourse.substring(0, 4) gives Java. It's useful for extracting prefixes or the username portion of an email address. I check the positions first to avoid an index error.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-31",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I find the position of @ using indexOf, then take substring from zero to that position. For example, alex@example.com gives alex. I first make sure the symbol is present and isn't the first character. Validate the input before slicing it.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-32",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd ask which direction to convert, read the value, and apply the corresponding formula. For example, one kilogram is about 2.20462 pounds. Then I'd print the result with units. This project is a practical combination of Scanner, if statements, and arithmetic.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-33",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd display the valid menu options and reject anything else rather than calculate a nonsense result. For example, entering 3 when only 1 and 2 exist should show a helpful message. In a larger app, I'd ask again. Input validation is part of a good user experience.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-34",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A ternary expression chooses between two values using condition ? yesValue : noValue. For example, isMember ? 0 : 10 can choose a fee. I use it for short and obvious choices. For more complicated rules, an if statement is easier to maintain.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-35",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Several ternaries nested together make it hard to see which result belongs to which condition. For example, a complicated shipping policy is easier to express with named if branches. I prefer readability to squeezing everything into one line. Shorter doesn't always mean simpler.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-36",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I ask for a direction and value, then apply the formula. Celsius to Fahrenheit multiplies by nine-fifths and adds 32. Fahrenheit to Celsius subtracts 32 and multiplies by five-ninths. For example, 0 Celsius equals 32 Fahrenheit. I use decimal arithmetic so integer division doesn't remove important fractions.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-37",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd test well-known values such as 0 Celsius = 32 Fahrenheit and 100 Celsius = 212 Fahrenheit. I'd also test negative temperatures and an invalid menu option. These examples quickly reveal formula and division mistakes. Small checks make the result trustworthy.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-38",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An enhanced switch uses arrow cases and can return a value. For example, it can convert a day name into a weekend or weekday label without writing many break statements. It avoids accidental fall-through and keeps simple choices readable. Java 21 supports this feature.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-39",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I can combine multiple labels in a case when they have the same outcome, such as Saturday and Sunday returning weekend. A default case handles anything unexpected. When a switch expression returns a value, its branches must be exhaustive. I think about every possible input.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-40",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd read two numbers and an operator, then use a switch to choose addition, subtraction, multiplication, or division. For example, 12 / 3 should return 4. I'd also check the operator and guard against division by zero. It is a small project joining input, decision-making, and arithmetic.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-41",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Dividing an integer by zero throws an ArithmeticException, while floating-point division can produce Infinity or NaN. For example, 10 / 0 shouldn't look like a successful calculation. I'd check the divisor first and show a clear error. Handling impossible input is part of correct code.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-42",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "&& means both conditions must be true, || means at least one, and ! reverses a boolean. For example, someone may enter an event only if they have a ticket && meet the age requirement. These operators express business rules cleanly. I use parentheses if the expression becomes difficult to read.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-43",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Java skips the second part of && when the first is false and skips the second part of || when the first is true. For example, user != null && user.isActive() avoids calling a method on null. It can prevent errors and unnecessary work. Condition order matters here too.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-44",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A while loop repeats code while a condition remains true. For example, a console menu can keep running until the user chooses Exit. I use it when I don't know in advance how many times the action will happen. A safe loop needs a realistic way to stop.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-45",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "while checks the condition before doing the work, so it may run zero times. do-while runs once before it checks, so it always runs at least once. For example, a menu that must appear before asking whether to continue fits do-while. Choose based on when the first check should occur.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-46",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd pick a secret number using Random, ask for a guess, and repeat until the player gets it. After each attempt, I'd say too high or too low. For example, if the secret is 42, a guess of 50 helps narrow the next choice. The project combines random numbers, input, loops, and conditions.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-47",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I start an attempts counter at zero and increment it for every valid guess. When the player wins, I show the number of attempts. For example, guesses 20, 50, and 42 mean three attempts. I can also reject guesses outside the range. Simple feedback makes the game understandable.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-48",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I use a for loop when I know how many times something should repeat. It places the counter, condition, and update together. For example, printing the numbers one through ten is a natural for loop. It also works for indexing arrays. Use the loop that makes the intent clear.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-49",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Java array indexes start at zero and end at length minus one. For an array of five items, the last valid index is four. So I normally loop while i < array.length, not i <= array.length. I test the first and last iteration to catch mistakes.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-50",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "break ends the loop. continue skips the rest of the current iteration and moves to the next one. For example, I break after finding the customer I'm searching for, but continue when I want to skip an invalid record. One ends the search; the other skips one step.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-51",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If a loop has many scattered break and continue statements, it becomes hard to follow. For example, five different early exits may hide why a record was skipped. I'd use clearer conditions or helper methods when necessary. These statements should simplify the logic, not disguise complexity.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-52",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A nested loop puts one loop inside another. For example, the outer loop can print rows and the inner loop can print columns in a grid. With three rows and four columns, the inner part runs twelve times total. Nested loops are useful for patterns, tables, and two-dimensional arrays.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-53",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If one loop runs n times and its inner loop also runs n times, the total work grows around n squared. For example, comparing every name to every other name becomes slow with a huge list. Sometimes a HashSet or Map can avoid those repeated comparisons. I check whether both loops are really needed.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-54",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A method gives a name to a reusable piece of behavior. For example, calculateTotal can be called from several places instead of copying the same arithmetic each time. Methods make code easier to read, test, and change. I keep each method focused on one job.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-55",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Parameters carry data into a method, while the return value sends a result back. For example, add(3,4) accepts two numbers and returns 7. A void method doesn't return a value. I use arguments to avoid hardcoding data and return values when other code needs the result.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-56",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Overloading allows methods with the same name but different parameter lists. For example, add(int,int) and add(double,double) can both exist. Java chooses the matching form based on arguments at compile time. I use it when different inputs should perform the same kind of operation.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-57",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "No. Changing only the return type doesn't create a new method signature. For example, int get(int id) and String get(int id) conflict. I'd change the parameters or use a different name. The caller's arguments, not the result they hope to get, determine an overload.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-58",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Scope means where a variable can be accessed. A local variable belongs to its method or block, while an instance field belongs to an object. For example, a temporary fee inside one method isn't directly visible in another. I keep variables in the smallest useful scope to prevent accidental changes.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-59",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Local variables must be initialized before they're read. Instance fields receive default values when the object is created. For example, each Account object can hold its own balance, while a calculation method uses a temporary local number. Their scope and lifetime are different.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-60",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd make a menu with check balance, deposit, withdraw, and exit. A loop keeps the menu open, and separate methods handle the actions. For example, depositing 50 adds to the balance while withdrawing 20 reduces it. I reject invalid amounts and withdrawals larger than the balance. Good rules matter more than a fancy menu.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-61",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I check that the amount is positive and doesn't exceed the available balance. For example, an account holding 30 can't withdraw 50. I leave the balance unchanged and explain why. Real banking needs much stronger transaction and security controls, but this teaches how business rules protect data.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-62",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I ask how many dice to roll, loop that many times, and generate a number from one to six with Random each time. For example, three dice might show 2, 4, and 6 for a total of 12. It brings together Scanner, loops, and random values.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-63",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I only accept a positive, reasonable count. For example, zero dice should trigger a helpful message, and an enormous count shouldn't freeze the console. After validation, I use a loop to generate and display each value. Input checking keeps even small games dependable.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-64",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An array holds a fixed number of elements of one declared type. For example, int[] scores can store five test results. Indexes begin at zero, so the last position is length minus one. Arrays are straightforward when the number of items is known. For a changing number of items, ArrayList is often easier.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-65",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I use a loop with i < array.length, or a for-each loop when I don't need the index. For example, summing student scores requires visiting each number once. Staying within the valid indexes prevents ArrayIndexOutOfBoundsException. The array's length tells me exactly how far to go.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-66",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I create an array of the expected size, then use a loop to ask for one value per position. For example, I can request five scores and store them in int[5]. A second loop can display what was collected. Allocate, fill, and process is the simple pattern.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-67",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A Java array has a fixed length once created. For example, int[5] always has five positions. If the user might add more items later, I would choose an ArrayList instead. The data structure should match whether the number of items is fixed or changing.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-68",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "For a simple unsorted array, I check items one by one until I find the target. For example, I can search a list of names and stop after finding Alice. This is called linear search. It's easy to understand and doesn't require sorting.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-69",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I care whether the text matches, not whether two String references are the same object. For example, a name typed by a user should match the same characters stored in an array. I use equals, or equalsIgnoreCase if case-insensitive matching is allowed. Correct comparison is essential for a correct search.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-70",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Varargs let a method accept any number of arguments of the same type. For example, sum(int... numbers) can accept two integers or ten. Inside the method, numbers behaves like an array. It reduces the need for many similar overloads.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-71",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A varargs parameter must come last, and a method can declare only one. For example, show(String title, int... scores) is valid, but another parameter after scores isn't. I use varargs when callers naturally have a changing count of similar arguments.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-72",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A 2D array is an array whose elements are also arrays. It works for grids and tables. For example, a classroom seating chart has rows and columns. I use nested loops to work across both dimensions. Java also allows uneven row lengths, so I don't assume every row has the same size.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-73",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I loop over each row using array.length, then over columns using array[row].length. For example, seats[1][2] selects a position in a seating chart. Using the current row's length handles jagged arrays safely. The two dimensions need two carefully bounded loops.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-74",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd store questions and correct answers, ask them in a loop, and add a point for each correct response. For example, a five-question quiz might end with four correct answers. Arrays, Strings, and conditions make the project straightforward. I show the final score so the user knows how they did.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-75",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I divide the number of correct answers by the total and multiply by 100 using decimal arithmetic. For example, four correct out of five gives 80 percent. If I divide integers in the wrong order, I may lose the fraction. I check the formula and the types.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-76",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I read the player's move, generate a random computer move, and compare the winning rules. Rock beats scissors, scissors beats paper, and paper beats rock. For example, rock versus scissors means the player wins. A loop allows more rounds. It's a good exercise for conditions and random numbers.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-77",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I validate that the move is rock, paper, or scissors. If both moves are the same, it's a tie. Otherwise I test the three winning pairs and treat the remaining valid combinations as losses. For example, typing banana should produce an error, not a result.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-78",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I keep a balance, read a wager, generate symbols for reels, and calculate any payout using clear rules. For example, three matching symbols can pay more than two matching symbols. Separate methods can handle spinning and scoring. It's a practice project for arrays, loops, and Random, not real-money software.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-79",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If payout is separated from drawing the reels, I can test the rules directly. For example, a test can pass three matching symbols and check the expected points without random input. Small independent methods make the game easier to reason about and change.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-80",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A class is a blueprint and an object is one instance of it. For example, Car describes fields and actions, while my red car and your blue car are different objects. Objects keep related data and behavior together. This helps organize a program beyond a large main method.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-81",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Fields store an object's state, and methods act on it. For example, a Car may have a speed field and an accelerate method that changes speed. Each car keeps its own state. Related behavior belongs with the data it controls.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-82",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A constructor initializes an object as it is created. For example, new Student(\"Maya\", 20) can assign a student's name and age. It has the class name and no return type. A good constructor makes a new object usable from the beginning.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-83",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A constructor runs during object creation to set up initial state. An ordinary method performs an action on an already created object. For example, an Account constructor sets the opening balance, while deposit updates it later. They solve different problems.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-84",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Different callers may know different information. For example, a Pizza can be created with just a size or with a size and toppings. Overloaded constructors use different parameter lists to offer those choices. The class remains the same kind of object.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-85",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "One constructor can call another with this(...) to supply default values. For example, the one-argument Pizza constructor can call the full constructor with default toppings. That keeps initialization in one place. In Java 21, the explicit constructor call must come first.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-86",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I create an array whose element type is a class, then put objects in each slot. For example, Student[] can hold several Student instances. Creating the array allocates the reference slots, not the students themselves. I still construct or assign each object.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-87",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An array of object references starts with nulls. For example, new Student[3] creates three positions but no Student instances. Calling a method on an unfilled position throws NullPointerException. I populate each position before using it.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-88",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A static field or method belongs to the class, not to one particular object. For example, a shared counter can track how many User objects were created. Instance fields belong to each object instead. I use static for genuinely shared behavior or constants, not just for convenience.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-89",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Every account needs a separate balance. If the balance were static, different account objects would share one value and overwrite each other. A static counter can be shared, but the balance is instance-specific. The question is whether the data belongs to one object or the whole class.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-90",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A subclass can inherit accessible behavior from a parent and add or specialize its own. For example, Dog can extend Animal and share some features while adding bark behavior. I use inheritance when the relationship truly means is-a. It's not a reason to build a deep hierarchy for every little feature.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-91",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A Dog is an Animal, but not every Animal is a Dog. That means code expecting an Animal can often work with a Dog instance. The child can add behavior and override inherited methods. The hierarchy should reflect a genuine relationship.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-92",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "super lets a child class access parent behavior or call the parent constructor. For example, a Student constructor can pass the name to a Person constructor using super(name). It helps a child build on the parent's setup rather than duplicating it.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-93",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If the parent requires constructor arguments and doesn't have an accessible no-argument constructor, the child must call an appropriate super(...). For example, if Person requires a name, Student needs to supply it. In Java 21, this call is at the beginning of the constructor.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-94",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A child class supplies its own version of an inherited instance method. For example, Animal can have makeSound, while Dog overrides it to bark. When called through an Animal reference, Java runs the method for the actual Dog object. That's runtime polymorphism.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-95",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "@Override asks the compiler to check that the method really overrides one from the parent. For example, if I misspell makeSound, the compiler catches the mistake rather than silently creating another method. It is a small annotation that prevents confusing bugs.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-96",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "toString gives a readable description of an object. For example, printing a Student object can show the student's name and grade instead of a cryptic class-and-hash string. It's useful for debugging and logging. I avoid including passwords or sensitive values in that output.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-97",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Java uses that object's toString representation when building the printed text. If the class doesn't override it, the default output is often not very helpful. For example, a Book can provide a custom toString showing its title. Readable output saves debugging time.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-98",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Abstraction means callers see the important behavior without needing to know every implementation detail. For example, a PaymentProcessor can expose pay while card and wallet providers work differently inside. Abstract classes and interfaces help express this idea. Depend on the promise, not the machinery.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-99",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An abstract class can't be created directly with new. It can contain shared code and abstract methods that subclasses must implement. For example, Shape might define an abstract area method and common color information. It is useful when several related classes share a meaningful base.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-100",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An interface describes behavior that different classes agree to provide. For example, Invoice and Report could both implement Printable. Code using Printable doesn't need to know which one it received. Interfaces help keep features easy to replace and test.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-101",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A service can depend on a Notifier interface instead of hardcoding EmailNotifier. For example, a test can supply a fake Notifier without sending real messages. Changing the implementation doesn't require rewriting the service's main logic. That's the power of a small, clear contract.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-102",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Polymorphism lets the same interface or parent reference work with different kinds of objects. For example, Animal references can point to Dogs and Cats that each implement makeSound differently. It reduces repeated type checks and makes code easier to extend.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-103",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If all payment types implement pay, the checkout code can call pay without checking which provider it received. For example, adding a wallet payment needs a new implementation, not a giant if statement in checkout. Changes stay in the right place.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-104",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Java uses the actual object's type to select its overridden instance method. For example, Animal animal = new Dog(); then animal.makeSound() uses Dog's behavior. The reference type limits what can be called at compile time, while the object controls the overridden result.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-105",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Overloading chooses between different parameter lists at compile time. Overriding chooses the implementation associated with the actual object at runtime. For example, add(int,int) versus add(double,double) is overloading, while Dog's makeSound is overriding. Similar names, different mechanisms.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-106",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Getters read private fields, while setters can control changes. For example, a setter can reject a negative age or balance. They support encapsulation because callers don't directly modify every detail of an object's state. I don't add setters when a value shouldn't change.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-107",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A public field can be changed without the class checking it. For example, external code could set a user's age to -500. A private field and a validated method protect the object's rules. The purpose is control, not creating boilerplate.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-108",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Aggregation is a has-a relationship where the parts can live independently. For example, a Department has Teachers, but a Teacher can still exist if the Department is removed. It helps model larger objects without claiming they're subclasses.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-109",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Inheritance means is-a, while aggregation means has-a. For example, Teacher is a Person, but School has Teachers. Those statements describe different relationships. I choose the one that matches the real-world model, not whichever produces less typing.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-110",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Composition builds an object from parts it owns or closely controls. For example, a Car can contain an Engine and use it to drive. In an OOP model, composition describes a strong whole-part relationship. It often keeps code simpler than a deep chain of inherited classes.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-111",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Both are has-a relationships, but composition normally implies stronger ownership or a linked lifetime. For example, a Library may reference independent Books, while an Order owns its LineItems. I let the real business ownership rules decide between them.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-112",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Wrapper classes hold primitive-like values as objects, such as Integer for int and Double for double. Collections use object types, so List<Integer> stores boxed numbers. Java often converts automatically through boxing and unboxing. I watch out for null wrapper values.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-113",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An Integer object can be null, but a primitive int cannot. If Java tries to unbox null, it throws NullPointerException. For example, a missing map value assigned directly to int can fail. I check for missing data before unboxing.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-114",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "ArrayList can grow or shrink as items are added or removed. For example, a changing shopping list is easier as an ArrayList than a fixed array. It offers add, get, and remove methods. Arrays remain useful when the size is fixed.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-115",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Changing an ArrayList structurally during a for-each loop may throw ConcurrentModificationException. For example, to remove empty names I can use removeIf or an Iterator's remove method. I choose collection operations designed for modification rather than editing blindly during iteration.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-116",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I put risky code inside try, handle expected problems in catch, and use finally for cleanup that should normally happen. For example, a bad number entered by a user can be caught and shown as a friendly message. I catch what I can recover from and don't silently hide failures.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-117",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "It hides bugs and may make broken work look successful. For example, a failed payment must never be reported as complete just because a catch block swallowed the error. I handle specific errors and make unexpected failures visible to the right part of the system.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-118",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I can use Files.writeString for simple text or a writer for larger or repeated writes. For example, a notes program might save the user's message into notes.txt. I choose whether to replace or append, and I handle failures. Writers should be closed reliably, often through try-with-resources.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-119",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Overwriting replaces the old content; appending adds new content at the end. For example, a running event log may append while a saved settings file usually overwrites. I check the intended behavior so the program doesn't accidentally destroy data.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-120",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "For a small file I can use Files.readString. For larger data, a BufferedReader can read one line at a time. For example, I might read a list of names and process them as I go. I handle missing files, encoding, and read failures.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-121",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Loading a huge file all at once can consume too much memory. Reading one line at a time lets me process records without storing every line. For example, I can count errors in a large log as I stream through it. It scales more predictably.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-122",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I can use Java Sound APIs to load a supported audio file into a Clip and start playback. For example, a small console music player might play a WAV file and let the user stop it. Audio projects teach file handling, loops, and cleanup.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-123",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Audio resources use operating-system handles. Leaving them open can waste resources or lock files. For example, when the player exits, I stop and close the Clip and any opened streams. Cleanup is part of the feature working correctly.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-124",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd choose a secret word, display placeholders for hidden letters, and ask for one letter per turn. Correct letters reveal their positions; wrong guesses reduce remaining attempts. For example, guessing A reveals several places in BANANA. Loops, Strings, arrays, and collections make it possible.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-125",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I track which letters were already guessed and check before scoring another attempt. For example, guessing A twice shouldn't cost two lives. I also reject blank or multiple-character input when only one letter is allowed. Consistent rules make the game fair.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-126",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "LocalDate represents a date, LocalTime a clock time, and LocalDateTime combines both without a time zone. For example, a birthday needs a LocalDate, while a global meeting often needs an Instant or zone. Choosing the right type avoids confusing local and global times.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-127",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A local time like 9 AM doesn't identify one global instant. For example, 9 AM in Texas is different from 9 AM in London. For worldwide scheduling, I'd store an Instant or relevant ZoneId. The time needs context.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-128",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An anonymous class is a one-off implementation or subclass created without a separate class name. For example, it can supply a small custom listener for a UI event. It is useful for local behavior, though lambdas are often simpler for functional interfaces.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-129",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "If the behavior is large or reused, a named class is easier to read and test. For example, I wouldn't hide a complete payment processor inside an anonymous class. I keep one-off implementations small and give important code a clear name.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-130",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Timer schedules a TimerTask to run later or repeatedly. For example, a simple app might display a message once every second. It teaches basic scheduling. In production services, ScheduledExecutorService is often more flexible.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-131",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An exception in a task can stop expected future work, depending on the scheduling tool. For example, a failed network call shouldn't quietly end every reminder. I log the error and use a scheduler with appropriate recovery behavior.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-132",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd start from a chosen number of seconds, show the remaining time, and reduce it once per tick until zero. For example, ten becomes nine, eight, and so on. A TimerTask can handle the periodic updates. I also think about cancellation and invalid starting values.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-133",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "The countdown decides when a value changes; display code decides how to show it. For example, switching from console output to a GUI shouldn't require rewriting the timing logic. Separating responsibilities makes it easier to test.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-134",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Generics give compile-time type safety to reusable classes and methods. For example, List<String> accepts Strings and helps catch adding an Integer by mistake. That reduces unsafe casts and makes code clearer. Generics catch many mistakes before running.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-135",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A generic method can work with different types while keeping the type information. For example, a firstElement method can return a String from List<String> or an Integer from List<Integer>. I write one clear algorithm instead of many almost identical methods.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-136",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "HashMap stores key-value pairs and is useful when I want to look up a value by a key. For example, I can map a student ID to a name. I use put, get, containsKey, and remove for common operations. The average lookup is fast when hashing works well.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-137",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "The second put replaces the value for that key rather than creating two entries. For example, storing a new department for employee ID 10 updates that employee's entry. HashMap uses hashing and equality to identify keys. The key points to one current value.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-138",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "An enum represents a fixed set of named choices. For example, OrderStatus might contain NEW, PAID, SHIPPED, and CANCELLED. That is clearer and safer than letting any random String represent a status. Enums can also have methods and fields.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-139",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A String may contain a typo or unsupported value. An enum restricts callers to the defined choices. For example, the compiler understands OrderStatus.SHIPPED but not a misspelled status constant. A fixed set of business values deserves its own type.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-140",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A thread is an independent path of execution inside a running program. For example, a background countdown can progress while the main thread waits for user input. Java offers Thread and Runnable for basic examples. Shared data still needs careful coordination.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-141",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Calling run directly is just a method call on the current thread. Calling start launches a new thread that executes the task. For example, if I want a countdown to run in the background, I call start. Otherwise my program still runs sequentially.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-142",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "Multithreading allows independent tasks to make progress together. For example, a download can continue while a progress display updates. It can improve responsiveness, but not every program becomes faster. Shared state and coordination are important.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-143",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "A race occurs when the result depends on how threads interleave access to shared data. For example, two threads incrementing a plain shared counter may lose one increment. I'd use a lock, atomic type, or avoid sharing mutable state. Concurrency needs clear ownership.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-144",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "I'd read the alarm time, compare it with the current time, and start an audio Clip when the time arrives. For example, an 8 AM alarm can play a WAV file. I'd keep timing separate from playback and handle missing files. The project brings together java.time, input, threads, and audio.",
+      "answer_style": "simple_spoken"
+    },
+    {
+      "question_id": "IJ-145",
+      "video_id": "YT-2",
+      "answer_type": "ai_only",
+      "ai_answer": "The program can play the alarm while waiting for the user to press Enter. After Enter, it stops and closes the Clip. For example, the ringing stops as soon as the user responds. I'd manage the shared Scanner and audio resources carefully so cleanup happens at the right time.",
+      "answer_style": "simple_spoken"
     }
   ]
 }

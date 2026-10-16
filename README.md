@@ -84,3 +84,7 @@ The same canonical `IJ-n` question may have a **YT-1 interview video option** wi
 ## Permanent answer standard (applies to all future transcripts)
 
 **Read [ANSWER-STYLE](docs/ANSWER-STYLE.md) before generating answers.** AI answers are **simple spoken interview responses**: direct explanation, one concrete example, memorable takeaway, usually 65–100 words. The actual candidate column is an **unaltered excerpt of original timed captions**, never a paraphrase. Uncertain speaker boundaries are identified honestly. [Browse IT-1 as the model](INTERVIEW-SYLLABUS/TESTING/IT-1.md).
+
+## YT-2 — Complete Java Full Course (12-hour tutorial)
+
+[Browse the 71-chapter Java course](VIDEO-LIBRARY/YT-2/timestamps.md) with **142 Java interview questions**, **588 curated clickable timestamps**, and the **2,693 original subtitles** preserved. All 142 answer blocks are AI-only, in simple spoken interview style—there is no fabricated candidate. [Pure video chronology](VIDEO-LIBRARY/YT-2/timeline.md) · [Coverage audit](VIDEO-LIBRARY/YT-2/coverage-audit.md).
