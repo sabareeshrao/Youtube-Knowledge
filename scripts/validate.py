@@ -296,13 +296,14 @@ for comparison in answer_comparisons:
                         continue
                     assembled.append(spoken)
                     if isinstance(second, int) and isinstance(video_youtube_id, str):
-                        candidate_line = re.compile(
-                            r"^- \\[[0-9:]+\\]\\(https://www\\.youtube\\.com/watch\\?v="
-                            + re.escape(video_youtube_id)
-                            + r"&t=" + str(second) + r"s\\) (.*)$",
-                            re.MULTILINE
+                        caption_target = (
+                            f"(https://www.youtube.com/watch?v={video_youtube_id}&t={second}s) "
                         )
-                        lines = candidate_line.findall(transcript_text)
+                        lines = [
+                            line.split(caption_target, 1)[1]
+                            for line in transcript_text.splitlines()
+                            if line.startswith("- [") and caption_target in line
+                        ]
                         if not lines or not any(spoken in original for original in lines):
                             fail(f"Source caption not found verbatim at {second}s: {key}")
                 if isinstance(candidate, str) and candidate != " ".join(assembled):
