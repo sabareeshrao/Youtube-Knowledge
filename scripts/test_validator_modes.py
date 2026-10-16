@@ -31,7 +31,11 @@ def make_fixture(root, video_type, record):
         answer_heading = "### AI answer — YT-2"
         answer_table = "| AI answer |\n|---|\n| Example answer |\n"
     else:
-        answer_heading = "### Candidate answer vs. AI-corrected answer — YT-2"
+        answer_heading = (
+            "### Original candidate transcript vs. simple AI answer — YT-2"
+            if record.get("candidate_transcript_rows") else
+            "### Candidate answer vs. AI-corrected answer — YT-2"
+        )
         answer_table = "| Candidate answer | AI corrected answer |\n|---|---|\n| A | B |\n"
     grouped = (
         "# YT-2 — Sample topic\n\n"
@@ -44,7 +48,13 @@ def make_fixture(root, video_type, record):
     qpage = "# IJ-1 — What is the example topic?\n\n" + grouped.replace(
         "## IJ-1 — What is the example topic?\n\n", "", 1
     )
-    write("VIDEO-LIBRARY/YT-2/transcript.md", f"Video: https://www.youtube.com/watch?v={SAMPLE_VIDEO}\n")
+    source_text = f"Video: https://www.youtube.com/watch?v={SAMPLE_VIDEO}\\n"
+    if record.get("candidate_transcript_rows"):
+        source_text += (
+            f"- [0:05](https://www.youtube.com/watch?v={SAMPLE_VIDEO}&t=5s) "
+            "This is the candidate speaking about the example topic exactly as transcribed.\\n"
+        )
+    write("VIDEO-LIBRARY/YT-2/transcript.md", source_text)
     write("VIDEO-LIBRARY/YT-2/timestamps.md", grouped)
     write("VIDEO-LIBRARY/YT-2/timeline.md", timeline)
     write("INTERVIEW-SYLLABUS/JAVA/IJ-1.md", qpage)
@@ -128,6 +138,38 @@ class TestAnswerModeValidator(unittest.TestCase):
             "question_id": "IJ-1", "video_id": "YT-2", "answer_type": "ai_only",
             "source_role": "instructor_only",
             "ai_answer": "A well-grounded interview explanation of the example topic, with useful detail."
+        }, True)
+
+    def test_verbatim_candidate_captions_are_accepted(self):
+        recorded = "This is the candidate speaking about the example topic exactly as transcribed."
+        self.check("interview", {
+            "question_id": "IJ-1", "video_id": "YT-2",
+            "answer_type": "interview_comparison",
+            "candidate_answer_status": "verbatim_excerpt",
+            "candidate_answer": recorded,
+            "candidate_transcript_rows": [{"seconds": 5, "clock": "0:05", "text": recorded}],
+            "ai_corrected_answer": "I would explain the example directly, add a practical scenario, and finish with a clear takeaway.",
+            "answer_style": "simple_spoken",
+        }, True)
+
+    def test_changed_candidate_quote_fails_source_check(self):
+        fake = "These are words never actually spoken in the candidate's original subtitle."
+        self.check("interview", {
+            "question_id": "IJ-1", "video_id": "YT-2",
+            "candidate_answer_status": "verbatim_excerpt",
+            "candidate_answer": fake,
+            "candidate_transcript_rows": [{"seconds": 5, "clock": "0:05", "text": fake}],
+            "ai_corrected_answer": "A technically accurate, simple interview explanation with an example and key takeaway.",
+        }, False, "not found verbatim")
+
+    def test_short_acknowledgement_is_not_fabricated(self):
+        words = "This"
+        self.check("interview", {
+            "question_id": "IJ-1", "video_id": "YT-2",
+            "candidate_answer_status": "no_substantive_answer",
+            "candidate_answer": words,
+            "candidate_transcript_rows": [{"seconds": 5, "clock": "0:05", "text": words}],
+            "ai_corrected_answer": "A direct, simple interview explanation that gives the missing technical details accurately.",
         }, True)
 
 

@@ -260,10 +260,53 @@ for comparison in answer_comparisons:
             fail(f"Interview comparison must not include ai_answer: {key}")
         candidate = comparison.get("candidate_answer")
         correction = comparison.get("ai_corrected_answer")
-        if not isinstance(candidate, str) or len(candidate.strip()) < 20:
-            fail(f"Candidate answer missing or too brief: {key}")
+        status = comparison.get("candidate_answer_status")
+        if status not in (None, "verbatim_excerpt", "no_substantive_answer"):
+            fail(f"Invalid candidate_answer_status: {key}")
+        minimum = 3 if status == "no_substantive_answer" else 20
+        if not isinstance(candidate, str) or len(candidate.strip()) < minimum:
+            fail(f"Candidate transcript missing or too brief: {key}")
         if not isinstance(correction, str) or len(correction.strip()) < 30:
-            fail(f"AI-corrected interview answer missing or too brief: {key}")
+            fail(f"AI interview answer missing or too brief: {key}")
+        if comparison.get("answer_style") not in (None, "simple_spoken"):
+            fail(f"Unrecognized answer_style: {key}")
+        caption_rows = comparison.get("candidate_transcript_rows")
+        if status in ("verbatim_excerpt", "no_substantive_answer"):
+            if not isinstance(caption_rows, list) or not caption_rows:
+                fail(f"Verbatim candidate answer needs source caption rows: {key}")
+            else:
+                assembled = []
+                transcript_path = video.get("transcript")
+                transcript_text = ""
+                if isinstance(transcript_path, str) and (ROOT / transcript_path).is_file():
+                    transcript_text = (ROOT / transcript_path).read_text(encoding="utf-8")
+                video_youtube_id = video.get("youtube_id", "")
+                for caption in caption_rows:
+                    if not isinstance(caption, dict):
+                        fail(f"Invalid source caption row: {key}")
+                        continue
+                    second = caption.get("seconds")
+                    clock = caption.get("clock")
+                    spoken = caption.get("text")
+                    if (type(second) is not int or not isinstance(clock, str)
+                            or time_seconds(clock) != second):
+                        fail(f"Source caption time mismatch: {key}")
+                    if not isinstance(spoken, str) or not spoken.strip():
+                        fail(f"Empty source caption text: {key}")
+                        continue
+                    assembled.append(spoken)
+                    if isinstance(second, int) and isinstance(video_youtube_id, str):
+                        candidate_line = re.compile(
+                            r"^- \\[[0-9:]+\\]\\(https://www\\.youtube\\.com/watch\\?v="
+                            + re.escape(video_youtube_id)
+                            + r"&t=" + str(second) + r"s\\) (.*)$",
+                            re.MULTILINE
+                        )
+                        lines = candidate_line.findall(transcript_text)
+                        if not lines or not any(spoken in original for original in lines):
+                            fail(f"Source caption not found verbatim at {second}s: {key}")
+                if isinstance(candidate, str) and candidate != " ".join(assembled):
+                    fail(f"Candidate answer is not an exact caption excerpt: {key}")
 
 for key in source_pairs:
     if key not in keys:
@@ -294,7 +337,12 @@ for q in questions:
             if heading not in grouped_text:
                 fail(f"Tutorial video page missing AI-only answer table: {key}")
         elif mode == "interview_comparison":
-            heading = f"### Candidate answer vs. AI-corrected answer — {vid}"
+            record = next((entry for entry in answer_comparisons if isinstance(entry, dict)
+                           and (entry.get("question_id"), entry.get("video_id")) == key), {})
+            if record.get("candidate_transcript_rows"):
+                heading = f"### Original candidate transcript vs. simple AI answer — {vid}"
+            else:
+                heading = f"### Candidate answer vs. AI-corrected answer — {vid}"
             if heading not in source_text:
                 fail(f"Interview question page missing comparison table: {key}")
             if heading not in grouped_text:
